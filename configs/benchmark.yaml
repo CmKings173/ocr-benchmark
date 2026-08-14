@@ -22,4 +22,4 @@ benchmark:
     critical_field_accuracy: 0.3
     latency_score: 0.1
     reliability_score: 0.1
-  allowed_tags: [clear, blur, rotated, reflection, dark, small_text, damaged, long_distance, vietnamese, mixed, chinese_simplified, chinese_traditional, japanese]
+  allowed_tags: [clear, blur, rotated, reflection, dark, small_text, damaged, long_distance, vietnamese, vietnamese_mixed, mixed, chinese_simplified, chinese_traditional, japanese]

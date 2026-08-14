@@ -16,6 +16,16 @@ def test_dataset_validator_accepts_single_label(tmp_path):
     assert len(dataset.samples) == 1
 
 
+def test_dataset_validator_accepts_top_level_list_and_mixed_language_tag(tmp_path):
+    image_dir = tmp_path / "images"
+    image_dir.mkdir()
+    Image.new("RGB", (10, 10), "white").save(image_dir / "one.png")
+    gt = tmp_path / "ground_truth.json"
+    gt.write_text(json.dumps([{"image": "one.png", "tags": ["vietnamese_mixed"], "required_fields": ["sku"], "fields": {"sku": "x"}, "notes": "synthetic"}]))
+    dataset = load_and_validate_dataset(image_dir, gt)
+    assert len(dataset.samples) == 1
+
+
 def test_dataset_validator_rejects_multi_label_sample(tmp_path):
     image_dir = tmp_path / "images"
     image_dir.mkdir()

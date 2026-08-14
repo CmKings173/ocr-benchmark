@@ -26,10 +26,12 @@ class GroundTruth(BaseModel):
     label_count: int = 1
     label_type: str = "default"
     tags: list[str] = Field(default_factory=list)
+    required_fields: list[str] = Field(default_factory=list)
     fields: dict[str, Any] = Field(default_factory=dict)
     critical_fields: list[str] = Field(default_factory=list)
     full_text: str = ""
     barcode_type: Optional[str] = None
+    notes: str = ""
 
 
 class Detection(BaseModel):

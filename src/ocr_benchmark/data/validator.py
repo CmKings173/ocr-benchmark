@@ -12,7 +12,22 @@ class DatasetValidationError(ValueError):
     pass
 
 
-ALLOWED_TAGS = {"clear", "blur", "rotated", "reflection", "dark", "small_text", "damaged", "long_distance", "vietnamese", "mixed", "chinese_simplified", "chinese_traditional", "japanese"}
+ALLOWED_TAGS = {
+    "clear",
+    "blur",
+    "rotated",
+    "reflection",
+    "dark",
+    "small_text",
+    "damaged",
+    "long_distance",
+    "vietnamese",
+    "vietnamese_mixed",
+    "mixed",
+    "chinese_simplified",
+    "chinese_traditional",
+    "japanese",
+}
 
 
 def _safe_image_path(dataset_dir: Path, image_ref: str) -> Path:
@@ -37,7 +52,12 @@ def load_and_validate_dataset(
 ) -> Dataset:
     try:
         payload = json.loads(ground_truth_path.read_text())
-        raw_samples = payload.get("samples", payload) if isinstance(payload, (dict, list)) else None
+        if isinstance(payload, dict):
+            raw_samples = payload.get("samples")
+        elif isinstance(payload, list):
+            raw_samples = payload
+        else:
+            raw_samples = None
         dataset = Dataset.model_validate({"samples": raw_samples})
     except Exception as exc:
         raise DatasetValidationError(f"invalid ground truth: {exc}") from exc
