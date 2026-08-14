@@ -60,6 +60,14 @@ python scripts/validate_dataset.py \
   --ground-truth data/ground_truth.json
 ```
 
+If you are using the included starter pack already located at `data/images/ocr_label_dataset_v1/`, validate it with its nested paths instead of copying files:
+
+```bash
+python scripts/validate_dataset.py \
+  --dataset data/images/ocr_label_dataset_v1/images \
+  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json
+```
+
 V1 accepts exactly one physical label per image. The validator rejects `label_count != 1` and unsafe paths. Keep the image set and ground-truth file versioned together; never resume a checkpoint against a changed dataset.
 
 ## 4. Smoke test, then install one model at a time
@@ -68,8 +76,8 @@ Start with the framework smoke test:
 
 ```bash
 python scripts/run_all.py --models mock \
-  --dataset data/images \
-  --ground-truth data/ground_truth.json \
+  --dataset data/images/ocr_label_dataset_v1/images \
+  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
   --output results/mock
 ```
 
@@ -93,8 +101,8 @@ Run one model first, with concurrency 1 and batch 1. Then increase workload only
 
 ```bash
 python scripts/run_all.py --models ppocr_v6 \
-  --dataset data/images \
-  --ground-truth data/ground_truth.json \
+  --dataset data/images/ocr_label_dataset_v1/images \
+  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
   --output results/ppocr_v6
 ```
 
