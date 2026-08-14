@@ -43,3 +43,4 @@ Each model run writes checkpointed raw JSONL predictions, performance JSON, fiel
 - [Requirements and decisions](docs/requirements-questionnaire.md)
 - [Dataset sourcing and V1 policy](docs/datasets.md)
 - [Benchmark runbook](docs/runbook.md)
+- [GX10 installation runbook](docs/gx10-install.md)
