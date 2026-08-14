@@ -76,6 +76,15 @@ V1 accepts exactly one physical label per image. The validator rejects `label_co
 Start with the framework smoke test:
 
 ```bash
+uv run python scripts/run_all.py --config configs/benchmark.gx10-smoke.yaml --models mock \
+  --dataset data/images/ocr_label_dataset_v1/images \
+  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
+  --output results/mock-smoke
+```
+
+The smoke config keeps the 100-image accuracy check but reduces performance to one repetition, batch size 1 and concurrency 1. For the full benchmark, use the default `configs/benchmark.yaml`.
+
+```bash
 uv run python scripts/run_all.py --models mock \
   --dataset data/images/ocr_label_dataset_v1/images \
   --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
