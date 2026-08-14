@@ -1,0 +1,23 @@
+services:
+  benchmark:
+    build: .
+    working_dir: /app
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./model_cache:/app/model_cache
+    environment:
+      HF_HOME: /app/model_cache/huggingface
+    command: ["--models", "mock"]
+  benchmark-gpu:
+    profiles: ["gpu"]
+    build: .
+    working_dir: /app
+    gpus: all
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+      - ./model_cache:/app/model_cache
+    environment:
+      HF_HOME: /app/model_cache/huggingface
+    command: ["--models", "ppocr_v6"]

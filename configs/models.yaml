@@ -1,0 +1,38 @@
+models:
+  ppocr_v6:
+    adapter: ppocr_v6
+    det_model: PP-OCRv6_medium_det
+    rec_model: PP-OCRv6_medium_rec
+    device: gpu:0
+    revision: VERIFY_REQUIRED
+    license_status: VERIFY_REQUIRED
+  glm_ocr:
+    adapter: glm_ocr
+    endpoint: http://127.0.0.1:8080/v1
+    model: glm-ocr
+    revision: VERIFY_REQUIRED
+    license_status: VERIFY_REQUIRED
+  paddleocr_vl_1_6:
+    adapter: paddleocr_vl_1_6
+    device: gpu:0
+    revision: VERIFY_REQUIRED
+    license_status: VERIFY_REQUIRED
+  monkey_ocr_v2_b_parsing:
+    adapter: monkey_ocr_v2_b_parsing
+    endpoint: http://127.0.0.1:8000/v1
+    model: MonkeyOCRv2-B-Parsing
+    revision: VERIFY_REQUIRED
+    license_status: VERIFY_REQUIRED
+  surya_ocr_2:
+    adapter: surya_ocr_2
+  deepseek_ocr:
+    adapter: deepseek_ocr
+  qwen2_vl_7b:
+    adapter: qwen2_vl_7b
+  donut:
+    adapter: donut
+  layoutlmv3_kie:
+    adapter: layoutlmv3_kie
+  mistral_ocr4:
+    adapter: mistral_ocr4
+    endpoint: ""

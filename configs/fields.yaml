@@ -1,0 +1,12 @@
+label_types:
+  shipping_label:
+    fields:
+      customer: {type: string, required: false, critical: false}
+      po_number: {type: string, required: false, critical: false}
+      sku: {type: string, required: true, critical: true}
+      lot: {type: string, required: true, critical: true}
+      quantity: {type: integer, required: true, critical: false}
+      unit: {type: string, required: true, critical: false}
+      serial: {type: string, required: false, critical: true}
+      barcode: {type: string, required: false, critical: true}
+      date: {type: string, required: false, critical: false}

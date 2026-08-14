@@ -1,0 +1,18 @@
+{
+  "samples": [
+    {
+      "image": "001.jpg",
+      "label_count": 1,
+      "label_type": "shipping_label",
+      "tags": ["clear", "vietnamese"],
+      "fields": {
+        "sku": "ABC-123",
+        "lot": "L20260814",
+        "quantity": 500,
+        "unit": "PCS",
+        "barcode": "8938505971123"
+      },
+      "full_text": "SKU: ABC-123 LOT: L20260814 QTY: 500 PCS"
+    }
+  ]
+}

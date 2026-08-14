@@ -1,0 +1,25 @@
+benchmark:
+  warmup_iterations: 5
+  accuracy_iterations_per_image: 1
+  performance_min_iterations: 100
+  performance_repetitions: 3
+  batch_sizes: [1, 4, 8]
+  concurrency: [1, 2, 4, 8]
+  timeout_seconds: 60
+  output_dir: results
+  production_gates:
+    full_label_accuracy_min: 0.995
+    critical_field_accuracy_min: 0.999
+    failure_rate_max: 0.001
+    p95_latency_max_ms: 500
+    p99_latency_max_ms: 1000
+    peak_memory_max_bytes: null
+  gate_policy:
+    enforce_on_v1_100_images: false
+    confidence_level: 0.95
+  score_weights:
+    full_label_accuracy: 0.5
+    critical_field_accuracy: 0.3
+    latency_score: 0.1
+    reliability_score: 0.1
+  allowed_tags: [clear, blur, rotated, reflection, dark, small_text, damaged, long_distance, vietnamese, mixed, chinese_simplified, chinese_traditional, japanese]
