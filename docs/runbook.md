@@ -3,7 +3,7 @@
 ## 1. Validate the dataset
 
 ```bash
-python scripts/validate_dataset.py \
+uv run python scripts/validate_dataset.py \
   --dataset data/images \
   --ground-truth data/ground_truth.json
 ```
@@ -13,7 +13,7 @@ The validator requires relative image paths, readable images, a single annotated
 ## 2. Run the mock smoke test
 
 ```bash
-python scripts/run_all.py --models mock \
+uv run python scripts/run_all.py --models mock \
   --dataset data/images \
   --ground-truth data/ground_truth.json
 ```
@@ -23,7 +23,7 @@ For a fast CI smoke test, use a benchmark config with one repetition, batch size
 ## 3. Stage model adapters
 
 ```bash
-python scripts/run_all.py \
+uv run python scripts/run_all.py \
   --models ppocr_v6,glm_ocr,paddleocr_vl_1_6,monkey_ocr_v2_b_parsing \
   --dataset data/images \
   --ground-truth data/ground_truth.json

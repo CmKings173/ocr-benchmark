@@ -33,13 +33,14 @@ cd ocr-benchmark
 git checkout main
 
 sudo apt update
-sudo apt install -y python3-venv python3-dev build-essential \
+sudo apt install -y python3-dev build-essential \
   libglib2.0-0 libgl1
 
-python3 -m venv .venv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+source "$HOME/.local/bin/env"
+uv python install 3.11
+uv sync --dev
 source .venv/bin/activate
-python -m pip install --upgrade pip setuptools wheel
-python -m pip install -e .
 ```
 
 Keep model downloads outside Git:
@@ -54,8 +55,8 @@ export HF_HOME="$PWD/model_cache/huggingface"
 ```bash
 cp data/ground_truth.example.json data/ground_truth.json
 # Copy the corresponding images into data/images/
-python scripts/inspect_environment.py
-python scripts/validate_dataset.py \
+uv run python scripts/inspect_environment.py
+uv run python scripts/validate_dataset.py \
   --dataset data/images \
   --ground-truth data/ground_truth.json
 ```
@@ -63,7 +64,7 @@ python scripts/validate_dataset.py \
 If you are using the included starter pack already located at `data/images/ocr_label_dataset_v1/`, validate it with its nested paths instead of copying files:
 
 ```bash
-python scripts/validate_dataset.py \
+uv run python scripts/validate_dataset.py \
   --dataset data/images/ocr_label_dataset_v1/images \
   --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json
 ```
@@ -75,7 +76,7 @@ V1 accepts exactly one physical label per image. The validator rejects `label_co
 Start with the framework smoke test:
 
 ```bash
-python scripts/run_all.py --models mock \
+uv run python scripts/run_all.py --models mock \
   --dataset data/images/ocr_label_dataset_v1/images \
   --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
   --output results/mock
@@ -84,12 +85,16 @@ python scripts/run_all.py --models mock \
 Install optional model dependencies only after confirming that the vendor provides an ARM64/GB10-compatible build. The generic requirements files are intentionally not a promise that every upstream wheel supports this platform:
 
 ```bash
-# PP-OCR / PaddleOCR (verify the PaddlePaddle ARM64 + GB10 wheel first)
-python -m pip install -r requirements/paddle.txt
+# PP-OCR runs in the benchmark worker; install only after confirming the
+# PaddlePaddle ARM64 + GB10 wheel/container is available.
+uv pip install -r requirements/paddle.txt
 
-# HTTP-served GLM-OCR or MonkeyOCR (the server must be running locally)
-python -m pip install -r requirements/glm.txt
-python -m pip install -r requirements/monkey.txt
+# GLM-OCR and MonkeyOCR are HTTP servers. Keep their conflicting vLLM
+# requirements in separate environments.
+uv venv .venv-glm --python 3.11
+uv pip install --python .venv-glm/bin/python -r requirements/glm.txt
+uv venv .venv-monkey --python 3.11
+uv pip install --python .venv-monkey/bin/python -r requirements/monkey.txt
 ```
 
 For HTTP VLMs, start the server using its official GB10/ARM64 instructions and keep the endpoint local (`127.0.0.1`). The configured endpoints are:
@@ -100,7 +105,7 @@ For HTTP VLMs, start the server using its official GB10/ARM64 instructions and k
 Run one model first, with concurrency 1 and batch 1. Then increase workload only after checking `environment.json`, `performance.json`, and `resource_usage.csv`:
 
 ```bash
-python scripts/run_all.py --models ppocr_v6 \
+uv run python scripts/run_all.py --models ppocr_v6 \
   --dataset data/images/ocr_label_dataset_v1/images \
   --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
   --output results/ppocr_v6
@@ -129,3 +134,4 @@ Useful references:
 - [NVIDIA DGX Spark first boot](https://docs.nvidia.com/dgx/dgx-spark/first-boot.html)
 - [NVIDIA DGX Spark container runtime](https://docs.nvidia.com/dgx/dgx-spark/nvidia-container-runtime-for-docker.html)
 - [NVIDIA DGX Spark NGC guide](https://docs.nvidia.com/dgx/dgx-spark/ngc.html)
+- [uv project sync and lock](https://docs.astral.sh/uv/concepts/projects/sync/)

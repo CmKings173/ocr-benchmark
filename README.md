@@ -5,14 +5,15 @@ Production-oriented OCR/VLM benchmark lab for customer shipping and product labe
 ## Quick start
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -e .
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv python install 3.11
+uv venv --python 3.11
+uv sync --dev
 cp data/ground_truth.example.json data/ground_truth.json
 mkdir -p data/images
 # Put an image matching the ground-truth record (for example data/images/001.jpg) here.
-python scripts/validate_dataset.py --dataset data/images --ground-truth data/ground_truth.json
-python scripts/run_all.py --models mock
+uv run python scripts/validate_dataset.py --dataset data/images --ground-truth data/ground_truth.json
+uv run python scripts/run_all.py --models mock
 ```
 
 The mock adapter is only for framework smoke tests. It is never a production benchmark result.
