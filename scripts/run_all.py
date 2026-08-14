@@ -37,12 +37,15 @@ def main() -> int:
 
     field_schema = load_field_schema(args.fields_config)
     models = [item.strip() for item in args.models.split(",") if item.strip()]
+    print(f"dataset validated: {len(dataset.samples)} samples; models={','.join(models)}", flush=True)
     output_root = args.output or config.output_dir
     multi_model = len(models) > 1
     model_configs_payload = yaml.safe_load(args.models_config.read_text()) if args.models_config.is_file() else {}
     model_configs = (model_configs_payload or {}).get("models", {})
+    print("barcode pass: starting", flush=True)
     barcode_records = run_barcode_pass(dataset, args.dataset)
     barcode_summary = aggregate_barcode(barcode_records)
+    print("barcode pass: completed", flush=True)
     leaderboard_rows = []
 
     minimum_repetitions = max(config.performance_repetitions, math.ceil(config.performance_min_iterations / max(len(dataset.samples), 1)))
@@ -53,6 +56,7 @@ def main() -> int:
             model_config.setdefault("timeout_seconds", config.timeout_seconds)
         output_dir = (output_root / model) if (multi_model or args.output is None) else output_root
         output_dir.mkdir(parents=True, exist_ok=True)
+        print(f"{model}: accuracy pass starting ({len(dataset.samples)} samples)", flush=True)
         records = run_accuracy_pass(
             dataset,
             args.dataset,
@@ -62,6 +66,8 @@ def main() -> int:
             checkpoint_path=output_dir / "accuracy.checkpoint.jsonl",
             field_schema=field_schema,
         )
+        print(f"{model}: accuracy pass completed", flush=True)
+        print(f"{model}: performance pass starting (repetitions={minimum_repetitions}, batch={config.batch_sizes}, concurrency={config.concurrency})", flush=True)
         performance = run_performance_pass(
             dataset,
             args.dataset,
@@ -74,6 +80,7 @@ def main() -> int:
             checkpoint_path=output_dir / "performance.checkpoint.jsonl",
             warmup_iterations=config.warmup_iterations,
         )
+        print(f"{model}: performance pass completed", flush=True)
         accuracy = aggregate_accuracy(records)
         system_records = build_system_records(records, barcode_records, dataset, field_schema=field_schema)
         system_accuracy = aggregate_accuracy(system_records)
