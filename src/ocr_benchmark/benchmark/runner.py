@@ -23,7 +23,7 @@ def _classify_error(exc: Exception) -> RunStatus:
     message = str(exc).upper()
     if "INVALID_OUTPUT" in message or "VALIDATIONERROR" in message or "VALIDATION ERROR" in message:
         return RunStatus.INVALID_OUTPUT
-    if "TIMEOUT" in message:
+    if "TIMEOUT" in message or "TIMED OUT" in message:
         return RunStatus.TIMEOUT
     if "NOT_CONFIGURED" in message:
         return RunStatus.NOT_CONFIGURED

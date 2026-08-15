@@ -1,15 +1,27 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Mapping
 from typing import Any, Optional
 
 
 def to_plain(value: Any) -> Any:
     if value is None or isinstance(value, (str, int, float, bool)):
         return value
+    # PaddleOCR and other runtimes commonly return numpy arrays/scalars.  Keep
+    # this conversion at the adapter boundary so the rest of the benchmark
+    # only sees JSON-compatible values.
+    tolist = getattr(value, "tolist", None)
+    if callable(tolist):
+        try:
+            converted = tolist()
+            if converted is not value:
+                return to_plain(converted)
+        except Exception:
+            pass
     if isinstance(value, (list, tuple)):
         return [to_plain(item) for item in value]
-    if isinstance(value, dict):
+    if isinstance(value, Mapping):
         return {str(key): to_plain(item) for key, item in value.items()}
     for method_name in ("model_dump", "to_dict"):
         method = getattr(value, method_name, None)
@@ -24,7 +36,14 @@ def to_plain(value: Any) -> Any:
             return to_plain(json.loads(json_method()))
         except Exception:
             pass
-    return {str(key): to_plain(item) for key, item in vars(value).items() if not key.startswith("_")}
+    try:
+        attributes = vars(value)
+    except TypeError:
+        # Some vendor result objects intentionally expose no __dict__.  Do
+        # not turn a valid inference into a worker crash; preserve a stable
+        # textual representation for diagnostics/fallback parsing.
+        return str(value)
+    return {str(key): to_plain(item) for key, item in attributes.items() if not key.startswith("_")}
 
 
 def first_mapping(value: Any) -> dict[str, Any]:
@@ -55,6 +74,7 @@ def text_from_payload(payload: dict[str, Any]) -> str:
 
 def normalize_bbox(value: Any) -> Optional[list[float]]:
     """Convert flat or polygon boxes to canonical xmin,ymin,xmax,ymax."""
+    value = to_plain(value)
     if not isinstance(value, (list, tuple)):
         return None
     if len(value) == 4 and all(isinstance(item, (int, float)) for item in value):

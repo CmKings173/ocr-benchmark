@@ -31,6 +31,6 @@ def test_multi_model_output_is_isolated(tmp_path):
     config.write_text("benchmark:\n  performance_min_iterations: 1\n  performance_repetitions: 1\n  batch_sizes: [1]\n  concurrency: [1]\n  production_gates: {}\n")
     output = tmp_path / "results"
     result = subprocess.run([sys.executable, "scripts/run_all.py", "--models", "mock,unknown_model", "--dataset", str(image_root), "--ground-truth", str(gt), "--config", str(config), "--output", str(output)], capture_output=True, text=True, check=False)
-    assert result.returncode == 0, result.stdout + result.stderr
+    assert result.returncode == 1, result.stdout + result.stderr
     assert (output / "mock" / "summary.json").is_file()
     assert (output / "unknown_model" / "summary.json").is_file()

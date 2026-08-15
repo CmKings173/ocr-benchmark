@@ -1,2 +1,3 @@
 vllm==0.11.2
 opencv-python
+zxing-cpp>=2.2

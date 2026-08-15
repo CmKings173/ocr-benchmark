@@ -1,3 +1,5 @@
 glmocr[selfhosted]
 vllm>=0.19.0
 transformers>=5.3.0
+opencv-python
+zxing-cpp>=2.2

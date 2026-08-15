@@ -40,6 +40,7 @@ def main() -> int:
     print(f"dataset validated: {len(dataset.samples)} samples; models={','.join(models)}", flush=True)
     output_root = args.output or config.output_dir
     multi_model = len(models) > 1
+    invalid_models: list[str] = []
     model_configs_payload = yaml.safe_load(args.models_config.read_text()) if args.models_config.is_file() else {}
     model_configs = (model_configs_payload or {}).get("models", {})
     print("barcode pass: starting", flush=True)
@@ -93,6 +94,11 @@ def main() -> int:
             },
             config.production_gates,
         )
+        performance_failure_rate = performance.get("failure_rate")
+        performance_valid = performance.get("status") == "SUCCESS" and performance_failure_rate is not None and float(performance_failure_rate) < 1.0
+        run_valid = bool(gates.get("valid")) and performance_valid
+        gates["valid"] = run_valid
+        gates["eligible"] = bool(gates.get("eligible") and run_valid)
         score = composite_score({**accuracy, "p95_ms": performance.get("p95_ms"), "eligible": gates["eligible"]}, config.score_weights)
         export_results(
             records,
@@ -109,9 +115,14 @@ def main() -> int:
             score=score,
         )
         leaderboard_rows.append({"model": model, "eligible": gates["eligible"], "full_label_accuracy": accuracy.get("full_label_accuracy"), "critical_field_accuracy": accuracy.get("critical_field_accuracy"), "field_exact_accuracy": accuracy.get("field_exact_accuracy"), "p95_ms": performance.get("p95_ms"), "failure_rate": performance.get("failure_rate"), "score": score if score is not None else "N/A"})
-        print(f"completed {model}: {output_dir} eligible={gates['eligible']}")
+        if not gates["valid"]:
+            invalid_models.append(model)
+        print(f"completed {model}: {output_dir} valid={gates['valid']} eligible={gates['eligible']}")
 
     write_leaderboard(leaderboard_rows, output_root / "leaderboard.csv")
+    if invalid_models:
+        print(f"invalid model runs: {', '.join(invalid_models)}", file=sys.stderr)
+        return 1
     return 0
 
 

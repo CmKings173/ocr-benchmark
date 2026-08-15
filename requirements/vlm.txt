@@ -1,1 +1,4 @@
-paddleocr>=3.7
+paddleocr[doc-parser]>=3.7
+paddlepaddle
+opencv-python
+zxing-cpp>=2.2

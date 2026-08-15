@@ -23,7 +23,13 @@ def gate_result(summary: dict[str, Any], gates: dict[str, Any]) -> dict[str, Any
     for metric, maximum in (("failure_rate", gates.get("failure_rate_max")), ("p95_ms", gates.get("p95_latency_max_ms")), ("p99_ms", gates.get("p99_latency_max_ms")), ("peak_unified_memory_bytes", gates.get("peak_memory_max_bytes"))):
         checks[metric] = None if maximum is None or summary.get(metric) is None else summary[metric] <= maximum
     applicable = [value for value in checks.values() if value is not None]
-    return {"eligible": all(applicable) if applicable else True, "checks": checks}
+    has_successful_predictions = summary.get("successful_images", 0) > 0
+    gate_eligible = all(applicable) if applicable else True
+    return {
+        "eligible": bool(gate_eligible and has_successful_predictions),
+        "valid": has_successful_predictions,
+        "checks": checks,
+    }
 
 
 def aggregate_accuracy(records: list[dict[str, Any]]) -> dict[str, Any]:

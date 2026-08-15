@@ -71,7 +71,7 @@ uv run python scripts/validate_dataset.py \
 
 V1 accepts exactly one physical label per image. The validator rejects `label_count != 1` and unsafe paths. Keep the image set and ground-truth file versioned together; never resume a checkpoint against a changed dataset.
 
-## 4. Smoke test, then install one model at a time
+## 4. Phase 1: PP-OCRv6 + barcode (real model)
 
 Start with the framework smoke test:
 
@@ -91,13 +91,58 @@ uv run python scripts/run_all.py --models mock \
   --output results/mock
 ```
 
+Install the PP-OCR runtime only after confirming that the vendor provides an ARM64/GB10-compatible build. The generic requirements file is intentionally not a promise that every upstream wheel supports this platform:
+
+```bash
+# PP-OCR runs in the benchmark worker. Run this inside the dedicated env.
+uv venv .venv-ppocr --python 3.12
+uv pip install --python .venv-ppocr/bin/python -r requirements/paddle.txt
+
+# Verify the actual engine before downloading/running a 100-image benchmark.
+.venv-ppocr/bin/python - <<'PY'
+import cv2
+import paddle
+import paddleocr
+print("paddleocr", getattr(paddleocr, "__version__", "unknown"))
+print("paddle", paddle.__version__)
+print("compiled_with_cuda", paddle.is_compiled_with_cuda())
+print("device", paddle.device.get_device())
+print("opencv", cv2.__version__)
+try:
+    import zxingcpp
+    print("zxingcpp", "available")
+except Exception as exc:
+    print("zxingcpp", "ERROR", exc)
+PY
+
+# This is the first real model download/load. It uses one clear image only.
+.venv-ppocr/bin/python scripts/preflight_model.py \
+  --model ppocr_v6 \
+  --dataset data/images/ocr_label_dataset_v1/images \
+  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
+  --timeout 300
+
+# Continue only when the preflight JSON ends with: "valid": true.
+.venv-ppocr/bin/python scripts/run_all.py \
+  --config configs/benchmark.gx10-smoke.yaml \
+  --models ppocr_v6 \
+  --dataset data/images/ocr_label_dataset_v1/images \
+  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
+  --output results/ppocr-v6-smoke-v2
+
+# Run the full performance pass only after the smoke run exits 0.
+.venv-ppocr/bin/python scripts/run_all.py \
+  --config configs/benchmark.yaml \
+  --models ppocr_v6 \
+  --dataset data/images/ocr_label_dataset_v1/images \
+  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
+  --output results/ppocr-v6-full-v2
+
+## 5. Optional model environments
+
 Install optional model dependencies only after confirming that the vendor provides an ARM64/GB10-compatible build. The generic requirements files are intentionally not a promise that every upstream wheel supports this platform:
 
 ```bash
-# PP-OCR runs in the benchmark worker; install only after confirming the
-# PaddlePaddle ARM64 + GB10 wheel/container is available.
-uv pip install -r requirements/paddle.txt
-
 # GLM-OCR and MonkeyOCR are HTTP servers. Keep their conflicting vLLM
 # requirements in separate environments.
 uv venv .venv-glm --python 3.11
@@ -111,18 +156,16 @@ For HTTP VLMs, start the server using its official GB10/ARM64 instructions and k
 - GLM-OCR: `http://127.0.0.1:8080/v1`
 - MonkeyOCR: `http://127.0.0.1:8000/v1`
 
-Run one model first, with concurrency 1 and batch 1. Then increase workload only after checking `environment.json`, `performance.json`, and `resource_usage.csv`:
+For HTTP VLMs, run their official server first, then use the same
+`scripts/preflight_model.py` command with the correct model configuration.
+The benchmark worker must never be pointed at a server hosting a different
+model. On a 128 GB unified-memory system, start one large VLM worker at a
+time; raise concurrency only after observing peak memory and OOM status.
 
-```bash
-uv run python scripts/run_all.py --models ppocr_v6 \
-  --dataset data/images/ocr_label_dataset_v1/images \
-  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
-  --output results/ppocr_v6
-```
+The accuracy pass and performance pass are separate. Do not use repeated
+performance inferences as extra accuracy samples.
 
-The accuracy pass and performance pass are separate. Do not use repeated performance inferences as extra accuracy samples. On a 128 GB unified-memory system, start one large VLM worker at a time; raise concurrency only after observing peak memory and OOM status.
-
-## 5. Container path (optional)
+## 6. Container path (optional)
 
 The repository includes a CPU/core image and a GPU Compose profile:
 
@@ -133,7 +176,7 @@ docker compose --profile gpu up --build benchmark-gpu
 
 The GPU profile only exposes the GPU; it does not install model-specific Paddle/vLLM runtimes. Build or select an ARM64/GB10-compatible base image for those dependencies, then mount `data/`, `results/`, and `model_cache/` as shown in `docker-compose.yml`.
 
-## 6. Artifacts and resume
+## 7. Artifacts and resume
 
 Each model output contains accuracy/performance checkpoints and separate model, barcode, and system reports. A rerun with the same output directory resumes completed samples. Use a new output directory whenever the dataset, model revision, framework, or device configuration changes.
 
