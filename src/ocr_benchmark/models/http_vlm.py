@@ -17,7 +17,7 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
     model_id = ""
     official_source = ""
 
-    def __init__(self, endpoint: Optional[str] = None, model: Optional[str] = None, api_key: Optional[str] = None, prompt: str = "Extract the document text. Return JSON with raw_text and fields.", revision: Optional[str] = None, license_status: str = "VERIFY_REQUIRED", timeout_seconds: float = 60.0, allow_remote_endpoint: bool = False):
+    def __init__(self, endpoint: Optional[str] = None, model: Optional[str] = None, api_key: Optional[str] = None, prompt: str = "Extract the document text. Return JSON with raw_text and fields.", revision: Optional[str] = None, license_status: str = "VERIFY_REQUIRED", timeout_seconds: float = 60.0, max_tokens: int = 2048, allow_remote_endpoint: bool = False):
         self.endpoint = (endpoint or "").rstrip("/")
         self.model_id = model or self.model_id
         self.api_key = api_key
@@ -25,6 +25,7 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
         self.revision = revision
         self.license_status = license_status
         self.timeout_seconds = timeout_seconds
+        self.max_tokens = max_tokens
         self.allow_remote_endpoint = allow_remote_endpoint
 
     def load(self) -> None:
@@ -45,6 +46,7 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
         body = {
             "model": self.model_id,
             "temperature": 0,
+            "max_tokens": self.max_tokens,
             "messages": [{"role": "user", "content": [{"type": "text", "text": self.prompt}, {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{encoded}"}}]}],
         }
         preprocess_ms = (time.perf_counter() - preprocess_started) * 1000

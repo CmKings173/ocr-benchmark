@@ -162,6 +162,76 @@ The benchmark worker must never be pointed at a server hosting a different
 model. On a 128 GB unified-memory system, start one large VLM worker at a
 time; raise concurrency only after observing peak memory and OOM status.
 
+### Hugging Face-backed VLM smoke tests
+
+The benchmark client does not download VLM weights. The server downloads the
+Hugging Face checkpoint on first start (or uses the cache in `HF_HOME`). Use
+the dedicated config so the requested model id matches the server id:
+
+```bash
+export HF_HOME="$PWD/model_cache/huggingface"
+mkdir -p "$HF_HOME"
+git pull --ff-only origin main
+
+# Install the HF CLI once if it is not already available.
+uv pip install --python .venv-ppocr/bin/python 'huggingface-hub>=0.30'
+```
+
+Start only one server at a time on the GX10. Each command downloads from
+Hugging Face automatically and exposes an OpenAI-compatible endpoint:
+
+```bash
+# Qwen2-VL (port 8101)
+HF_HOME="$HF_HOME" vllm serve Qwen/Qwen2-VL-7B-Instruct \
+  --host 127.0.0.1 --port 8101 \
+  --served-model-name Qwen/Qwen2-VL-7B-Instruct \
+  --max-model-len 4096 --gpu-memory-utilization 0.80
+
+# Surya OCR 2 (port 8102)
+HF_HOME="$HF_HOME" vllm serve datalab-to/surya-ocr-2 \
+  --host 127.0.0.1 --port 8102 \
+  --served-model-name datalab-to/surya-ocr-2 \
+  --trust-remote-code --max-model-len 8192 --gpu-memory-utilization 0.70
+
+# DeepSeek-OCR (port 8103)
+HF_HOME="$HF_HOME" vllm serve deepseek-ai/DeepSeek-OCR \
+  --host 127.0.0.1 --port 8103 \
+  --served-model-name deepseek-ai/DeepSeek-OCR \
+  --trust-remote-code --max-model-len 8192 --gpu-memory-utilization 0.75
+
+# MonkeyOCRv2-B-Parsing (port 8104)
+HF_HOME="$HF_HOME" vllm serve zenosai/MonkeyOCRv2-B-Parsing \
+  --host 127.0.0.1 --port 8104 \
+  --served-model-name zenosai/MonkeyOCRv2-B-Parsing \
+  --trust-remote-code --max-model-len 8192 --gpu-memory-utilization 0.70
+```
+
+Before running the benchmark, verify the endpoint advertises the expected
+model id, for example:
+
+```bash
+curl -s http://127.0.0.1:8101/v1/models
+```
+
+Then run a three-image smoke test. Always use a new output directory when
+changing model, checkpoint, or server port:
+
+```bash
+.venv-ppocr/bin/python scripts/run_all.py \
+  --config configs/benchmark.gx10-smoke.yaml \
+  --models-config configs/models.huggingface.yaml \
+  --models qwen2_vl_7b \
+  --dataset data/images/ocr_label_dataset_v1/images \
+  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
+  --max-samples 3 --skip-performance \
+  --output results/qwen2-vl-hf-accuracy-3
+```
+
+Replace only `--models` and the output directory for `surya_ocr_2`,
+`deepseek_ocr`, and `monkey_ocr_v2_b_parsing`. A `valid=True eligible=False`
+result is expected for this accuracy-only triage run; `eligible` requires a
+separate performance pass.
+
 The accuracy pass and performance pass are separate. Do not use repeated
 performance inferences as extra accuracy samples.
 

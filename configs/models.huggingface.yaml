@@ -1,0 +1,31 @@
+# Hugging Face-backed OpenAI-compatible VLM deployments.
+# Start exactly one server at a time on the matching port before benchmarking.
+models:
+  monkey_ocr_v2_b_parsing:
+    adapter: monkey_ocr_v2_b_parsing
+    endpoint: http://127.0.0.1:8104/v1
+    model: zenosai/MonkeyOCRv2-B-Parsing
+    max_tokens: 4096
+    revision: HF_MAIN
+    license_status: VERIFY_REQUIRED
+  qwen2_vl_7b:
+    adapter: qwen2_vl_7b
+    endpoint: http://127.0.0.1:8101/v1
+    model: Qwen/Qwen2-VL-7B-Instruct
+    max_tokens: 2048
+    revision: HF_MAIN
+    license_status: Apache-2.0
+  surya_ocr_2:
+    adapter: surya_ocr_2
+    endpoint: http://127.0.0.1:8102/v1
+    model: datalab-to/surya-ocr-2
+    max_tokens: 4096
+    revision: HF_MAIN
+    license_status: VERIFY_REQUIRED
+  deepseek_ocr:
+    adapter: deepseek_ocr
+    endpoint: http://127.0.0.1:8103/v1
+    model: deepseek-ai/DeepSeek-OCR
+    max_tokens: 4096
+    revision: HF_MAIN
+    license_status: MIT

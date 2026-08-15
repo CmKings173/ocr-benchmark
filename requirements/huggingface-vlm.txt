@@ -1,0 +1,4 @@
+# The benchmark client only needs its core dependencies. Install vLLM in a
+# separate GX10 environment/container for the model server.
+huggingface-hub>=0.30
+vllm>=0.11.2
