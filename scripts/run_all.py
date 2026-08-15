@@ -26,6 +26,17 @@ def main() -> int:
     parser.add_argument("--models-config", type=Path, default=Path("configs/models.yaml"))
     parser.add_argument("--fields-config", type=Path, default=Path("configs/fields.yaml"))
     parser.add_argument("--output", type=Path, default=None)
+    parser.add_argument(
+        "--max-samples",
+        type=int,
+        default=None,
+        help="Evaluate only the first N validated samples (use a new output directory)",
+    )
+    parser.add_argument(
+        "--skip-performance",
+        action="store_true",
+        help="Run accuracy/barcode evaluation only; do not run latency/resource passes",
+    )
     args = parser.parse_args()
 
     config = load_config(args.config)
@@ -35,9 +46,19 @@ def main() -> int:
         print(f"FAIL: {exc}")
         return 1
 
+    if args.max_samples is not None and args.max_samples <= 0:
+        print("FAIL: --max-samples must be greater than zero")
+        return 1
     field_schema = load_field_schema(args.fields_config)
     models = [item.strip() for item in args.models.split(",") if item.strip()]
-    print(f"dataset validated: {len(dataset.samples)} samples; models={','.join(models)}", flush=True)
+    validated_count = len(dataset.samples)
+    if args.max_samples is not None:
+        dataset = dataset.model_copy(update={"samples": dataset.samples[: args.max_samples]})
+    print(
+        f"dataset validated: {validated_count} samples; evaluating {len(dataset.samples)} samples; "
+        f"models={','.join(models)}",
+        flush=True,
+    )
     output_root = args.output or config.output_dir
     multi_model = len(models) > 1
     invalid_models: list[str] = []
@@ -68,20 +89,40 @@ def main() -> int:
             field_schema=field_schema,
         )
         print(f"{model}: accuracy pass completed", flush=True)
-        print(f"{model}: performance pass starting (repetitions={minimum_repetitions}, batch={config.batch_sizes}, concurrency={config.concurrency})", flush=True)
-        performance = run_performance_pass(
-            dataset,
-            args.dataset,
-            adapter_name,
-            repetitions=minimum_repetitions,
-            model_config=model_config,
-            timeout_seconds=config.timeout_seconds,
-            batch_sizes=config.batch_sizes,
-            concurrency_levels=config.concurrency,
-            checkpoint_path=output_dir / "performance.checkpoint.jsonl",
-            warmup_iterations=config.warmup_iterations,
-        )
-        print(f"{model}: performance pass completed", flush=True)
+        if args.skip_performance:
+            performance = {
+                "model": model,
+                "status": "SKIPPED",
+                "scope": "accuracy_only",
+                "samples": 0,
+                "failures": 0,
+                "failure_rate": None,
+                "p50_ms": None,
+                "p90_ms": None,
+                "p95_ms": None,
+                "p99_ms": None,
+                "mean_ms": None,
+                "throughput_images_per_second": None,
+                "batch_results": [],
+                "concurrency_results": [],
+                "resource_usage": {},
+            }
+            print(f"{model}: performance pass skipped (--skip-performance)", flush=True)
+        else:
+            print(f"{model}: performance pass starting (repetitions={minimum_repetitions}, batch={config.batch_sizes}, concurrency={config.concurrency})", flush=True)
+            performance = run_performance_pass(
+                dataset,
+                args.dataset,
+                adapter_name,
+                repetitions=minimum_repetitions,
+                model_config=model_config,
+                timeout_seconds=config.timeout_seconds,
+                batch_sizes=config.batch_sizes,
+                concurrency_levels=config.concurrency,
+                checkpoint_path=output_dir / "performance.checkpoint.jsonl",
+                warmup_iterations=config.warmup_iterations,
+            )
+            print(f"{model}: performance pass completed", flush=True)
         accuracy = aggregate_accuracy(records)
         system_records = build_system_records(records, barcode_records, dataset, field_schema=field_schema)
         system_accuracy = aggregate_accuracy(system_records)
@@ -96,9 +137,15 @@ def main() -> int:
         )
         performance_failure_rate = performance.get("failure_rate")
         performance_valid = performance.get("status") == "SUCCESS" and performance_failure_rate is not None and float(performance_failure_rate) < 1.0
-        run_valid = bool(gates.get("valid")) and performance_valid
+        if args.skip_performance:
+            run_valid = bool(gates.get("valid"))
+            gates["performance_skipped"] = True
+            gates["eligible"] = False
+        else:
+            run_valid = bool(gates.get("valid")) and performance_valid
         gates["valid"] = run_valid
-        gates["eligible"] = bool(gates.get("eligible") and run_valid)
+        if not args.skip_performance:
+            gates["eligible"] = bool(gates.get("eligible") and run_valid)
         score = composite_score({**accuracy, "p95_ms": performance.get("p95_ms"), "eligible": gates["eligible"]}, config.score_weights)
         export_results(
             records,
