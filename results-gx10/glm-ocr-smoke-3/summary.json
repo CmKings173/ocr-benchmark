@@ -1,0 +1,186 @@
+{
+  "accuracy": {
+    "images": 3,
+    "successful_images": 1,
+    "failure_rate": 0.6666666666666666,
+    "field_exact_accuracy": 1.0,
+    "critical_field_accuracy": 1.0,
+    "critical_full_label_accuracy": 1.0,
+    "full_label_accuracy": 1.0,
+    "full_label_accuracy_wilson_95": [
+      0.20654931437723745,
+      1.0
+    ],
+    "critical_full_label_accuracy_wilson_95": [
+      0.20654931437723745,
+      1.0
+    ],
+    "mean_cer": 135.0,
+    "mean_wer": 17.0
+  },
+  "gates": {
+    "eligible": true,
+    "valid": true,
+    "checks": {
+      "full_label_accuracy": null,
+      "critical_field_accuracy": null,
+      "failure_rate": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "peak_unified_memory_bytes": null
+    }
+  },
+  "score": 0.8474287945401378,
+  "performance": {
+    "model": "glm_ocr",
+    "status": "SUCCESS",
+    "samples": 3,
+    "failures": 0,
+    "failure_rate": 0.0,
+    "p50_ms": 6011.019263998605,
+    "p90_ms": 6094.482297019567,
+    "p95_ms": 6094.482297019567,
+    "p99_ms": 6094.482297019567,
+    "mean_ms": 5931.354733339201,
+    "throughput_images_per_second": 0.16859554772186516,
+    "batch_results": [
+      {
+        "batch_size": 1,
+        "status": "SUCCESS",
+        "images": 3,
+        "failures": 0,
+        "failure_rate": 0.0,
+        "p50_ms": 6355.1351630012505,
+        "p90_ms": 6628.298910974991,
+        "p95_ms": 6628.298910974991,
+        "p99_ms": 6628.298910974991,
+        "mean_ms": 6330.933205337108,
+        "throughput_images_per_second": 0.15795459651303526,
+        "execution_mode": "adapter_batch_contract_sequential_fallback",
+        "resource_usage": {
+          "sample_count": 143,
+          "peak_rss_bytes": 33800192,
+          "mean_cpu_percent": 0.0,
+          "peak_cpu_percent": 0.0,
+          "mean_gpu_utilization_percent": 0.0,
+          "peak_gpu_utilization_percent": 0.0,
+          "peak_unified_memory_bytes": null,
+          "peak_gpu_memory_bytes": null,
+          "peak_gpu_power_watts": null,
+          "peak_gpu_temperature_c": null
+        }
+      }
+    ],
+    "concurrency_results": [
+      {
+        "concurrency": 1,
+        "status": "SUCCESS",
+        "images": 3,
+        "failures": 0,
+        "failure_rate": 0.0,
+        "p50_ms": 7385.007640987169,
+        "p90_ms": 8587.811308039818,
+        "p95_ms": 8587.811308039818,
+        "p99_ms": 8587.811308039818,
+        "mean_ms": 7619.743828351299,
+        "throughput_images_per_second": 0.13123800780273373,
+        "resource_usage": {
+          "sample_count": 173,
+          "peak_rss_bytes": 33808384,
+          "mean_cpu_percent": 0.0,
+          "peak_cpu_percent": 0.0,
+          "mean_gpu_utilization_percent": 0.0,
+          "peak_gpu_utilization_percent": 0.0,
+          "peak_unified_memory_bytes": null,
+          "peak_gpu_memory_bytes": null,
+          "peak_gpu_power_watts": null,
+          "peak_gpu_temperature_c": null
+        }
+      }
+    ],
+    "resource_usage": {
+      "sample_count": 621,
+      "peak_rss_bytes": 33808384,
+      "mean_cpu_percent": 0.0,
+      "peak_cpu_percent": 0.0,
+      "mean_gpu_utilization_percent": 0.0,
+      "peak_gpu_utilization_percent": 0.0,
+      "peak_unified_memory_bytes": null,
+      "peak_gpu_memory_bytes": null,
+      "peak_gpu_power_watts": null,
+      "peak_gpu_temperature_c": null
+    }
+  },
+  "barcode": {
+    "images": 3,
+    "engines": {
+      "opencv": {
+        "images": 3,
+        "successes": 0,
+        "exact_matches": 0,
+        "exact_match_accuracy": 0.0,
+        "mean_latency_ms": 41.62246136305233
+      },
+      "zxing_cpp": {
+        "images": 3,
+        "successes": 3,
+        "exact_matches": 3,
+        "exact_match_accuracy": 1.0,
+        "mean_latency_ms": 9.027315342488388
+      }
+    }
+  },
+  "system_accuracy": {
+    "images": 3,
+    "successful_images": 1,
+    "failure_rate": 0.6666666666666666,
+    "field_exact_accuracy": 1.0,
+    "critical_field_accuracy": 1.0,
+    "critical_full_label_accuracy": 1.0,
+    "full_label_accuracy": 1.0,
+    "full_label_accuracy_wilson_95": [
+      0.20654931437723745,
+      1.0
+    ],
+    "critical_full_label_accuracy_wilson_95": [
+      0.20654931437723745,
+      1.0
+    ],
+    "mean_cer": 0.0,
+    "mean_wer": 0.0
+  },
+  "category_accuracy": {
+    "blur": {
+      "images": 2,
+      "successful_images": 1,
+      "failure_rate": 0.5,
+      "field_exact_accuracy": 1.0,
+      "critical_field_accuracy": 1.0,
+      "critical_full_label_accuracy": 1.0,
+      "full_label_accuracy": 1.0,
+      "full_label_accuracy_wilson_95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "critical_full_label_accuracy_wilson_95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "mean_cer": 135.0,
+      "mean_wer": 17.0
+    },
+    "damaged": {
+      "images": 1,
+      "successful_images": 0,
+      "failure_rate": 1.0,
+      "field_exact_accuracy": null,
+      "critical_field_accuracy": null,
+      "critical_full_label_accuracy": null,
+      "full_label_accuracy": null,
+      "full_label_accuracy_wilson_95": null,
+      "critical_full_label_accuracy_wilson_95": null,
+      "mean_cer": null,
+      "mean_wer": null
+    }
+  }
+}

@@ -1,0 +1,2 @@
+rank,model,eligible,full_label_accuracy,critical_field_accuracy,field_exact_accuracy,p95_ms,failure_rate,score
+1,mock,True,0.0,,0.0,0.7178999949246645,0.0,0.14275465928796457

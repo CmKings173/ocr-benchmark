@@ -1,0 +1,3102 @@
+[
+  {
+    "image": "001_blur.jpg",
+    "expected": "8914852027678",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/001_blur.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 46.96785501437262,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/001_blur.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "002_blur.jpg",
+    "expected": "8942755085487",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/002_blur.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.531533017754555,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/002_blur.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "003_damaged.jpg",
+    "expected": "8923048322824",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/003_damaged.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.929873012471944,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/003_damaged.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "004_reflection.jpg",
+    "expected": "8935337831069",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/004_reflection.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.905550999566913,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/004_reflection.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "005_blur.jpg",
+    "expected": "8993480596843",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/005_blur.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.640407013241202,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/005_blur.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "006_rotated.jpg",
+    "expected": "8998961653625",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/006_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.281830010470003,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/006_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "007_vietnamese_mixed.jpg",
+    "expected": "8952663487456",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/007_vietnamese_mixed.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.366669015027583,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/007_vietnamese_mixed.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "008_reflection.jpg",
+    "expected": "8973495411920",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/008_reflection.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.217838952783495,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/008_reflection.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "009_vietnamese_mixed.jpg",
+    "expected": "8980376445850",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/009_vietnamese_mixed.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.053725003264844,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/009_vietnamese_mixed.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "010_vietnamese_mixed.jpg",
+    "expected": "8961492486490",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/010_vietnamese_mixed.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.942210999317467,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/010_vietnamese_mixed.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "011_rotated.jpg",
+    "expected": "8968017908735",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/011_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.918384042568505,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/011_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "012_rotated.jpg",
+    "expected": "8981230662926",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/012_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.937732978258282,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/012_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "013_small_text.jpg",
+    "expected": "8996265117345",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/013_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.769894040189683,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/013_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "014_damaged.jpg",
+    "expected": "8989083136676",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/014_damaged.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.0776339853182435,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/014_damaged.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "015_small_text.jpg",
+    "expected": "8976496398830",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/015_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.419333047233522,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/015_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "016_small_text.jpg",
+    "expected": "8966913824016",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/016_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.446632032748312,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/016_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "017_clear.jpg",
+    "expected": "8999519665641",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/017_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.632360978983343,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/017_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "018_dark.jpg",
+    "expected": "8942203634077",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/018_dark.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.934980978257954,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/018_dark.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "019_dark.jpg",
+    "expected": "8938753087732",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/019_dark.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.781463045626879,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/019_dark.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "020_vietnamese_mixed.jpg",
+    "expected": "8941287441068",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/020_vietnamese_mixed.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.172395009547472,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/020_vietnamese_mixed.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "021_clear.jpg",
+    "expected": "8980909723295",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/021_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.085823967121542,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/021_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "022_clear.jpg",
+    "expected": "8950137531947",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/022_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.074206009041518,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/022_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "023_dark.jpg",
+    "expected": "8992358554897",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/023_dark.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.666937017347664,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/023_dark.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "024_clear.jpg",
+    "expected": "8964613741177",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/024_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.934657973237336,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/024_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "025_blur.jpg",
+    "expected": "8952400222897",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/025_blur.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.762178021948785,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/025_blur.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "026_damaged.jpg",
+    "expected": "8951633847325",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/026_damaged.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.446293020620942,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/026_damaged.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "027_damaged.jpg",
+    "expected": "8971995286480",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/027_damaged.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.3359779780730605,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/027_damaged.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "028_rotated.jpg",
+    "expected": "8916094677166",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/028_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.561327016446739,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/028_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "029_rotated.jpg",
+    "expected": "8953587942600",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/029_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.511530013289303,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/029_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "030_rotated.jpg",
+    "expected": "8937386603374",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/030_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.057613973505795,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/030_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "031_damaged.jpg",
+    "expected": "8982048119024",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/031_damaged.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.907567021902651,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/031_damaged.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "032_small_text.jpg",
+    "expected": "8997726592908",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/032_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.485383946914226,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/032_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "033_dark.jpg",
+    "expected": "8992893227513",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/033_dark.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.897183008026332,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/033_dark.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "034_blur.jpg",
+    "expected": "8940238020383",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/034_blur.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.822904037311673,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/034_blur.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "035_dark.jpg",
+    "expected": "8941084555787",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/035_dark.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.143785012885928,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/035_dark.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "036_small_text.jpg",
+    "expected": "8943775832314",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/036_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.681242015678436,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/036_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "037_small_text.jpg",
+    "expected": "8916661205088",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/037_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.670361956115812,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/037_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "038_clear.jpg",
+    "expected": "8974725386892",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/038_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.930993044283241,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/038_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "039_vietnamese_mixed.jpg",
+    "expected": "8926481828221",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/039_vietnamese_mixed.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.082110958639532,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/039_vietnamese_mixed.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "040_small_text.jpg",
+    "expected": "8916033755547",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/040_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.865195046178997,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/040_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "041_small_text.jpg",
+    "expected": "8944478742649",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/041_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.70905299577862,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/041_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "042_small_text.jpg",
+    "expected": "8953509125955",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/042_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.8165350132621825,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/042_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "043_vietnamese_mixed.jpg",
+    "expected": "8940570101523",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/043_vietnamese_mixed.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.731230987701565,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/043_vietnamese_mixed.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "044_clear.jpg",
+    "expected": "8963338684761",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/044_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.293318049050868,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/044_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "045_clear.jpg",
+    "expected": "8920084157465",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/045_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.406352029647678,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/045_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "046_dark.jpg",
+    "expected": "8931372811875",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/046_dark.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.097107998561114,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/046_dark.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "047_clear.jpg",
+    "expected": "8959637100490",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/047_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.553438015747815,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/047_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "048_rotated.jpg",
+    "expected": "8912239902034",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/048_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.725854986347258,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/048_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "049_rotated.jpg",
+    "expected": "8945046030405",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/049_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.48778396518901,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/049_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "050_damaged.jpg",
+    "expected": "8930137999955",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/050_damaged.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.103088999632746,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/050_damaged.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "051_blur.jpg",
+    "expected": "8921324426139",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/051_blur.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.856890966650099,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/051_blur.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "052_clear.jpg",
+    "expected": "8937471138286",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/052_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.527116045821458,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/052_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "053_blur.jpg",
+    "expected": "8927181553074",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/053_blur.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.431011006701738,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/053_blur.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "054_reflection.jpg",
+    "expected": "8998496366161",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/054_reflection.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.376142020802945,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/054_reflection.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "055_small_text.jpg",
+    "expected": "8958215652885",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/055_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.311975990887731,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/055_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "056_blur.jpg",
+    "expected": "8934967555812",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/056_blur.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.472550962120295,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/056_blur.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "057_damaged.jpg",
+    "expected": "8921430805856",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/057_damaged.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.608275976963341,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/057_damaged.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "058_reflection.jpg",
+    "expected": "8946614299156",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/058_reflection.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.372173015028238,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/058_reflection.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "059_clear.jpg",
+    "expected": "8913184838633",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/059_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.630002033896744,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/059_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "060_rotated.jpg",
+    "expected": "8961104248628",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/060_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.295235049445182,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/060_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "061_damaged.jpg",
+    "expected": "8975421549495",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/061_damaged.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.14976601395756,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/061_damaged.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "062_dark.jpg",
+    "expected": "8936460451381",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/062_dark.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.264112984761596,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/062_dark.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "063_reflection.jpg",
+    "expected": "8977559034651",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/063_reflection.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.42680300027132,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/063_reflection.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "064_damaged.jpg",
+    "expected": "8923105308930",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/064_damaged.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.028668944258243,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/064_damaged.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "065_small_text.jpg",
+    "expected": "8960377465748",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/065_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.995946983806789,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/065_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "066_clear.jpg",
+    "expected": "8950104200159",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/066_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.690555008593947,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/066_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "067_reflection.jpg",
+    "expected": "8957512664161",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/067_reflection.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.771682983729988,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/067_reflection.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "068_rotated.jpg",
+    "expected": "8984318762839",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/068_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.26857698848471,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/068_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "069_small_text.jpg",
+    "expected": "8953681254461",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/069_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.8715800191275775,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/069_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "070_reflection.jpg",
+    "expected": "8927139293206",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/070_reflection.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.077359001617879,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/070_reflection.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "071_clear.jpg",
+    "expected": "8970075359684",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/071_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.963748008478433,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/071_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "072_dark.jpg",
+    "expected": "8992229289227",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/072_dark.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.000103989616036,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/072_dark.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "073_small_text.jpg",
+    "expected": "8922898565551",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/073_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.828039000742137,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/073_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "074_blur.jpg",
+    "expected": "8916411804184",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/074_blur.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.973557978402823,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/074_blur.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "075_rotated.jpg",
+    "expected": "8987011315521",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/075_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.14693298889324,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/075_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "076_vietnamese_mixed.jpg",
+    "expected": "8930534276974",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/076_vietnamese_mixed.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.872732006944716,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/076_vietnamese_mixed.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "077_rotated.jpg",
+    "expected": "8975211983011",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/077_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.7849639928899705,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/077_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "078_rotated.jpg",
+    "expected": "8971952831074",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/078_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.951524050440639,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/078_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "079_clear.jpg",
+    "expected": "8989808610102",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/079_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.47006997698918,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/079_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "080_clear.jpg",
+    "expected": "8959501072345",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/080_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.564447994809598,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/080_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "081_rotated.jpg",
+    "expected": "8973988192517",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/081_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.068094030022621,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/081_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "082_clear.jpg",
+    "expected": "8969868470908",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/082_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.68577097915113,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/082_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "083_rotated.jpg",
+    "expected": "8976062321137",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/083_rotated.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.07268702192232,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/083_rotated.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "084_clear.jpg",
+    "expected": "8997281735453",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/084_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.034122991375625,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/084_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "085_clear.jpg",
+    "expected": "8934885166151",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/085_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.619125011842698,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/085_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "086_clear.jpg",
+    "expected": "8929380588853",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/086_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.057565020862967,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/086_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "087_vietnamese_mixed.jpg",
+    "expected": "8996839306034",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/087_vietnamese_mixed.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.846649037674069,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/087_vietnamese_mixed.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "088_blur.jpg",
+    "expected": "8912140610753",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/088_blur.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.492552977055311,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/088_blur.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "089_reflection.jpg",
+    "expected": "8989097773463",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/089_reflection.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.40856398968026,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/089_reflection.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "090_clear.jpg",
+    "expected": "8976981867323",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/090_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.791187963448465,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/090_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "091_reflection.jpg",
+    "expected": "8911444467718",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/091_reflection.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.755634025670588,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/091_reflection.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "092_damaged.jpg",
+    "expected": "8933398131575",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/092_damaged.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.998504035640508,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/092_damaged.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "093_dark.jpg",
+    "expected": "8983134456936",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/093_dark.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 8.109745976980776,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/093_dark.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "094_small_text.jpg",
+    "expected": "8935667610603",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/094_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.648198981769383,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/094_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "095_clear.jpg",
+    "expected": "8994572537436",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/095_clear.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.918035040143877,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/095_clear.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "096_vietnamese_mixed.jpg",
+    "expected": "8911847425369",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/096_vietnamese_mixed.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.289381988812238,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/096_vietnamese_mixed.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "097_dark.jpg",
+    "expected": "8981067705930",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/097_dark.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.352587999776006,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/097_dark.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "098_reflection.jpg",
+    "expected": "8958638207588",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/098_reflection.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.891872966662049,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/098_reflection.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "099_small_text.jpg",
+    "expected": "8965885826948",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/099_small_text.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 6.470554042607546,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/099_small_text.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "image": "100_vietnamese_mixed.jpg",
+    "expected": "8964108824557",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/100_vietnamese_mixed.jpg",
+          "status": "EXCEPTION",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 7.253282004967332,
+          "error": "too many values to unpack (expected 3)"
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/100_vietnamese_mixed.jpg",
+          "status": "DEPENDENCY_ERROR",
+          "value": null,
+          "symbology": null,
+          "latency_ms": null,
+          "error": "No module named 'zxingcpp'"
+        },
+        "exact_match": false
+      }
+    ]
+  }
+]

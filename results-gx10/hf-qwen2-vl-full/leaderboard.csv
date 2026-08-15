@@ -1,0 +1,2 @@
+rank,model,eligible,full_label_accuracy,critical_field_accuracy,field_exact_accuracy,p95_ms,failure_rate,score
+1,qwen2_vl_7b,False,0.0,0.0,0.0,,1.0,N/A

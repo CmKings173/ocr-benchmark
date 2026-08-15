@@ -1,0 +1,3 @@
+category,images,successful_images,failure_rate,field_exact_accuracy,critical_field_accuracy,full_label_accuracy,mean_cer,mean_wer
+blur,2,1,0.5,1.0,1.0,1.0,135.0,17.0
+damaged,1,0,1.0,,,,,

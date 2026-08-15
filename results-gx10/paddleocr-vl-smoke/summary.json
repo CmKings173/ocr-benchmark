@@ -1,0 +1,193 @@
+{
+  "accuracy": {
+    "images": 100,
+    "successful_images": 0,
+    "failure_rate": 1.0,
+    "field_exact_accuracy": null,
+    "critical_field_accuracy": null,
+    "critical_full_label_accuracy": null,
+    "full_label_accuracy": null,
+    "full_label_accuracy_wilson_95": null,
+    "critical_full_label_accuracy_wilson_95": null,
+    "mean_cer": null,
+    "mean_wer": null
+  },
+  "gates": {
+    "eligible": true,
+    "checks": {
+      "full_label_accuracy": null,
+      "critical_field_accuracy": null,
+      "failure_rate": null,
+      "p95_ms": null,
+      "p99_ms": null,
+      "peak_unified_memory_bytes": null
+    }
+  },
+  "score": 0.5,
+  "performance": {
+    "model": "paddleocr_vl_1_6",
+    "status": "DEPENDENCY_ERROR",
+    "samples": 0,
+    "failures": 100,
+    "failure_rate": 1.0,
+    "p50_ms": null,
+    "p90_ms": null,
+    "p95_ms": null,
+    "p99_ms": null,
+    "mean_ms": null,
+    "throughput_images_per_second": 0.0,
+    "batch_results": [],
+    "concurrency_results": [],
+    "resource_usage": {
+      "sample_count": 4,
+      "peak_rss_bytes": 152457216,
+      "mean_cpu_percent": 0.0,
+      "peak_cpu_percent": 0.0,
+      "mean_gpu_utilization_percent": 0.0,
+      "peak_gpu_utilization_percent": 0.0,
+      "peak_unified_memory_bytes": null,
+      "peak_gpu_memory_bytes": null,
+      "peak_gpu_power_watts": null,
+      "peak_gpu_temperature_c": null
+    },
+    "error": "DEPENDENCY_ERROR: A dependency error occurred during pipeline creation. Please refer to the installation documentation to ensure all required dependencies are installed."
+  },
+  "barcode": {
+    "images": 100,
+    "engines": {
+      "opencv": {
+        "images": 100,
+        "successes": 0,
+        "exact_matches": 0,
+        "exact_match_accuracy": 0.0,
+        "mean_latency_ms": 7.995219983276911
+      },
+      "zxing_cpp": {
+        "images": 100,
+        "successes": 0,
+        "exact_matches": 0,
+        "exact_match_accuracy": 0.0,
+        "mean_latency_ms": 0.0
+      }
+    }
+  },
+  "system_accuracy": {
+    "images": 100,
+    "successful_images": 0,
+    "failure_rate": 1.0,
+    "field_exact_accuracy": null,
+    "critical_field_accuracy": null,
+    "critical_full_label_accuracy": null,
+    "full_label_accuracy": null,
+    "full_label_accuracy_wilson_95": null,
+    "critical_full_label_accuracy_wilson_95": null,
+    "mean_cer": null,
+    "mean_wer": null
+  },
+  "category_accuracy": {
+    "blur": {
+      "images": 10,
+      "successful_images": 0,
+      "failure_rate": 1.0,
+      "field_exact_accuracy": null,
+      "critical_field_accuracy": null,
+      "critical_full_label_accuracy": null,
+      "full_label_accuracy": null,
+      "full_label_accuracy_wilson_95": null,
+      "critical_full_label_accuracy_wilson_95": null,
+      "mean_cer": null,
+      "mean_wer": null
+    },
+    "damaged": {
+      "images": 10,
+      "successful_images": 0,
+      "failure_rate": 1.0,
+      "field_exact_accuracy": null,
+      "critical_field_accuracy": null,
+      "critical_full_label_accuracy": null,
+      "full_label_accuracy": null,
+      "full_label_accuracy_wilson_95": null,
+      "critical_full_label_accuracy_wilson_95": null,
+      "mean_cer": null,
+      "mean_wer": null
+    },
+    "reflection": {
+      "images": 10,
+      "successful_images": 0,
+      "failure_rate": 1.0,
+      "field_exact_accuracy": null,
+      "critical_field_accuracy": null,
+      "critical_full_label_accuracy": null,
+      "full_label_accuracy": null,
+      "full_label_accuracy_wilson_95": null,
+      "critical_full_label_accuracy_wilson_95": null,
+      "mean_cer": null,
+      "mean_wer": null
+    },
+    "rotated": {
+      "images": 15,
+      "successful_images": 0,
+      "failure_rate": 1.0,
+      "field_exact_accuracy": null,
+      "critical_field_accuracy": null,
+      "critical_full_label_accuracy": null,
+      "full_label_accuracy": null,
+      "full_label_accuracy_wilson_95": null,
+      "critical_full_label_accuracy_wilson_95": null,
+      "mean_cer": null,
+      "mean_wer": null
+    },
+    "vietnamese_mixed": {
+      "images": 10,
+      "successful_images": 0,
+      "failure_rate": 1.0,
+      "field_exact_accuracy": null,
+      "critical_field_accuracy": null,
+      "critical_full_label_accuracy": null,
+      "full_label_accuracy": null,
+      "full_label_accuracy_wilson_95": null,
+      "critical_full_label_accuracy_wilson_95": null,
+      "mean_cer": null,
+      "mean_wer": null
+    },
+    "small_text": {
+      "images": 15,
+      "successful_images": 0,
+      "failure_rate": 1.0,
+      "field_exact_accuracy": null,
+      "critical_field_accuracy": null,
+      "critical_full_label_accuracy": null,
+      "full_label_accuracy": null,
+      "full_label_accuracy_wilson_95": null,
+      "critical_full_label_accuracy_wilson_95": null,
+      "mean_cer": null,
+      "mean_wer": null
+    },
+    "clear": {
+      "images": 20,
+      "successful_images": 0,
+      "failure_rate": 1.0,
+      "field_exact_accuracy": null,
+      "critical_field_accuracy": null,
+      "critical_full_label_accuracy": null,
+      "full_label_accuracy": null,
+      "full_label_accuracy_wilson_95": null,
+      "critical_full_label_accuracy_wilson_95": null,
+      "mean_cer": null,
+      "mean_wer": null
+    },
+    "dark": {
+      "images": 10,
+      "successful_images": 0,
+      "failure_rate": 1.0,
+      "field_exact_accuracy": null,
+      "critical_field_accuracy": null,
+      "critical_full_label_accuracy": null,
+      "full_label_accuracy": null,
+      "full_label_accuracy_wilson_95": null,
+      "critical_full_label_accuracy_wilson_95": null,
+      "mean_cer": null,
+      "mean_wer": null
+    }
+  }
+}

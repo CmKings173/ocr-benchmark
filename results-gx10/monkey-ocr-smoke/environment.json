@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-14T10:37:33.935362+00:00",
+  "os": "Linux-6.17.0-1029-nvidia-aarch64-with-glibc2.39",
+  "kernel": "6.17.0-1029-nvidia",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "architecture": "aarch64",
+  "cpu": "aarch64",
+  "nvidia_smi": "NVIDIA GB10, 580.173.02, [N/A]",
+  "packages": {
+    "pydantic": "2.13.4",
+    "Pillow": "12.3.0",
+    "PyYAML": "6.0.2",
+    "paddleocr": "3.7.0",
+    "torch": null,
+    "vllm": null
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "accuracy": {
+    "images": 100,
+    "successful_images": 38,
+    "failure_rate": 0.62,
+    "field_exact_accuracy": 0.0,
+    "critical_field_accuracy": 0.0,
+    "critical_full_label_accuracy": 0.0,
+    "full_label_accuracy": 0.0,
+    "full_label_accuracy_wilson_95": [
+      0.0,
+      0.09180986822558396
+    ],
+    "critical_full_label_accuracy_wilson_95": [
+      0.0,
+      0.09180986822558396
+    ],
+    "mean_cer": 568.6052631578947,
+    "mean_wer": 54.55263157894737
+  },
+  "gates": {
+    "eligible": false,
+    "valid": false,
+    "checks": {
+      "full_label_accuracy": false,
+      "critical_field_accuracy": false,
+      "failure_rate": false,
+      "p95_ms": null,
+      "p99_ms": null,
+      "peak_unified_memory_bytes": null
+    }
+  },
+  "score": null,
+  "performance": {
+    "model": "qwen2_vl_7b",
+    "status": "EXCEPTION",
+    "samples": 0,
+    "failures": 100,
+    "failure_rate": 1.0,
+    "p50_ms": null,
+    "p90_ms": null,
+    "p95_ms": null,
+    "p99_ms": null,
+    "mean_ms": null,
+    "throughput_images_per_second": 0.0,
+    "batch_results": [],
+    "concurrency_results": [],
+    "resource_usage": {
+      "sample_count": 1,
+      "peak_rss_bytes": 9396224,
+      "mean_cpu_percent": 0.0,
+      "peak_cpu_percent": 0.0,
+      "mean_gpu_utilization_percent": 1.0,
+      "peak_gpu_utilization_percent": 1.0,
+      "peak_unified_memory_bytes": null,
+      "peak_gpu_memory_bytes": null,
+      "peak_gpu_power_watts": null,
+      "peak_gpu_temperature_c": null
+    },
+    "error": "EXCEPTION: <urlopen error [Errno 111] Connection refused>"
+  },
+  "barcode": {
+    "images": 100,
+    "engines": {
+      "opencv": {
+        "images": 100,
+        "successes": 85,
+        "exact_matches": 85,
+        "exact_match_accuracy": 0.85,
+        "mean_latency_ms": 27.291350669111125
+      },
+      "zxing_cpp": {
+        "images": 100,
+        "successes": 100,
+        "exact_matches": 100,
+        "exact_match_accuracy": 1.0,
+        "mean_latency_ms": 7.329991349251941
+      }
+    }
+  },
+  "system_accuracy": {
+    "images": 100,
+    "successful_images": 38,
+    "failure_rate": 0.62,
+    "field_exact_accuracy": 0.14285714285714285,
+    "critical_field_accuracy": 0.25,
+    "critical_full_label_accuracy": 0.0,
+    "full_label_accuracy": 0.0,
+    "full_label_accuracy_wilson_95": [
+      0.0,
+      0.09180986822558396
+    ],
+    "critical_full_label_accuracy_wilson_95": [
+      0.0,
+      0.09180986822558396
+    ],
+    "mean_cer": 0.0,
+    "mean_wer": 0.0
+  },
+  "category_accuracy": {
+    "blur": {
+      "images": 10,
+      "successful_images": 5,
+      "failure_rate": 0.5,
+      "field_exact_accuracy": 0.0,
+      "critical_field_accuracy": 0.0,
+      "critical_full_label_accuracy": 0.0,
+      "full_label_accuracy": 0.0,
+      "full_label_accuracy_wilson_95": [
+        0.0,
+        0.43448246478317476
+      ],
+      "critical_full_label_accuracy_wilson_95": [
+        0.0,
+        0.43448246478317476
+      ],
+      "mean_cer": 560.8,
+      "mean_wer": 54.0
+    },
+    "damaged": {
+      "images": 10,
+      "successful_images": 5,
+      "failure_rate": 0.5,
+      "field_exact_accuracy": 0.0,
+      "critical_field_accuracy": 0.0,
+      "critical_full_label_accuracy": 0.0,
+      "full_label_accuracy": 0.0,
+      "full_label_accuracy_wilson_95": [
+        0.0,
+        0.43448246478317476
+      ],
+      "critical_full_label_accuracy_wilson_95": [
+        0.0,
+        0.43448246478317476
+      ],
+      "mean_cer": 558.6,
+      "mean_wer": 53.6
+    },
+    "reflection": {
+      "images": 10,
+      "successful_images": 2,
+      "failure_rate": 0.8,
+      "field_exact_accuracy": 0.0,
+      "critical_field_accuracy": 0.0,
+      "critical_full_label_accuracy": 0.0,
+      "full_label_accuracy": 0.0,
+      "full_label_accuracy_wilson_95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "critical_full_label_accuracy_wilson_95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "mean_cer": 649.5,
+      "mean_wer": 62.0
+    },
+    "rotated": {
+      "images": 15,
+      "successful_images": 6,
+      "failure_rate": 0.6,
+      "field_exact_accuracy": 0.0,
+      "critical_field_accuracy": 0.0,
+      "critical_full_label_accuracy": 0.0,
+      "full_label_accuracy": 0.0,
+      "full_label_accuracy_wilson_95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ],
+      "critical_full_label_accuracy_wilson_95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ],
+      "mean_cer": 596.5,
+      "mean_wer": 57.166666666666664
+    },
+    "vietnamese_mixed": {
+      "images": 10,
+      "successful_images": 4,
+      "failure_rate": 0.6,
+      "field_exact_accuracy": 0.0,
+      "critical_field_accuracy": 0.0,
+      "critical_full_label_accuracy": 0.0,
+      "full_label_accuracy": 0.0,
+      "full_label_accuracy_wilson_95": [
+        0.0,
+        0.4898908364545973
+      ],
+      "critical_full_label_accuracy_wilson_95": [
+        0.0,
+        0.4898908364545973
+      ],
+      "mean_cer": 533.0,
+      "mean_wer": 50.5
+    },
+    "small_text": {
+      "images": 15,
+      "successful_images": 6,
+      "failure_rate": 0.6,
+      "field_exact_accuracy": 0.0,
+      "critical_field_accuracy": 0.0,
+      "critical_full_label_accuracy": 0.0,
+      "full_label_accuracy": 0.0,
+      "full_label_accuracy_wilson_95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ],
+      "critical_full_label_accuracy_wilson_95": [
+        2.7755575615628914e-17,
+        0.3903342879021653
+      ],
+      "mean_cer": 558.0,
+      "mean_wer": 53.5
+    },
+    "clear": {
+      "images": 20,
+      "successful_images": 5,
+      "failure_rate": 0.75,
+      "field_exact_accuracy": 0.0,
+      "critical_field_accuracy": 0.0,
+      "critical_full_label_accuracy": 0.0,
+      "full_label_accuracy": 0.0,
+      "full_label_accuracy_wilson_95": [
+        0.0,
+        0.43448246478317476
+      ],
+      "critical_full_label_accuracy_wilson_95": [
+        0.0,
+        0.43448246478317476
+      ],
+      "mean_cer": 557.8,
+      "mean_wer": 53.8
+    },
+    "dark": {
+      "images": 10,
+      "successful_images": 5,
+      "failure_rate": 0.5,
+      "field_exact_accuracy": 0.0,
+      "critical_field_accuracy": 0.0,
+      "critical_full_label_accuracy": 0.0,
+      "full_label_accuracy": 0.0,
+      "full_label_accuracy_wilson_95": [
+        0.0,
+        0.43448246478317476
+      ],
+      "critical_full_label_accuracy_wilson_95": [
+        0.0,
+        0.43448246478317476
+      ],
+      "mean_cer": 572.6,
+      "mean_wer": 55.2
+    }
+  }
+}

@@ -51,3 +51,17 @@ CODE: 8999519665641"""
         "barcode": "8999519665641",
     }
     assert extract_fields(raw_text, {}, expected) == expected
+
+
+def test_empty_adapter_fields_do_not_block_raw_text_fallback():
+    expected = {"sku": "MX-P2NC0JT", "lot": "L20260801-B90"}
+    assert extract_fields(
+        "SKU:\nMX-P2NC0JT\nLOT:\nL20260801-B90",
+        {"sku": "", "lot": ""},
+        expected,
+    ) == expected
+
+
+def test_structured_quantity_value_is_split_from_unit():
+    expected = {"quantity": "1000", "unit": "BOX"}
+    assert extract_fields("", {"QTY": "1000 BOX"}, expected) == expected

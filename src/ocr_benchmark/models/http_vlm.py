@@ -13,6 +13,61 @@ from ocr_benchmark.core.adapter import OCRAdapter
 from ocr_benchmark.core.schemas import Prediction, Timing
 
 
+def _fields_from_payload(value: Any) -> dict[str, Any]:
+    """Convert common VLM field shapes into the benchmark mapping."""
+    if isinstance(value, dict):
+        return dict(value)
+    if isinstance(value, list):
+        fields: dict[str, Any] = {}
+        for item in value:
+            if not isinstance(item, dict):
+                continue
+            name = item.get("name", item.get("key", item.get("field")))
+            if name is not None and "value" in item:
+                fields[str(name)] = item["value"]
+        return fields
+    return {}
+
+
+def _parse_structured_content(content: Any) -> tuple[str, dict[str, Any]]:
+    """Parse plain or fenced JSON returned by an OpenAI-compatible VLM."""
+    if isinstance(content, dict):
+        parsed: Any = content
+        fallback = json.dumps(content, ensure_ascii=False)
+    elif isinstance(content, str):
+        fallback = content
+        candidate = content.strip()
+        if candidate.startswith("```"):
+            lines = candidate.splitlines()
+            if lines and lines[0].strip().startswith("```"):
+                lines = lines[1:]
+            if lines and lines[-1].strip().startswith("```"):
+                lines = lines[:-1]
+            candidate = "\n".join(lines).strip()
+        try:
+            parsed = json.loads(candidate)
+        except json.JSONDecodeError:
+            # Some providers prepend a sentence before the JSON object.
+            parsed = None
+            decoder = json.JSONDecoder()
+            for index, char in enumerate(candidate):
+                if char != "{":
+                    continue
+                try:
+                    parsed, _ = decoder.raw_decode(candidate[index:])
+                    break
+                except json.JSONDecodeError:
+                    continue
+    else:
+        fallback = json.dumps(content, ensure_ascii=False)
+        parsed = None
+
+    if isinstance(parsed, dict):
+        raw_text = parsed.get("raw_text", fallback)
+        return str(raw_text), _fields_from_payload(parsed.get("fields", {}))
+    return fallback, {}
+
+
 class OpenAICompatibleVLMAdapter(OCRAdapter):
     model_id = ""
     official_source = ""
@@ -68,15 +123,6 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
             content = payload["choices"][0]["message"]["content"]
         except (KeyError, IndexError, TypeError) as exc:
             raise RuntimeError("INVALID_OUTPUT: response missing choices[0].message.content") from exc
-        fields: dict[str, Any] = {}
-        raw_text = content if isinstance(content, str) else json.dumps(content)
-        if isinstance(content, str):
-            try:
-                parsed = json.loads(content)
-                if isinstance(parsed, dict):
-                    fields = dict(parsed.get("fields", {}))
-                    raw_text = str(parsed.get("raw_text", content))
-            except json.JSONDecodeError:
-                pass
+        raw_text, fields = _parse_structured_content(content)
         postprocess_ms = (time.perf_counter() - postprocess_started) * 1000
         return Prediction(model=self.name, image=str(image_path), raw_text=raw_text, fields=fields, timing=Timing(preprocess_ms=preprocess_ms, inference_ms=inference_ms, postprocess_ms=postprocess_ms), metadata={"endpoint": self.endpoint, "model_id": self.model_id, "revision": self.revision, "license_status": self.license_status})

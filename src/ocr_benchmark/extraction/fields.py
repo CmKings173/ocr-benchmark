@@ -20,6 +20,10 @@ def _coerce(value: str, expected: Any) -> Any:
     return value
 
 
+def _is_blank(value: Any) -> bool:
+    return value is None or (isinstance(value, str) and not value.strip())
+
+
 def extract_fields(raw_text: str, model_fields: dict[str, Any], expected_fields: dict[str, Any]) -> dict[str, Any]:
     aliases = {key.lower(): key for key in expected_fields}
     for alias, canonical in {
@@ -40,14 +44,24 @@ def extract_fields(raw_text: str, model_fields: dict[str, Any], expected_fields:
             aliases[alias] = canonical
 
     def set_value(canonical: str, value: str) -> None:
-        if canonical in expected_fields and canonical not in values:
+        if canonical in expected_fields and (canonical not in values or _is_blank(values[canonical])):
             values[canonical] = _coerce(value.strip(), expected_fields[canonical])
 
     values: dict[str, Any] = {}
     for key, value in model_fields.items():
+        if _is_blank(value):
+            continue
         canonical = aliases.get(str(key).strip().lower(), str(key).strip())
         if canonical in expected_fields:
-            values[canonical] = _coerce(str(value), expected_fields[canonical])
+            value_text = str(value).strip()
+            if canonical == "quantity" and "unit" in expected_fields:
+                quantity_match = re.match(r"^\s*([0-9]+(?:[.,][0-9]+)?)\s+(.+?)\s*$", value_text)
+                if quantity_match:
+                    values[canonical] = _coerce(quantity_match.group(1).replace(",", "."), expected_fields[canonical])
+                    if _is_blank(values.get("unit")):
+                        values["unit"] = _coerce(quantity_match.group(2), expected_fields["unit"])
+                    continue
+            values[canonical] = _coerce(value_text, expected_fields[canonical])
     if raw_text:
         lines = [line.strip() for line in raw_text.splitlines()]
         label_pattern = re.compile(r"^\s*([A-Za-z][A-Za-z0-9 _/.-]*)\s*[:=]\s*(.*?)\s*$")
