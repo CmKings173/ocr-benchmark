@@ -24,9 +24,20 @@ class PPOCRv6Adapter(OCRAdapter):
 
     def load(self) -> None:
         try:
+            import paddle
             from paddleocr import PaddleOCR
         except ImportError as exc:
             raise RuntimeError("DEPENDENCY_ERROR: install the official paddleocr package") from exc
+        requested_gpu = str(self.device).lower().startswith(("gpu", "cuda"))
+        if requested_gpu and (
+            not paddle.is_compiled_with_cuda()
+            or str(paddle.device.get_device()).lower() == "cpu"
+        ):
+            raise RuntimeError(
+                "GPU_REQUESTED_BUT_PADDLE_CPU_BUILD: this PaddlePaddle installation "
+                "has no CUDA support; install a CUDA-enabled aarch64 build or set "
+                "device=cpu explicitly"
+            )
         kwargs = {
             "ocr_version": "PP-OCRv6",
             "text_detection_model_name": self.det_model,
