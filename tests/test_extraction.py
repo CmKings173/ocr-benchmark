@@ -27,3 +27,27 @@ def test_to_plain_handles_array_like_values():
             return [[1, 2], [3, 4]]
 
     assert to_plain(ArrayLike()) == [[1, 2], [3, 4]]
+
+
+def test_extract_fields_supports_multiline_label_format():
+    raw_text = """SKU:
+MX-HD3CWYL
+LOT:
+L20260823-D18
+QTY:
+10 PCS
+S/N:
+SN-RV0ATNNPAZ
+PO:
+PO-202608-0017
+CODE: 8999519665641"""
+    expected = {
+        "sku": "MX-HD3CWYL",
+        "lot": "L20260823-D18",
+        "quantity": "10",
+        "unit": "PCS",
+        "serial": "SN-RV0ATNNPAZ",
+        "po_number": "PO-202608-0017",
+        "barcode": "8999519665641",
+    }
+    assert extract_fields(raw_text, {}, expected) == expected

@@ -16,7 +16,20 @@ def capture_environment() -> dict[str, Any]:
     except Exception:
         snapshot["nvidia_smi"] = None
     versions = {}
-    for package in ("pydantic", "Pillow", "PyYAML", "paddleocr", "torch", "vllm"):
+    for package in (
+        "pydantic",
+        "Pillow",
+        "PyYAML",
+        "numpy",
+        "paddleocr",
+        "paddlepaddle",
+        "opencv-python",
+        "zxing-cpp",
+        "torch",
+        "vllm",
+        "transformers",
+        "glmocr",
+    ):
         try:
             versions[package] = importlib.metadata.version(package)
         except importlib.metadata.PackageNotFoundError:
