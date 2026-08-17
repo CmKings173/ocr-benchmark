@@ -1,0 +1,90 @@
+<!doctype html><html><head><meta charset='utf-8'><title>OCR Benchmark</title></head><body><h1>OCR Benchmark Report</h1><pre>{
+  &quot;accuracy&quot;: {
+    &quot;images&quot;: 3,
+    &quot;successful_images&quot;: 3,
+    &quot;failure_rate&quot;: 0.0,
+    &quot;field_exact_accuracy&quot;: 1.0,
+    &quot;critical_field_accuracy&quot;: 1.0,
+    &quot;critical_full_label_accuracy&quot;: 1.0,
+    &quot;full_label_accuracy&quot;: 1.0,
+    &quot;full_label_accuracy_wilson_95&quot;: [
+      0.4385029682449546,
+      1.0
+    ],
+    &quot;critical_full_label_accuracy_wilson_95&quot;: [
+      0.4385029682449546,
+      1.0
+    ],
+    &quot;mean_cer&quot;: 134.66666666666666,
+    &quot;mean_wer&quot;: 16.666666666666668
+  },
+  &quot;gates&quot;: {
+    &quot;eligible&quot;: false,
+    &quot;valid&quot;: true,
+    &quot;checks&quot;: {
+      &quot;full_label_accuracy&quot;: null,
+      &quot;critical_field_accuracy&quot;: null,
+      &quot;failure_rate&quot;: null,
+      &quot;p95_ms&quot;: null,
+      &quot;p99_ms&quot;: null,
+      &quot;peak_unified_memory_bytes&quot;: null
+    },
+    &quot;performance_skipped&quot;: true
+  },
+  &quot;score&quot;: null,
+  &quot;performance&quot;: {
+    &quot;model&quot;: &quot;ppocr_v6&quot;,
+    &quot;status&quot;: &quot;SKIPPED&quot;,
+    &quot;scope&quot;: &quot;accuracy_only&quot;,
+    &quot;samples&quot;: 0,
+    &quot;failures&quot;: 0,
+    &quot;failure_rate&quot;: null,
+    &quot;p50_ms&quot;: null,
+    &quot;p90_ms&quot;: null,
+    &quot;p95_ms&quot;: null,
+    &quot;p99_ms&quot;: null,
+    &quot;mean_ms&quot;: null,
+    &quot;throughput_images_per_second&quot;: null,
+    &quot;batch_results&quot;: [],
+    &quot;concurrency_results&quot;: [],
+    &quot;resource_usage&quot;: {}
+  },
+  &quot;barcode&quot;: {
+    &quot;images&quot;: 3,
+    &quot;engines&quot;: {
+      &quot;opencv&quot;: {
+        &quot;images&quot;: 3,
+        &quot;successes&quot;: 0,
+        &quot;exact_matches&quot;: 0,
+        &quot;exact_match_accuracy&quot;: 0.0,
+        &quot;mean_latency_ms&quot;: 59.23249366605887
+      },
+      &quot;zxing_cpp&quot;: {
+        &quot;images&quot;: 3,
+        &quot;successes&quot;: 3,
+        &quot;exact_matches&quot;: 3,
+        &quot;exact_match_accuracy&quot;: 1.0,
+        &quot;mean_latency_ms&quot;: 12.374816336280977
+      }
+    }
+  },
+  &quot;system_accuracy&quot;: {
+    &quot;images&quot;: 3,
+    &quot;successful_images&quot;: 3,
+    &quot;failure_rate&quot;: 0.0,
+    &quot;field_exact_accuracy&quot;: 1.0,
+    &quot;critical_field_accuracy&quot;: 1.0,
+    &quot;critical_full_label_accuracy&quot;: 1.0,
+    &quot;full_label_accuracy&quot;: 1.0,
+    &quot;full_label_accuracy_wilson_95&quot;: [
+      0.4385029682449546,
+      1.0
+    ],
+    &quot;critical_full_label_accuracy_wilson_95&quot;: [
+      0.4385029682449546,
+      1.0
+    ],
+    &quot;mean_cer&quot;: 0.0,
+    &quot;mean_wer&quot;: 0.0
+  }
+}</pre><table><tr><th>Image</th><th>Status</th><th>Field exact</th></tr><tr><td>001_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>002_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>003_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr></table></body></html>

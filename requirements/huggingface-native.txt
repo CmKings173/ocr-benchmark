@@ -1,0 +1,5 @@
+# Native Transformers runtime for model benchmarks.  Keep this separate from
+# vLLM server environments because their dependency constraints can diverge.
+transformers>=4.57.6
+accelerate>=1.0
+huggingface-hub>=0.30

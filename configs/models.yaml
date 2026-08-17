@@ -23,6 +23,14 @@ models:
     model: MonkeyOCRv2-B-Parsing
     revision: VERIFY_REQUIRED
     license_status: VERIFY_REQUIRED
+  monkey_ocr_v2_b_parsing_native:
+    adapter: monkey_ocr_v2_b_parsing_native
+    model_id: zenosai/MonkeyOCRv2-B-Parsing
+    device_map: auto
+    dtype: auto
+    max_new_tokens: 4096
+    revision: HF_MAIN
+    license_status: VERIFY_REQUIRED
   surya_ocr_2:
     adapter: surya_ocr_2
   deepseek_ocr:

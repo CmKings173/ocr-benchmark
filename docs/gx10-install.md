@@ -227,6 +227,60 @@ changing model, checkpoint, or server port:
   --output results/qwen2-vl-hf-accuracy-3
 ```
 
+### Native MonkeyOCR model benchmark (no HTTP server)
+
+MonkeyOCRv2 is still a downloadable Hugging Face model; HTTP/vLLM is only one
+serving mode.  The repository now also provides
+`monkey_ocr_v2_b_parsing_native`, which loads the checkpoint through the
+Transformers `image-text-to-text` pipeline inside the benchmark worker.  Use
+this adapter to measure model inference without an HTTP request/response hop.
+Keep the existing `monkey_ocr_v2_b_parsing` adapter for a separate production
+system benchmark that intentionally includes vLLM and IPC overhead.
+
+The native worker must run with a Python environment that has the working
+GX10-compatible CUDA PyTorch build.  Since `.venv-vllm` already contains the
+verified `torch 2.13.0+cu130` in the current setup, install the native client
+dependencies into that environment (do not reinstall or downgrade torch):
+
+```bash
+cd ~/work/ocr-benchmark
+export HF_HOME="$PWD/model_cache/huggingface"
+
+uv pip install --python .venv-vllm/bin/python -r requirements/base.txt \
+  -r requirements/huggingface-native.txt
+
+# Load one image and verify the direct Transformers path first.
+.venv-vllm/bin/python scripts/preflight_model.py \
+  --models-config configs/models.yaml \
+  --model monkey_ocr_v2_b_parsing_native \
+  --dataset data/images/ocr_label_dataset_v1/images \
+  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
+  --timeout 300
+```
+
+The first native run downloads the model into `HF_HOME` if it is not already
+cached.  Run the full accuracy and performance passes in `tmux` after the
+preflight returns `"valid": true`:
+
+```bash
+tmux new -s monkey-native-benchmark
+cd ~/work/ocr-benchmark
+.venv-vllm/bin/python scripts/run_all.py \
+  --config configs/benchmark.yaml \
+  --models-config configs/models.yaml \
+  --models monkey_ocr_v2_b_parsing_native \
+  --dataset data/images/ocr_label_dataset_v1/images \
+  --ground-truth data/images/ocr_label_dataset_v1/ground_truth.json \
+  --output results/monkey-native-full
+# Detach: Ctrl-B then D. Reattach: tmux attach -t monkey-native-benchmark
+```
+
+This still uses the benchmark's worker process for isolation, so worker IPC is
+reported separately as orchestrator round-trip time.  `prediction.timing.inference_ms`
+is the native Transformers call; there is no vLLM HTTP latency in that number.
+Do not run the native model and a large vLLM server concurrently on the 128 GB
+unified-memory GX10 unless the memory headroom has been measured first.
+
 Replace only `--models` and the output directory for `surya_ocr_2`,
 `deepseek_ocr`, and `monkey_ocr_v2_b_parsing`. A `valid=True eligible=False`
 result is expected for this accuracy-only triage run; `eligible` requires a

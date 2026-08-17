@@ -30,6 +30,7 @@ Tier A adapters are registered as:
 - `glm_ocr`
 - `paddleocr_vl_1_6`
 - `monkey_ocr_v2_b_parsing`
+- `monkey_ocr_v2_b_parsing_native` (Transformers in-worker model benchmark; no HTTP)
 
 Optional dependencies and endpoints are configured per model. Missing dependencies are reported, not replaced with fake output. See [model notes](docs/model_notes.md).
 

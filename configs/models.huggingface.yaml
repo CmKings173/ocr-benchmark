@@ -6,6 +6,7 @@ models:
     endpoint: http://127.0.0.1:8104/v1
     model: zenosai/MonkeyOCRv2-B-Parsing
     max_tokens: 4096
+    verify_model: true
     revision: HF_MAIN
     license_status: VERIFY_REQUIRED
   qwen2_vl_7b:
@@ -13,6 +14,7 @@ models:
     endpoint: http://127.0.0.1:8101/v1
     model: Qwen/Qwen2-VL-7B-Instruct
     max_tokens: 2048
+    verify_model: true
     revision: HF_MAIN
     license_status: Apache-2.0
   surya_ocr_2:
@@ -20,6 +22,7 @@ models:
     endpoint: http://127.0.0.1:8102/v1
     model: datalab-to/surya-ocr-2
     max_tokens: 4096
+    verify_model: true
     revision: HF_MAIN
     license_status: VERIFY_REQUIRED
   deepseek_ocr:
@@ -27,5 +30,6 @@ models:
     endpoint: http://127.0.0.1:8103/v1
     model: deepseek-ai/DeepSeek-OCR
     max_tokens: 4096
+    verify_model: true
     revision: HF_MAIN
     license_status: MIT

@@ -25,7 +25,9 @@ These notes record the official sources checked before adapter implementation. E
 
 - Official repository: https://github.com/Yuliang-Liu/MonkeyOCRv2
 - Official parsing path uses vLLM; DFlash is optional and version-dependent.
-- The adapter targets an OpenAI-compatible local vLLM endpoint. DFlash is metadata/configuration, not an assumed capability.
+- `monkey_ocr_v2_b_parsing` targets an OpenAI-compatible local vLLM endpoint. DFlash is metadata/configuration, not an assumed capability.
+- `monkey_ocr_v2_b_parsing_native` uses the Transformers `image-text-to-text` pipeline inside the worker for model-only measurements. Keep both scopes: native for model latency, HTTP for production system/IPC latency.
+- Native Transformers usage is documented by the [MonkeyOCRv2-B-Parsing model card](https://huggingface.co/zenosai/MonkeyOCRv2-B-Parsing); run a one-image preflight before a full benchmark because custom remote code and runtime versions must match the GX10 environment.
 
 ## License and reproducibility
 
