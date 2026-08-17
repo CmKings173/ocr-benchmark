@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 import time
+from collections.abc import Mapping
 from pathlib import Path
 from typing import Any, Optional
 
 from ocr_benchmark.core.adapter import OCRAdapter
-from ocr_benchmark.core.schemas import Detection, Prediction, RunStatus, Timing
+from ocr_benchmark.core.schemas import Detection, Prediction, Timing
 from ocr_benchmark.models.helpers import first_mapping, find_first, normalize_bbox, text_from_payload
 
 
@@ -63,8 +64,22 @@ class PPOCRv6Adapter(OCRAdapter):
         output = self.pipeline.predict(input=input_path)
         inference_ms = (time.perf_counter() - inference_started) * 1000
         postprocess_started = time.perf_counter()
-        payload = first_mapping(list(output))
+        if isinstance(output, Mapping):
+            payload = first_mapping(output)
+        else:
+            try:
+                payload = first_mapping(list(output))
+            except TypeError:
+                payload = first_mapping(output)
+        if not payload:
+            raise RuntimeError("INVALID_OUTPUT: PaddleOCR returned an empty result")
         texts = find_first(payload, ("rec_texts", "texts"))
+        if texts is None:
+            raise RuntimeError("INVALID_OUTPUT: PaddleOCR response is missing rec_texts")
+        if isinstance(texts, str):
+            texts = [texts]
+        if not isinstance(texts, list):
+            raise RuntimeError("INVALID_OUTPUT: PaddleOCR rec_texts is not a list")
         scores = find_first(payload, ("rec_scores", "scores"))
         boxes = find_first(payload, ("rec_boxes", "dt_polys", "boxes"))
         detections = []
@@ -73,10 +88,13 @@ class PPOCRv6Adapter(OCRAdapter):
             box = boxes[index] if isinstance(boxes, list) and index < len(boxes) else None
             detections.append(Detection(text=str(text), confidence=float(score) if score is not None else None, bbox=normalize_bbox(box)))
         postprocess_ms = (time.perf_counter() - postprocess_started) * 1000
+        raw_text = text_from_payload(payload)
+        if not raw_text.strip():
+            raise RuntimeError("INVALID_OUTPUT: PaddleOCR returned no recognized text")
         return Prediction(
             model=self.name,
             image=str(image_path),
-            raw_text=text_from_payload(payload),
+            raw_text=raw_text,
             detections=detections,
             timing=Timing(preprocess_ms=preprocess_ms, inference_ms=inference_ms, postprocess_ms=postprocess_ms),
             metadata={"det_model": self.det_model, "rec_model": self.rec_model, "device": self.device, "revision": self.revision, "license_status": self.license_status},
