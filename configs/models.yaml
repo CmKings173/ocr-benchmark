@@ -10,6 +10,8 @@ models:
     adapter: glm_ocr
     endpoint: http://127.0.0.1:8080/v1
     model: glm-ocr
+    max_tokens: 2048
+    verify_model: true
     revision: VERIFY_REQUIRED
     license_status: VERIFY_REQUIRED
   paddleocr_vl_1_6:

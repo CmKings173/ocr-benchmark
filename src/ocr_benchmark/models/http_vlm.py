@@ -123,6 +123,8 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
             content = payload["choices"][0]["message"]["content"]
         except (KeyError, IndexError, TypeError) as exc:
             raise RuntimeError("INVALID_OUTPUT: response missing choices[0].message.content") from exc
+        if content is None or content == [] or (isinstance(content, str) and not content.strip()):
+            raise RuntimeError("INVALID_OUTPUT: response returned empty message content")
         raw_text, fields = _parse_structured_content(content)
         postprocess_ms = (time.perf_counter() - postprocess_started) * 1000
         return Prediction(model=self.name, image=str(image_path), raw_text=raw_text, fields=fields, timing=Timing(preprocess_ms=preprocess_ms, inference_ms=inference_ms, postprocess_ms=postprocess_ms), metadata={"endpoint": self.endpoint, "model_id": self.model_id, "server_model_id": self.server_model_id, "revision": self.revision, "license_status": self.license_status})

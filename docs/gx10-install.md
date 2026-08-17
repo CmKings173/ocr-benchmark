@@ -200,10 +200,19 @@ HF_HOME="$HF_HOME" vllm serve deepseek-ai/DeepSeek-OCR \
   --trust-remote-code --max-model-len 8192 --gpu-memory-utilization 0.75
 
 # MonkeyOCRv2-B-Parsing (port 8104)
-HF_HOME="$HF_HOME" vllm serve zenosai/MonkeyOCRv2-B-Parsing \
-  --host 127.0.0.1 --port 8104 \
+# Use the official MonkeyOCRv2 parsing launcher.  It imports the model's
+# vLLM registration before starting vllm; plain `vllm serve <HF_ID>` does not
+# register MonkeyOCRv2ForCausalLM on all vLLM versions.
+git clone https://github.com/Yuliang-Liu/MonkeyOCRv2.git "$HOME/MonkeyOCRv2"
+MODEL_DIR="$PWD/model_cache/MonkeyOCRv2-B-Parsing"
+HF_HOME="$HF_HOME" .venv-vllm/bin/hf download \
+  zenosai/MonkeyOCRv2-B-Parsing --local-dir "$MODEL_DIR"
+cd "$HOME/MonkeyOCRv2/parsing"
+HF_HOME="$HF_HOME" "$HOME/work/ocr-benchmark/.venv-vllm/bin/python" serve.py \
+  --model-path "$MODEL_DIR" --host 127.0.0.1 --port 8104 \
   --served-model-name zenosai/MonkeyOCRv2-B-Parsing \
-  --trust-remote-code --max-model-len 8192 --gpu-memory-utilization 0.70
+  --max-model-len 4096 --max-num-seqs 1 \
+  --gpu-memory-utilization 0.20
 ```
 
 Before running the benchmark, verify the endpoint advertises the expected
