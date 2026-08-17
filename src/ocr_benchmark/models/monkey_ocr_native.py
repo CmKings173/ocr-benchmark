@@ -61,6 +61,7 @@ class MonkeyOCRv2NativeAdapter(OCRAdapter):
         trust_remote_code: bool = True,
         prompt: str = "Extract the document text. Return JSON with raw_text and fields.",
         max_new_tokens: int = 4096,
+        max_pixels: int = 1003520,
         revision: Optional[str] = None,
         license_status: str = "VERIFY_REQUIRED",
     ) -> None:
@@ -71,6 +72,7 @@ class MonkeyOCRv2NativeAdapter(OCRAdapter):
         self.trust_remote_code = trust_remote_code
         self.prompt = prompt
         self.max_new_tokens = max_new_tokens
+        self.max_pixels = max_pixels
         self.revision = revision
         self.license_status = license_status
         self._pipeline: Any = None
@@ -110,6 +112,7 @@ class MonkeyOCRv2NativeAdapter(OCRAdapter):
             "model_dir": self.model_dir,
             "device_map": self.device_map,
             "dtype": self.dtype,
+            "max_pixels": self.max_pixels,
             "revision": self.revision,
             "license_status": self.license_status,
             "official_source": self.official_source,
@@ -122,14 +125,17 @@ class MonkeyOCRv2NativeAdapter(OCRAdapter):
         preprocess_started = time.perf_counter()
         if not image_path.is_file():
             raise RuntimeError(f"INVALID_INPUT: image does not exist: {image_path}")
-        # MonkeyOCR's documented Transformers chat format uses an image URL.
-        # An absolute local path is resolved by the processor without any
-        # network request; it is not an HTTP endpoint.
+        # Use the local-path form from MonkeyOCRv2's native inference example;
+        # this never creates an HTTP request for the image.
         messages = [
             {
                 "role": "user",
                 "content": [
-                    {"type": "image", "url": str(image_path.resolve())},
+                    # MonkeyOCRv2's native inference example uses the
+                    # ``image`` field for a local path.  ``url`` is reserved
+                    # for remote image URLs in the generic Transformers
+                    # examples and can accidentally trigger URL handling.
+                    {"type": "image", "image": str(image_path.resolve()), "max_pixels": self.max_pixels},
                     {"type": "text", "text": self.prompt},
                 ],
             }

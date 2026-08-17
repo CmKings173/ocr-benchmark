@@ -35,8 +35,9 @@ def test_native_monkey_predict_uses_local_image_and_parses_fields(tmp_path: Path
     class FakePipeline:
         def __call__(self, *, text, max_new_tokens):
             calls.append((text, max_new_tokens))
-            image_url = text[0]["content"][0]["url"]
-            assert image_url == str(image_path.resolve())
+            image_path_value = text[0]["content"][0]["image"]
+            assert image_path_value == str(image_path.resolve())
+            assert text[0]["content"][0]["max_pixels"] == 1003520
             return [{"generated_text": "```json\n{\"raw_text\":\"SKU: ABC\",\"fields\":{\"SKU\":\"ABC\"}}\n```"}]
 
     adapter = MonkeyOCRv2NativeAdapter(max_new_tokens=17)
