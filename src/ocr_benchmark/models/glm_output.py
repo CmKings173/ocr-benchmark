@@ -12,18 +12,9 @@ import re
 from typing import Any
 
 from ocr_benchmark.extraction.fields import extract_fields
+from ocr_benchmark.models.document_output import EXPECTED_FIELDS
 from ocr_benchmark.models.structured_output import decode_structured_content
 
-
-EXPECTED_FIELDS: dict[str, str] = {
-    "sku": "",
-    "lot": "",
-    "quantity": "",
-    "unit": "",
-    "serial": "",
-    "po_number": "",
-    "barcode": "",
-}
 
 _ALIASES = {
     "sku": "sku",

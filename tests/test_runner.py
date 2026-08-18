@@ -25,6 +25,49 @@ def test_mock_two_pass_and_export(tmp_path):
     assert (out / "report.html").is_file()
 
 
+def test_concurrency_serializes_requests_per_worker(tmp_path, monkeypatch):
+    """The line-oriented worker protocol must not receive interleaved calls."""
+    from ocr_benchmark.benchmark import runner
+
+    class FakeWorker:
+        instances = []
+
+        def __init__(self, *args, **kwargs):
+            self.active = 0
+            self.max_active = 0
+            FakeWorker.instances.append(self)
+            from types import SimpleNamespace
+            self.process = SimpleNamespace(pid=None)
+
+        def start(self):
+            return 0.0
+
+        def request(self, payload):
+            if payload["operation"] == "load" or payload["operation"] == "warmup":
+                return {"ok": True}
+            self.active += 1
+            self.max_active = max(self.max_active, self.active)
+            import time
+            time.sleep(0.002)
+            self.active -= 1
+            return {"ok": True}
+
+        def stop(self):
+            return None
+
+    monkeypatch.setattr(runner, "SubprocessWorker", FakeWorker)
+    image_root = tmp_path / "images"
+    image_root.mkdir()
+    image = image_root / "one.png"
+    Image.new("RGB", (8, 8), "white").save(image)
+    gt_path = tmp_path / "ground_truth.json"
+    gt_path.write_text(json.dumps({"samples": [{"image": "one.png", "fields": {"sku": "ABC"}}]}))
+    dataset = load_and_validate_dataset(image_root, gt_path)
+    result = run_performance_pass(dataset, image_root, "mock", repetitions=4, batch_sizes=[], concurrency_levels=[2])
+    assert result["concurrency_results"][0]["status"] == "SUCCESS"
+    assert all(worker.max_active <= 1 for worker in FakeWorker.instances)
+
+
 def test_worker_failure_is_returned_as_status(tmp_path):
     image_root = tmp_path / "images"
     image_root.mkdir()

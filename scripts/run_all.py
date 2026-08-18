@@ -74,8 +74,10 @@ def main() -> int:
     for model in models:
         model_config = dict(model_configs.get(model, {}))
         adapter_name = model_config.pop("adapter", model)
-        if adapter_name in {"glm_ocr", "monkey_ocr_v2_b_parsing", "mistral_ocr4"}:
-            model_config.setdefault("timeout_seconds", config.timeout_seconds)
+        # Per-model timeout belongs in the model config because providers have
+        # materially different generation limits.  Falling back to the
+        # benchmark timeout keeps minimal/custom configs compatible.
+        model_timeout_seconds = float(model_config.get("timeout_seconds", config.timeout_seconds))
         output_dir = (output_root / model) if (multi_model or args.output is None) else output_root
         output_dir.mkdir(parents=True, exist_ok=True)
         print(f"{model}: accuracy pass starting ({len(dataset.samples)} samples)", flush=True)
@@ -84,7 +86,7 @@ def main() -> int:
             args.dataset,
             adapter_name,
             model_config=model_config,
-            timeout_seconds=config.timeout_seconds,
+            timeout_seconds=model_timeout_seconds,
             checkpoint_path=output_dir / "accuracy.checkpoint.jsonl",
             field_schema=field_schema,
         )
@@ -116,7 +118,7 @@ def main() -> int:
                 adapter_name,
                 repetitions=minimum_repetitions,
                 model_config=model_config,
-                timeout_seconds=config.timeout_seconds,
+                timeout_seconds=model_timeout_seconds,
                 batch_sizes=config.batch_sizes,
                 concurrency_levels=config.concurrency,
                 checkpoint_path=output_dir / "performance.checkpoint.jsonl",

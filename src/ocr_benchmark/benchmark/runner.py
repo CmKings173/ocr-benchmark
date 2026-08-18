@@ -4,6 +4,7 @@ import statistics
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from threading import Lock
 from typing import Any, Optional
 
 from ocr_benchmark.benchmark.checkpoint import CheckpointStore
@@ -195,6 +196,7 @@ def _run_batch_level(
                     latencies.append((time.perf_counter() - started) * 1000)
                 except Exception:
                     failures += len(samples)
+                    _recover_worker(worker, warmup_iterations=1, warmup_image=warmup_image)
         metrics = _percentiles(latencies)
         total_images = len(dataset.samples) * repetitions
         total_ms = sum(latencies)
@@ -218,6 +220,10 @@ def _run_concurrency_level(
     warmup_image: Path,
 ) -> dict[str, Any]:
     workers = [SubprocessWorker(timeout_seconds=timeout_seconds, model_name=model, model_config=model_config) for _ in range(concurrency)]
+    # A worker is a line-oriented subprocess protocol, not a thread-safe RPC
+    # client.  Keep each worker's stdin/stdout pair serialized while allowing
+    # different workers to process requests concurrently.
+    worker_locks = [Lock() for _ in workers]
     monitors: list[ResourceMonitor] = []
     latencies: list[float] = []
     failures = 0
@@ -230,9 +236,15 @@ def _run_concurrency_level(
 
         def predict(item: tuple[int, Any]) -> float:
             worker = workers[item[0] % len(workers)]
-            started = time.perf_counter()
-            worker.request({"operation": "predict", "image": str(_image_path(dataset_root, item[1].image))})
-            return (time.perf_counter() - started) * 1000
+            lock = worker_locks[item[0] % len(workers)]
+            with lock:
+                started = time.perf_counter()
+                try:
+                    worker.request({"operation": "predict", "image": str(_image_path(dataset_root, item[1].image))})
+                except Exception:
+                    _recover_worker(worker, warmup_iterations=1, warmup_image=warmup_image)
+                    raise
+                return (time.perf_counter() - started) * 1000
 
         items = [(index % concurrency, sample) for index, sample in enumerate(dataset.samples * repetitions)]
         wall_started = time.perf_counter()

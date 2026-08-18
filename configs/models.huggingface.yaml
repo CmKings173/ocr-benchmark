@@ -33,3 +33,39 @@ models:
     verify_model: true
     revision: HF_MAIN
     license_status: MIT
+  # HunyuanOCR-1.5 official vLLM server (inference/vLLM/serve.sh).
+  hunyuan_ocr_1_5:
+    adapter: hunyuan_ocr_1_5
+    endpoint: http://127.0.0.1:8107/v1
+    model: tencent/HunyuanOCR
+    task_type: spotting_json
+    max_tokens: 32768
+    timeout_seconds: 3600
+    verify_model: true
+    revision: HF_MAIN
+    license_status: tencent-hunyuan-community
+  # Unlimited-OCR dedicated vLLM recipe; launch with the official custom
+  # image and NGramPerReqLogitsProcessor server flag.
+  unlimited_ocr:
+    adapter: unlimited_ocr
+    endpoint: http://127.0.0.1:8106/v1
+    model: baidu/Unlimited-OCR
+    max_tokens: 32768
+    image_mode: gundam
+    ngram_size: 35
+    ngram_window: 128
+    timeout_seconds: 1200
+    verify_model: true
+    revision: HF_MAIN
+    license_status: MIT
+  # dots.mocr official vLLM integration.
+  dots_mocr:
+    adapter: dots_mocr
+    endpoint: http://127.0.0.1:8108/v1
+    model: rednote-hilab/dots.mocr
+    prompt_mode: prompt_layout_all_en
+    max_tokens: 32768
+    timeout_seconds: 1200
+    verify_model: true
+    revision: HF_MAIN
+    license_status: MIT

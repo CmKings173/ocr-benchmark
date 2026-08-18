@@ -31,6 +31,9 @@ Tier A adapters are registered as:
 - `paddleocr_vl_1_6`
 - `monkey_ocr_v2_b_parsing`
 - `monkey_ocr_v2_b_parsing_native` (Transformers in-worker model benchmark; no HTTP)
+- `hunyuan_ocr_1_5` (official vLLM task prompts; `spotting_json` by default)
+- `unlimited_ocr` (official dedicated vLLM recipe and n-gram processor)
+- `dots_mocr` (official vLLM integration; layout JSON prompt)
 
 Optional dependencies and endpoints are configured per model. Missing dependencies are reported, not replaced with fake output. See [model notes](docs/model_notes.md).
 

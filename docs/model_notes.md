@@ -29,6 +29,26 @@ These notes record the official sources checked before adapter implementation. E
 - `monkey_ocr_v2_b_parsing_native` uses the Transformers `image-text-to-text` pipeline inside the worker for model-only measurements. Keep both scopes: native for model latency, HTTP for production system/IPC latency.
 - Native Transformers usage is documented by the [MonkeyOCRv2-B-Parsing model card](https://huggingface.co/zenosai/MonkeyOCRv2-B-Parsing); run a one-image preflight before a full benchmark because custom remote code and runtime versions must match the GX10 environment.
 
+## HunyuanOCR-1.5
+
+- Official repository and inference guide: https://github.com/Tencent-Hunyuan/HunyuanOCR
+- Official vLLM server is OpenAI-compatible and uses the model id `tencent/HunyuanOCR`.
+- The adapter locks prompts to the official task vocabulary. The default benchmark task is `spotting_json` (JSON array of normalized boxes and text); `doc_parse` remains available for Markdown parsing.
+- License: Tencent Hunyuan Community License Agreement. CUDA 13 is required by the unified 1.5 environment; the official guide documents lighter per-configuration recipes for other CUDA versions.
+
+## Unlimited-OCR
+
+- Official repository: https://github.com/baidu/Unlimited-OCR
+- Official vLLM recipe: https://recipes.vllm.ai/baidu/Unlimited-OCR
+- The model requires the dedicated `vllm/vllm-openai:unlimited-ocr` image, `NGramPerReqLogitsProcessor`, the literal `<image>` prompt prefix, `skip_special_tokens=false`, and per-request n-gram arguments. The adapter sends these fields and parses the native Markdown/grounding output.
+- Native output is not a strict JSON contract. License: MIT.
+
+## dots.mocr
+
+- Official repository: https://github.com/studio-dots-ai/dots.mocr
+- Official vLLM integration requires `--chat-template-content-format string --trust-remote-code`; the repository documents `prompt_layout_all_en` for document parsing.
+- The adapter uses the official layout prompt that requires one JSON object with bbox/category/text, then normalizes its layout elements into the benchmark fields. License: MIT.
+
 ## License and reproducibility
 
 The benchmark must capture repository URL, model identifier, exact revision, package versions, license status and verification date. Vendor benchmark numbers are informational only; customer holdout metrics are authoritative.

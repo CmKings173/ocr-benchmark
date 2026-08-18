@@ -14,6 +14,9 @@ from ocr_benchmark.models.layoutlmv3 import LayoutLMv3Adapter
 from ocr_benchmark.models.mistral_ocr4 import MistralOCRAdapter
 from ocr_benchmark.models.qwen2_vl import Qwen2VLAdapter
 from ocr_benchmark.models.surya import SuryaOCRAdapter
+from ocr_benchmark.models.hunyuan_ocr import HunyuanOCRAdapter
+from ocr_benchmark.models.unlimited_ocr import UnlimitedOCRAdapter
+from ocr_benchmark.models.dots_mocr import DotsMOCRAdapter
 
 
 def create_adapter(name: str, config: Optional[dict[str, Any]] = None) -> OCRAdapter:
@@ -31,6 +34,9 @@ def create_adapter(name: str, config: Optional[dict[str, Any]] = None) -> OCRAda
         "donut": DonutAdapter,
         "layoutlmv3_kie": LayoutLMv3Adapter,
         "mistral_ocr4": MistralOCRAdapter,
+        "hunyuan_ocr_1_5": HunyuanOCRAdapter,
+        "unlimited_ocr": UnlimitedOCRAdapter,
+        "dots_mocr": DotsMOCRAdapter,
     }
     if name not in adapters:
         raise KeyError(f"unknown model adapter: {name}")

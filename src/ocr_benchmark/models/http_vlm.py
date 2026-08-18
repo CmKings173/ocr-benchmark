@@ -41,6 +41,10 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
         """Provider hook; subclasses may normalize their own response shape."""
         return _parse_structured_content(content)
 
+    def _request_prompt(self) -> str:
+        """Return the exact prompt text sent in the multimodal request."""
+        return self.prompt
+
     def load(self) -> None:
         if not self.endpoint:
             raise RuntimeError("NOT_CONFIGURED: an OpenAI-compatible VLM endpoint is required")
@@ -97,6 +101,33 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
             f"MODEL_MISMATCH: requested {self.model_id!r}; endpoint advertises {sorted(set(advertised))!r}"
         )
 
+    def metadata(self) -> dict[str, object]:
+        return {
+            "name": self.name,
+            "endpoint": self.endpoint,
+            "model_id": self.model_id,
+            "server_model_id": self.server_model_id,
+            "revision": self.revision,
+            "license_status": self.license_status,
+            "official_source": self.official_source,
+            "prompt_profile": self.prompt_profile,
+            "prompt_sha256": hashlib.sha256(self._request_prompt().encode("utf-8")).hexdigest(),
+        }
+
+    def _build_request_body(self, *, mime: str, encoded: str) -> dict[str, object]:
+        """Build the OpenAI-compatible request body.
+
+        Provider adapters can override this hook for documented ``extra_body``
+        or generation parameters while retaining the common transport,
+        timing, and response validation code.
+        """
+        return {
+            "model": self.model_id,
+            "temperature": 0,
+            "max_tokens": self.max_tokens,
+            "messages": [{"role": "user", "content": [{"type": "text", "text": self._request_prompt()}, {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{encoded}"}}]}],
+        }
+
     def predict(self, image_path: Path) -> Prediction:
         preprocess_started = time.perf_counter()
         mime = mimetypes.guess_type(image_path.name)[0] or "image/png"
@@ -105,12 +136,7 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
         except OSError as exc:
             raise RuntimeError(f"INVALID_INPUT: cannot read image {image_path}: {exc}") from exc
         encoded = base64.b64encode(image_bytes).decode("ascii")
-        body = {
-            "model": self.model_id,
-            "temperature": 0,
-            "max_tokens": self.max_tokens,
-            "messages": [{"role": "user", "content": [{"type": "text", "text": self.prompt}, {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{encoded}"}}]}],
-        }
+        body = self._build_request_body(mime=mime, encoded=encoded)
         preprocess_ms = (time.perf_counter() - preprocess_started) * 1000
         request = urllib.request.Request(self.endpoint + "/chat/completions", data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
         if self.api_key:
@@ -146,7 +172,8 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
                 "server_model_id": self.server_model_id,
                 "revision": self.revision,
                 "license_status": self.license_status,
+                "official_source": self.official_source,
                 "prompt_profile": self.prompt_profile,
-                "prompt_sha256": hashlib.sha256(self.prompt.encode("utf-8")).hexdigest(),
+                "prompt_sha256": hashlib.sha256(self._request_prompt().encode("utf-8")).hexdigest(),
             },
         )
