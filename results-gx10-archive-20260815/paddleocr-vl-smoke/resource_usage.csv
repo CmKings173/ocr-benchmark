@@ -1,2 +1,0 @@
-sample_count,peak_rss_bytes,mean_cpu_percent,peak_cpu_percent,mean_gpu_utilization_percent,peak_gpu_utilization_percent,peak_unified_memory_bytes,peak_gpu_memory_bytes,peak_gpu_power_watts,peak_gpu_temperature_c
-4,152457216,0.0,0.0,0.0,0.0,,,,

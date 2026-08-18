@@ -235,6 +235,7 @@ def _run_concurrency_level(
             return (time.perf_counter() - started) * 1000
 
         items = [(index % concurrency, sample) for index, sample in enumerate(dataset.samples * repetitions)]
+        wall_started = time.perf_counter()
         with ThreadPoolExecutor(max_workers=concurrency) as executor:
             futures = [executor.submit(predict, item) for item in items]
             for future in as_completed(futures):
@@ -242,10 +243,10 @@ def _run_concurrency_level(
                     latencies.append(future.result())
                 except Exception:
                     failures += 1
+        wall_time_ms = (time.perf_counter() - wall_started) * 1000
         metrics = _percentiles(latencies)
-        total_ms = sum(latencies)
         resource_samples = [sample for monitor in monitors for sample in monitor.stop()]
-        return {"concurrency": concurrency, "status": "SUCCESS", "images": len(latencies), "failures": failures, "failure_rate": failures / max(len(items), 1), **metrics, "throughput_images_per_second": len(latencies) / (total_ms / 1000) if total_ms else 0.0, "resource_usage": ResourceMonitor.summary(resource_samples)}
+        return {"concurrency": concurrency, "status": "SUCCESS", "images": len(latencies), "failures": failures, "failure_rate": failures / max(len(items), 1), **metrics, "wall_time_ms": wall_time_ms, "throughput_images_per_second": len(latencies) / (wall_time_ms / 1000) if wall_time_ms else 0.0, "resource_usage": ResourceMonitor.summary(resource_samples)}
     except Exception as exc:
         resource_samples = [sample for monitor in monitors for sample in monitor.stop()]
         return {"concurrency": concurrency, "status": _classify_error(exc).value, "images": 0, "failures": len(dataset.samples) * repetitions, "failure_rate": 1.0, **_percentiles([]), "throughput_images_per_second": 0.0, "resource_usage": ResourceMonitor.summary(resource_samples), "error": str(exc)}

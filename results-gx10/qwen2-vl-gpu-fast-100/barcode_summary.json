@@ -1,0 +1,19 @@
+{
+  "images": 100,
+  "engines": {
+    "opencv": {
+      "images": 100,
+      "successes": 85,
+      "exact_matches": 85,
+      "exact_match_accuracy": 0.85,
+      "mean_latency_ms": 26.294356010039337
+    },
+    "zxing_cpp": {
+      "images": 100,
+      "successes": 100,
+      "exact_matches": 100,
+      "exact_match_accuracy": 1.0,
+      "mean_latency_ms": 7.4780726798053365
+    }
+  }
+}

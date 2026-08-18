@@ -1,0 +1,80 @@
+{
+  "model": "qwen2_vl_7b",
+  "status": "SUCCESS",
+  "samples": 100,
+  "failures": 0,
+  "failure_rate": 0.0,
+  "p50_ms": 21776.848528010305,
+  "p90_ms": 27061.532840001746,
+  "p95_ms": 33756.449966997025,
+  "p99_ms": 47659.39315999276,
+  "mean_ms": 23613.293790068998,
+  "throughput_images_per_second": 0.042349026310788046,
+  "batch_results": [
+    {
+      "batch_size": 1,
+      "status": "SUCCESS",
+      "images": 100,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "p50_ms": 22253.772166004637,
+      "p90_ms": 25432.72599299962,
+      "p95_ms": 25667.043647990795,
+      "p99_ms": 27134.141913003987,
+      "mean_ms": 22480.9472807993,
+      "throughput_images_per_second": 0.0444821113411928,
+      "execution_mode": "adapter_batch_contract_sequential_fallback",
+      "resource_usage": {
+        "sample_count": 13245,
+        "peak_rss_bytes": 34152448,
+        "mean_cpu_percent": 0.0,
+        "peak_cpu_percent": 0.0,
+        "mean_gpu_utilization_percent": 95.98346545866364,
+        "peak_gpu_utilization_percent": 96.0,
+        "peak_unified_memory_bytes": null,
+        "peak_gpu_memory_bytes": null,
+        "peak_gpu_power_watts": null,
+        "peak_gpu_temperature_c": null
+      }
+    }
+  ],
+  "concurrency_results": [
+    {
+      "concurrency": 1,
+      "status": "SUCCESS",
+      "images": 100,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "p50_ms": 22023.433107999153,
+      "p90_ms": 25298.05076699995,
+      "p95_ms": 25540.929299997515,
+      "p99_ms": 25850.541929001338,
+      "mean_ms": 22147.480302709737,
+      "throughput_images_per_second": 0.04515186316150151,
+      "resource_usage": {
+        "sample_count": 12908,
+        "peak_rss_bytes": 34156544,
+        "mean_cpu_percent": 0.0,
+        "peak_cpu_percent": 0.0,
+        "mean_gpu_utilization_percent": 95.98442826154323,
+        "peak_gpu_utilization_percent": 96.0,
+        "peak_unified_memory_bytes": null,
+        "peak_gpu_memory_bytes": null,
+        "peak_gpu_power_watts": null,
+        "peak_gpu_temperature_c": null
+      }
+    }
+  ],
+  "resource_usage": {
+    "sample_count": 40702,
+    "peak_rss_bytes": 34160640,
+    "mean_cpu_percent": 0.0,
+    "peak_cpu_percent": 0.0,
+    "mean_gpu_utilization_percent": 95.98992579487935,
+    "peak_gpu_utilization_percent": 96.0,
+    "peak_unified_memory_bytes": null,
+    "peak_gpu_memory_bytes": null,
+    "peak_gpu_power_watts": null,
+    "peak_gpu_temperature_c": null
+  }
+}

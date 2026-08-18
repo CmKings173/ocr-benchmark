@@ -1,0 +1,9 @@
+category,images,successful_images,failure_rate,field_exact_accuracy,critical_field_accuracy,full_label_accuracy,mean_cer,mean_wer
+blur,10,10,0.0,0.2,0.2,0.2,190.4,20.4
+damaged,10,10,0.0,0.1,0.1,0.1,188.0,19.6
+reflection,10,10,0.0,0.1,0.1,0.1,193.2,20.1
+rotated,15,15,0.0,0.0,0.0,0.0,195.66666666666666,21.0
+vietnamese_mixed,10,10,0.0,0.1,0.1,0.1,259.0,29.4
+small_text,15,15,0.0,0.9714285714285714,0.95,0.8,139.6,17.533333333333335
+clear,20,20,0.0,0.1,0.1,0.1,184.65,19.55
+dark,10,10,0.0,0.1,0.1,0.1,180.3,19.0

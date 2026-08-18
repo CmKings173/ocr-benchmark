@@ -40,6 +40,8 @@ def aggregate_accuracy(records: list[dict[str, Any]]) -> dict[str, Any]:
     critical_labels = [record["field_metrics"]["critical_fields_exact"] for record in valid if record.get("field_metrics", {}).get("critical_fields")]
     full_label_successes = sum(labels)
     critical_successes = sum(critical_labels)
+    cer_values = [record.get("cer") for record in valid if record.get("cer") is not None]
+    wer_values = [record.get("wer") for record in valid if record.get("wer") is not None]
     return {
         "images": len(records),
         "successful_images": len(valid),
@@ -50,8 +52,8 @@ def aggregate_accuracy(records: list[dict[str, Any]]) -> dict[str, Any]:
         "full_label_accuracy": sum(labels) / len(labels) if labels else None,
         "full_label_accuracy_wilson_95": wilson_interval(full_label_successes, len(labels)) if labels else None,
         "critical_full_label_accuracy_wilson_95": wilson_interval(critical_successes, len(critical_labels)) if critical_labels else None,
-        "mean_cer": sum(record.get("cer", 0.0) for record in valid) / len(valid) if valid else None,
-        "mean_wer": sum(record.get("wer", 0.0) for record in valid) / len(valid) if valid else None,
+        "mean_cer": sum(cer_values) / len(cer_values) if cer_values else None,
+        "mean_wer": sum(wer_values) / len(wer_values) if wer_values else None,
     }
 
 
@@ -69,11 +71,13 @@ def composite_score(summary: dict[str, Any], weights: Optional[dict[str, float]]
     if summary.get("eligible") is False:
         return None
     weights = weights or {"full_label_accuracy": 0.5, "critical_field_accuracy": 0.3, "latency_score": 0.1, "reliability_score": 0.1}
+    failure_rate = summary.get("failure_rate")
+    reliability_score = None if failure_rate is None else 1.0 - min(max(float(failure_rate), 0.0), 1.0)
     values = {
         "full_label_accuracy": summary.get("full_label_accuracy"),
         "critical_field_accuracy": summary.get("critical_field_accuracy"),
         "latency_score": 1.0 / (1.0 + max(float(summary.get("p95_ms", 0.0) or 0.0), 0.0) / 1000.0),
-        "reliability_score": 1.0 - min(max(float(summary.get("failure_rate", 1.0) or 1.0), 0.0), 1.0),
+        "reliability_score": reliability_score,
     }
     available = [(weight, values[name]) for name, weight in weights.items() if values.get(name) is not None]
     denominator = sum(weight for weight, _ in available)

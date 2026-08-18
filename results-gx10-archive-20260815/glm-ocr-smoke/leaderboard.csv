@@ -1,2 +1,0 @@
-rank,model,eligible,full_label_accuracy,critical_field_accuracy,field_exact_accuracy,p95_ms,failure_rate,score
-1,glm_ocr,True,,,,,1.0,0.5

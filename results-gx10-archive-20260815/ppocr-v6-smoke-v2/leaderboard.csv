@@ -1,2 +1,0 @@
-rank,model,eligible,full_label_accuracy,critical_field_accuracy,field_exact_accuracy,p95_ms,failure_rate,score
-1,ppocr_v6,True,0.0,,0.0,9961.330459977034,0.0,0.013032828759132416

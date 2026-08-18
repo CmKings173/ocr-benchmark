@@ -62,7 +62,7 @@ def export_results(
 
     resource = performance.get("resource_usage", {})
     _write_csv(output_dir / "resource_usage.csv", [resource], list(resource.keys()) or ["sample_count"])
-    _write_csv(output_dir / "concurrency.csv", performance.get("concurrency_results", []), ["concurrency", "status", "images", "failures", "failure_rate", "p50_ms", "p95_ms", "p99_ms", "throughput_images_per_second"])
+    _write_csv(output_dir / "concurrency.csv", performance.get("concurrency_results", []), ["concurrency", "status", "images", "failures", "failure_rate", "p50_ms", "p95_ms", "p99_ms", "wall_time_ms", "throughput_images_per_second"])
     _write_csv(output_dir / "batch.csv", performance.get("batch_results", []), ["batch_size", "status", "images", "failures", "failure_rate", "p50_ms", "p95_ms", "p99_ms", "throughput_images_per_second", "execution_mode"])
 
     rows = "".join(

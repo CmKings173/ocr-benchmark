@@ -1,3 +1,0 @@
-{"key": "glm_ocr:performance:0:001_blur.jpg", "record": {"image": "001_blur.jpg", "repetition": 0, "status": "SUCCESS", "latency_ms": 6011.019263998605}}
-{"key": "glm_ocr:performance:0:002_blur.jpg", "record": {"image": "002_blur.jpg", "repetition": 0, "status": "SUCCESS", "latency_ms": 6094.482297019567}}
-{"key": "glm_ocr:performance:0:003_damaged.jpg", "record": {"image": "003_damaged.jpg", "repetition": 0, "status": "SUCCESS", "latency_ms": 5688.562638999429}}

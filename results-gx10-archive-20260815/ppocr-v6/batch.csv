@@ -1,1 +1,0 @@
-batch_size,status,images,failures,failure_rate,p50_ms,p95_ms,p99_ms,throughput_images_per_second,execution_mode

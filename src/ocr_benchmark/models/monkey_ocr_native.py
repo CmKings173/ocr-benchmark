@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import gc
+import hashlib
 import json
 import time
 from pathlib import Path
@@ -9,6 +10,7 @@ from typing import Any, Optional, Union
 from ocr_benchmark.core.adapter import OCRAdapter
 from ocr_benchmark.core.schemas import Prediction, Timing
 from ocr_benchmark.models.structured_output import parse_structured_content
+from ocr_benchmark.models.prompts import MONKEY_OCR_PROMPT
 
 
 def _generated_text(value: Any) -> str:
@@ -59,7 +61,7 @@ class MonkeyOCRv2NativeAdapter(OCRAdapter):
         device_map: Union[str, dict[str, Any]] = "auto",
         dtype: Optional[str] = "auto",
         trust_remote_code: bool = True,
-        prompt: str = "Extract the document text. Return JSON with raw_text and fields.",
+        prompt: Optional[str] = None,
         max_new_tokens: int = 4096,
         max_pixels: int = 1003520,
         revision: Optional[str] = None,
@@ -70,7 +72,7 @@ class MonkeyOCRv2NativeAdapter(OCRAdapter):
         self.device_map = device_map
         self.dtype = dtype
         self.trust_remote_code = trust_remote_code
-        self.prompt = prompt
+        self.prompt = prompt if prompt is not None else MONKEY_OCR_PROMPT
         self.max_new_tokens = max_new_tokens
         self.max_pixels = max_pixels
         self.revision = revision
@@ -116,6 +118,8 @@ class MonkeyOCRv2NativeAdapter(OCRAdapter):
             "revision": self.revision,
             "license_status": self.license_status,
             "official_source": self.official_source,
+            "prompt_profile": "monkey_document_parsing_json_v1",
+            "prompt_sha256": hashlib.sha256(self.prompt.encode("utf-8")).hexdigest(),
         }
 
     def predict(self, image_path: Path) -> Prediction:

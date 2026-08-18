@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import hashlib
 import json
 import mimetypes
 import time
@@ -20,12 +21,14 @@ _parse_structured_content = parse_structured_content
 class OpenAICompatibleVLMAdapter(OCRAdapter):
     model_id = ""
     official_source = ""
+    default_prompt = "Extract the document text. Return JSON with raw_text and fields."
+    prompt_profile = "generic_label_json_v1"
 
-    def __init__(self, endpoint: Optional[str] = None, model: Optional[str] = None, api_key: Optional[str] = None, prompt: str = "Extract the document text. Return JSON with raw_text and fields.", revision: Optional[str] = None, license_status: str = "VERIFY_REQUIRED", timeout_seconds: float = 60.0, max_tokens: int = 2048, allow_remote_endpoint: bool = False, verify_model: bool = True):
+    def __init__(self, endpoint: Optional[str] = None, model: Optional[str] = None, api_key: Optional[str] = None, prompt: Optional[str] = None, revision: Optional[str] = None, license_status: str = "VERIFY_REQUIRED", timeout_seconds: float = 60.0, max_tokens: int = 2048, allow_remote_endpoint: bool = False, verify_model: bool = True):
         self.endpoint = (endpoint or "").rstrip("/")
         self.model_id = model or self.model_id
         self.api_key = api_key
-        self.prompt = prompt
+        self.prompt = prompt if prompt is not None else self.default_prompt
         self.revision = revision
         self.license_status = license_status
         self.timeout_seconds = timeout_seconds
@@ -33,6 +36,10 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
         self.allow_remote_endpoint = allow_remote_endpoint
         self.verify_model = verify_model
         self.server_model_id: Optional[str] = None
+
+    def _parse_content(self, content: object) -> tuple[str, dict[str, object]]:
+        """Provider hook; subclasses may normalize their own response shape."""
+        return _parse_structured_content(content)
 
     def load(self) -> None:
         if not self.endpoint:
@@ -125,6 +132,21 @@ class OpenAICompatibleVLMAdapter(OCRAdapter):
             raise RuntimeError("INVALID_OUTPUT: response missing choices[0].message.content") from exc
         if content is None or content == [] or (isinstance(content, str) and not content.strip()):
             raise RuntimeError("INVALID_OUTPUT: response returned empty message content")
-        raw_text, fields = _parse_structured_content(content)
+        raw_text, fields = self._parse_content(content)
         postprocess_ms = (time.perf_counter() - postprocess_started) * 1000
-        return Prediction(model=self.name, image=str(image_path), raw_text=raw_text, fields=fields, timing=Timing(preprocess_ms=preprocess_ms, inference_ms=inference_ms, postprocess_ms=postprocess_ms), metadata={"endpoint": self.endpoint, "model_id": self.model_id, "server_model_id": self.server_model_id, "revision": self.revision, "license_status": self.license_status})
+        return Prediction(
+            model=self.name,
+            image=str(image_path),
+            raw_text=raw_text,
+            fields=fields,
+            timing=Timing(preprocess_ms=preprocess_ms, inference_ms=inference_ms, postprocess_ms=postprocess_ms),
+            metadata={
+                "endpoint": self.endpoint,
+                "model_id": self.model_id,
+                "server_model_id": self.server_model_id,
+                "revision": self.revision,
+                "license_status": self.license_status,
+                "prompt_profile": self.prompt_profile,
+                "prompt_sha256": hashlib.sha256(self.prompt.encode("utf-8")).hexdigest(),
+            },
+        )

@@ -1,2 +1,0 @@
-rank,model,eligible,full_label_accuracy,critical_field_accuracy,field_exact_accuracy,p95_ms,failure_rate,score
-1,paddleocr_vl_1_6,False,,,,,1.0,N/A

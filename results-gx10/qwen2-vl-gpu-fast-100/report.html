@@ -1,0 +1,152 @@
+<!doctype html><html><head><meta charset='utf-8'><title>OCR Benchmark</title></head><body><h1>OCR Benchmark Report</h1><pre>{
+  &quot;accuracy&quot;: {
+    &quot;images&quot;: 100,
+    &quot;successful_images&quot;: 100,
+    &quot;failure_rate&quot;: 0.0,
+    &quot;field_exact_accuracy&quot;: 0.9928571428571429,
+    &quot;critical_field_accuracy&quot;: 0.9875,
+    &quot;critical_full_label_accuracy&quot;: 0.95,
+    &quot;full_label_accuracy&quot;: 0.95,
+    &quot;full_label_accuracy_wilson_95&quot;: [
+      0.8882495307680808,
+      0.9784563208456319
+    ],
+    &quot;critical_full_label_accuracy_wilson_95&quot;: [
+      0.8882495307680808,
+      0.9784563208456319
+    ],
+    &quot;mean_cer&quot;: 136.8,
+    &quot;mean_wer&quot;: 17.32
+  },
+  &quot;gates&quot;: {
+    &quot;eligible&quot;: true,
+    &quot;valid&quot;: true,
+    &quot;checks&quot;: {
+      &quot;full_label_accuracy&quot;: null,
+      &quot;critical_field_accuracy&quot;: null,
+      &quot;failure_rate&quot;: null,
+      &quot;p95_ms&quot;: null,
+      &quot;p99_ms&quot;: null,
+      &quot;peak_unified_memory_bytes&quot;: null
+    }
+  },
+  &quot;score&quot;: 0.7741271638097376,
+  &quot;performance&quot;: {
+    &quot;model&quot;: &quot;qwen2_vl_7b&quot;,
+    &quot;status&quot;: &quot;SUCCESS&quot;,
+    &quot;samples&quot;: 100,
+    &quot;failures&quot;: 0,
+    &quot;failure_rate&quot;: 0.0,
+    &quot;p50_ms&quot;: 21776.848528010305,
+    &quot;p90_ms&quot;: 27061.532840001746,
+    &quot;p95_ms&quot;: 33756.449966997025,
+    &quot;p99_ms&quot;: 47659.39315999276,
+    &quot;mean_ms&quot;: 23613.293790068998,
+    &quot;throughput_images_per_second&quot;: 0.042349026310788046,
+    &quot;batch_results&quot;: [
+      {
+        &quot;batch_size&quot;: 1,
+        &quot;status&quot;: &quot;SUCCESS&quot;,
+        &quot;images&quot;: 100,
+        &quot;failures&quot;: 0,
+        &quot;failure_rate&quot;: 0.0,
+        &quot;p50_ms&quot;: 22253.772166004637,
+        &quot;p90_ms&quot;: 25432.72599299962,
+        &quot;p95_ms&quot;: 25667.043647990795,
+        &quot;p99_ms&quot;: 27134.141913003987,
+        &quot;mean_ms&quot;: 22480.9472807993,
+        &quot;throughput_images_per_second&quot;: 0.0444821113411928,
+        &quot;execution_mode&quot;: &quot;adapter_batch_contract_sequential_fallback&quot;,
+        &quot;resource_usage&quot;: {
+          &quot;sample_count&quot;: 13245,
+          &quot;peak_rss_bytes&quot;: 34152448,
+          &quot;mean_cpu_percent&quot;: 0.0,
+          &quot;peak_cpu_percent&quot;: 0.0,
+          &quot;mean_gpu_utilization_percent&quot;: 95.98346545866364,
+          &quot;peak_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_unified_memory_bytes&quot;: null,
+          &quot;peak_gpu_memory_bytes&quot;: null,
+          &quot;peak_gpu_power_watts&quot;: null,
+          &quot;peak_gpu_temperature_c&quot;: null
+        }
+      }
+    ],
+    &quot;concurrency_results&quot;: [
+      {
+        &quot;concurrency&quot;: 1,
+        &quot;status&quot;: &quot;SUCCESS&quot;,
+        &quot;images&quot;: 100,
+        &quot;failures&quot;: 0,
+        &quot;failure_rate&quot;: 0.0,
+        &quot;p50_ms&quot;: 22023.433107999153,
+        &quot;p90_ms&quot;: 25298.05076699995,
+        &quot;p95_ms&quot;: 25540.929299997515,
+        &quot;p99_ms&quot;: 25850.541929001338,
+        &quot;mean_ms&quot;: 22147.480302709737,
+        &quot;throughput_images_per_second&quot;: 0.04515186316150151,
+        &quot;resource_usage&quot;: {
+          &quot;sample_count&quot;: 12908,
+          &quot;peak_rss_bytes&quot;: 34156544,
+          &quot;mean_cpu_percent&quot;: 0.0,
+          &quot;peak_cpu_percent&quot;: 0.0,
+          &quot;mean_gpu_utilization_percent&quot;: 95.98442826154323,
+          &quot;peak_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_unified_memory_bytes&quot;: null,
+          &quot;peak_gpu_memory_bytes&quot;: null,
+          &quot;peak_gpu_power_watts&quot;: null,
+          &quot;peak_gpu_temperature_c&quot;: null
+        }
+      }
+    ],
+    &quot;resource_usage&quot;: {
+      &quot;sample_count&quot;: 40702,
+      &quot;peak_rss_bytes&quot;: 34160640,
+      &quot;mean_cpu_percent&quot;: 0.0,
+      &quot;peak_cpu_percent&quot;: 0.0,
+      &quot;mean_gpu_utilization_percent&quot;: 95.98992579487935,
+      &quot;peak_gpu_utilization_percent&quot;: 96.0,
+      &quot;peak_unified_memory_bytes&quot;: null,
+      &quot;peak_gpu_memory_bytes&quot;: null,
+      &quot;peak_gpu_power_watts&quot;: null,
+      &quot;peak_gpu_temperature_c&quot;: null
+    }
+  },
+  &quot;barcode&quot;: {
+    &quot;images&quot;: 100,
+    &quot;engines&quot;: {
+      &quot;opencv&quot;: {
+        &quot;images&quot;: 100,
+        &quot;successes&quot;: 85,
+        &quot;exact_matches&quot;: 85,
+        &quot;exact_match_accuracy&quot;: 0.85,
+        &quot;mean_latency_ms&quot;: 26.294356010039337
+      },
+      &quot;zxing_cpp&quot;: {
+        &quot;images&quot;: 100,
+        &quot;successes&quot;: 100,
+        &quot;exact_matches&quot;: 100,
+        &quot;exact_match_accuracy&quot;: 1.0,
+        &quot;mean_latency_ms&quot;: 7.4780726798053365
+      }
+    }
+  },
+  &quot;system_accuracy&quot;: {
+    &quot;images&quot;: 100,
+    &quot;successful_images&quot;: 100,
+    &quot;failure_rate&quot;: 0.0,
+    &quot;field_exact_accuracy&quot;: 0.9928571428571429,
+    &quot;critical_field_accuracy&quot;: 0.9875,
+    &quot;critical_full_label_accuracy&quot;: 0.95,
+    &quot;full_label_accuracy&quot;: 0.95,
+    &quot;full_label_accuracy_wilson_95&quot;: [
+      0.8882495307680808,
+      0.9784563208456319
+    ],
+    &quot;critical_full_label_accuracy_wilson_95&quot;: [
+      0.8882495307680808,
+      0.9784563208456319
+    ],
+    &quot;mean_cer&quot;: 0.0,
+    &quot;mean_wer&quot;: 0.0
+  }
+}</pre><table><tr><th>Image</th><th>Status</th><th>Field exact</th></tr><tr><td>001_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>002_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>003_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>004_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>005_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>006_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>007_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>008_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>009_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>010_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>011_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>012_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>013_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>014_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>015_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>016_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>017_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>018_dark.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>019_dark.jpg</td><td>SUCCESS</td><td>0.8571428571428571</td></tr><tr><td>020_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>021_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>022_clear.jpg</td><td>SUCCESS</td><td>0.8571428571428571</td></tr><tr><td>023_dark.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>024_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>025_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>026_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>027_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>028_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>029_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>030_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>031_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>032_small_text.jpg</td><td>SUCCESS</td><td>0.8571428571428571</td></tr><tr><td>033_dark.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>034_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>035_dark.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>036_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>037_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>038_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>039_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>040_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>041_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>042_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>043_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>0.8571428571428571</td></tr><tr><td>044_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>045_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>046_dark.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>047_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>048_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>049_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>050_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>051_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>052_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>053_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>054_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>055_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>056_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>057_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>058_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>059_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>060_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>061_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>062_dark.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>063_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>064_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>065_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>066_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>067_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>068_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>069_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>070_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>071_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>072_dark.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>073_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>074_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>075_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>076_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>077_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>078_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>079_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>080_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>081_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>082_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>083_rotated.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>084_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>085_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>086_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>087_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>088_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>089_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>090_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>091_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>092_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>093_dark.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>094_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>095_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>096_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>097_dark.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>098_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>099_small_text.jpg</td><td>SUCCESS</td><td>0.8571428571428571</td></tr><tr><td>100_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>1.0</td></tr></table></body></html>

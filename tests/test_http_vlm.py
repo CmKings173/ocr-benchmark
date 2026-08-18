@@ -96,12 +96,14 @@ def test_vlm_load_and_predict_round_trip(monkeypatch, tmp_path):
     prediction = adapter.predict(image_path)
 
     assert prediction.raw_text == "SKU: ABC"
-    assert prediction.fields == {"SKU": "ABC"}
+    assert prediction.fields == {"sku": "ABC"}
     assert prediction.timing.inference_ms is not None
     assert len(requests) == 2
     body = json.loads(requests[1][0].data.decode("utf-8"))
     assert body["model"] == "glm-ocr"
     assert body["messages"][0]["content"][1]["image_url"]["url"].startswith("data:image/jpeg;base64,")
+    assert body["messages"][0]["content"][0]["text"].startswith("Text Recognition:")
+    assert prediction.metadata["prompt_profile"] == "glm_text_recognition_json_v1"
 
 
 def test_vlm_predict_rejects_empty_message_content(monkeypatch, tmp_path):

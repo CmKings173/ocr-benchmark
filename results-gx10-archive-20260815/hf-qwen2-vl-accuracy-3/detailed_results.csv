@@ -1,4 +1,0 @@
-image,status,field_exact_match_accuracy,critical_field_exact_match_accuracy,full_label_exact_match,cer,wer
-001_blur.jpg,SUCCESS,0.0,0.0,False,574.0,56.0
-002_blur.jpg,SUCCESS,0.0,0.0,False,514.0,49.0
-003_damaged.jpg,SUCCESS,0.0,0.0,False,571.0,55.0

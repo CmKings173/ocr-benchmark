@@ -1,0 +1,4 @@
+batch_size,status,images,failures,failure_rate,p50_ms,p95_ms,p99_ms,throughput_images_per_second,execution_mode
+1,SUCCESS,300,0,0.0,2864.6887020004215,3485.1234079978894,4147.894159992575,0.3486823083784113,adapter_batch_contract_sequential_fallback
+4,SUCCESS,300,0,0.0,11508.775612004683,12591.577201994369,12913.471193998703,0.3463481079077837,adapter_batch_contract_sequential_fallback
+8,SUCCESS,300,0,0.0,22971.274719006033,23414.24710598949,23480.049160003546,0.34853529808695644,adapter_batch_contract_sequential_fallback

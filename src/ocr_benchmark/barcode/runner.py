@@ -60,15 +60,30 @@ def build_system_records(
         fields = dict(prediction.get("fields", {}))
         barcode = barcode_by_image.get(image, {})
         decoded = None
-        for item in barcode.get("engines", []):
-            if item.get("result", {}).get("status") == "SUCCESS" and item.get("result", {}).get("value"):
-                decoded = item["result"]["value"]
+        selected_engine = None
+        # Decoder choice is a deployment policy, never a ground-truth lookup.
+        # ZXing is the preferred production decoder on this dataset; OpenCV is
+        # retained as a deterministic fallback.  The full engine-level results
+        # remain available in barcode_results.json for comparison.
+        engines = barcode.get("engines", [])
+        preferred = {"zxing_cpp": 0, "opencv": 1}
+        ordered = sorted(enumerate(engines), key=lambda pair: (preferred.get(pair[1].get("result", {}).get("engine"), 99), pair[0]))
+        for _, item in ordered:
+            result = item.get("result", {})
+            if result.get("status") == "SUCCESS" and result.get("value"):
+                decoded = result["value"]
+                selected_engine = result.get("engine")
                 break
         if decoded is not None:
             fields["barcode"] = decoded
         prediction["fields"] = fields
         sample = sample_by_image.get(image)
-        system = {"image": image, "prediction": prediction, "barcode_source": "decoder" if decoded is not None else "ocr"}
+        system = {
+            "image": image,
+            "prediction": prediction,
+            "barcode_source": "decoder" if decoded is not None else "ocr",
+            "barcode_engine": selected_engine,
+        }
         if sample is not None:
             required = list(sample.fields.keys())
             from ocr_benchmark.metrics.fields import field_exact_metrics

@@ -22,3 +22,5 @@ def test_critical_field_metrics_are_separate():
 def test_text_metrics():
     assert cer("ABC", "ABD") == 1 / 3
     assert wer("A B", "A C") == 0.5
+    assert cer("", "anything") is None
+    assert wer("", "anything") is None

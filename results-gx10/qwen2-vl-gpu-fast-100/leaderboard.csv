@@ -1,0 +1,2 @@
+rank,model,eligible,full_label_accuracy,critical_field_accuracy,field_exact_accuracy,p95_ms,failure_rate,score
+1,qwen2_vl_7b,True,0.95,0.9875,0.9928571428571429,33756.449966997025,0.0,0.7741271638097376

@@ -1,0 +1,6302 @@
+[
+  {
+    "image": "001_blur.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "001_blur.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL BEARING UNIT\nSKU: MX-P2NC0JT\nLOT: L20260801-B90\nQTY: 1000 BOX\nS/N: SN-HJBSGT25ZN\nPO: PO-202608-0001\nCODE: 8914852027678",
+      "detections": [],
+      "fields": {
+        "sku": "MX-P2NC0JT",
+        "lot": "L20260801-B90",
+        "quantity": "1000",
+        "unit": "BOX",
+        "serial": "SN-HJBSGT25ZN",
+        "po_number": "PO-202608-0001",
+        "barcode": "8914852027678"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 1.80826400173828,
+        "inference_ms": 20749.35048900079,
+        "postprocess_ms": 0.025856003048829734,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20752.331276991754,
+        "pipeline_e2e_ms": 20752.331276991754
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "002_blur.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "002_blur.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nVALVE ASSEMBLY\n\nSKU: VT-56BR878\nLOT: L20260810-D42\nQTY: 100 SET\nS/N: SN-ZKWZ7T5CNN\nPO: PO-202608-0002\n\nCODE: 8942755085487",
+      "detections": [],
+      "fields": {
+        "sku": "VT-56BR878",
+        "lot": "L20260810-D42",
+        "quantity": "100",
+        "unit": "SET",
+        "serial": "SN-ZKWZ7T5CNN",
+        "po_number": "PO-202608-0002",
+        "barcode": "8942755085487"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.36475100205279887,
+        "inference_ms": 18891.39911599341,
+        "postprocess_ms": 0.04404800711199641,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18892.998807001277,
+        "pipeline_e2e_ms": 18892.998807001277
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "003_damaged.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "003_damaged.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nBEARING UNIT\nSKU: MX-K5WZJCG\nLOT: L20260806-D75\nQTY: 10 SET\nS/N: SN-2W9R2ND8R3\nPO: PO-202608-0003\nCODE: 8923048322824",
+      "detections": [],
+      "fields": {
+        "sku": "MX-K5WZJCG",
+        "lot": "L20260806-D75",
+        "quantity": "10",
+        "unit": "SET",
+        "serial": "SN-2W9R2ND8R3",
+        "po_number": "PO-202608-0003",
+        "barcode": "8923048322824"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5036939983256161,
+        "inference_ms": 21075.922556992737,
+        "postprocess_ms": 0.04032001015730202,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21078.10291601345,
+        "pipeline_e2e_ms": 21078.10291601345
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "004_reflection.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "004_reflection.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nCONTROL MODULE\nSKU: A1-JJDPSM2\nLOT: L20260824-D41\nQTY: 200 SET\nS/N: SN-NTN0JQCYWP\nPO: PO-202608-0004\nREF: O0I1L5S8B\nCODE: 8935337831069",
+      "detections": [],
+      "fields": {
+        "sku": "A1-JJDPSM2",
+        "lot": "L20260824-D41",
+        "quantity": "200",
+        "unit": "SET",
+        "serial": "SN-NTN0JQCYWP",
+        "po_number": "PO-202608-0004",
+        "barcode": "8935337831069"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.45913399662822485,
+        "inference_ms": 23573.846945990226,
+        "postprocess_ms": 0.0426720071118325,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23575.647163001122,
+        "pipeline_e2e_ms": 23575.647163001122
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "005_blur.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "005_blur.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL BEARING UNIT\nSKU: SP-Z5AYRT3\nLOT: L20260809-D83\nQTY: 200 BOX\nS/N: SN-U0APV1U7DR\nPO: PO-202608-0005\nCODE: 8993480596843",
+      "detections": [],
+      "fields": {
+        "sku": "SP-Z5AYRT3",
+        "lot": "L20260809-D83",
+        "quantity": "200",
+        "unit": "BOX",
+        "serial": "SN-U0APV1U7DR",
+        "po_number": "PO-202608-0005",
+        "barcode": "8993480596843"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.26423898816574365,
+        "inference_ms": 20760.14520598983,
+        "postprocess_ms": 0.029279995942488313,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20761.755296000047,
+        "pipeline_e2e_ms": 20761.755296000047
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "006_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "006_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nSTEEL BRACKET\nSKU: SP-T2JMET9\nLOT: L20260804-D50\nQTY: 200 SET\nS/N: SN-0TKJ1DMUPR\nPO: PO-202608-0006\nCODE: 8998961653625",
+      "detections": [],
+      "fields": {
+        "sku": "SP-T2JMET9",
+        "lot": "L20260804-D50",
+        "quantity": "200",
+        "unit": "SET",
+        "serial": "SN-0TKJ1DMUPR",
+        "po_number": "PO-202608-0006",
+        "barcode": "8998961653625"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5849740118719637,
+        "inference_ms": 20771.04649800458,
+        "postprocess_ms": 0.019327009795233607,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20773.56354499352,
+        "pipeline_e2e_ms": 20773.56354499352
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "007_vietnamese_mixed.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "007_vietnamese_mixed.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH BEARING UNIT\nSKU: VT-B8CQWSA\nLOT: L20260819-A10\nQTY: 20 PCS\nS/N: SN-CK59Y8JD3B\nPO: PO-202608-0007\nCODE: 8952663487456",
+      "detections": [],
+      "fields": {
+        "sku": "VT-B8CQWSA",
+        "lot": "L20260819-A10",
+        "quantity": "20",
+        "unit": "PCS",
+        "serial": "SN-CK59Y8JD3B",
+        "po_number": "PO-202608-0007",
+        "barcode": "8952663487456"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4618390084942803,
+        "inference_ms": 20778.497870007413,
+        "postprocess_ms": 0.02406399289611727,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20780.538662002073,
+        "pipeline_e2e_ms": 20780.538662002073
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "008_reflection.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "008_reflection.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nSTEEL BRACKET\nSKU: VT-KGLKJT2\nLOT: L20260828-B26\nQTY: 10 BOX\nS/N: SN-AKW835U65V\nPO: PO-202608-0008\nREF: B8S5Z2G6\nCODE: 8973495411920",
+      "detections": [],
+      "fields": {
+        "sku": "VT-KGLKJT2",
+        "lot": "L20260828-B26",
+        "quantity": "10",
+        "unit": "BOX",
+        "serial": "SN-AKW835U65V",
+        "po_number": "PO-202608-0008",
+        "barcode": "8973495411920"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4661739949369803,
+        "inference_ms": 23572.13166099973,
+        "postprocess_ms": 0.03007998748216778,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23574.030806994415,
+        "pipeline_e2e_ms": 23574.030806994415
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "009_vietnamese_mixed.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "009_vietnamese_mixed.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nSTEEL BRACKET\n\nSKU: MX-ARUATPL\nLOT: L20260801-A84\nQTY: 200 BOX\nS/N: SN-ZPYXHZHEBD\nPO: PO-202608-0009\n\nCODE: 8980376445850",
+      "detections": [],
+      "fields": {
+        "sku": "MX-ARUATPL",
+        "lot": "L20260801-A84",
+        "quantity": "200",
+        "unit": "BOX",
+        "serial": "SN-ZPYXHZHEBD",
+        "po_number": "PO-202608-0009",
+        "barcode": "8980376445850"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.41743800102267414,
+        "inference_ms": 15826.818784000352,
+        "postprocess_ms": 0.051184004405513406,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 15828.788073995383,
+        "pipeline_e2e_ms": 15828.788073995383
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "010_vietnamese_mixed.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "010_vietnamese_mixed.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nCONTROL MODULE\nSKU: VT-KXMQFSE\nLOT: L20260808-B25\nQTY: 20 PCS\nS/N: SN-85C3887DRN\nPO: PO-202608-0010\nCODE: 8961492486490",
+      "detections": [],
+      "fields": {
+        "sku": "VT-KXMQFSE",
+        "lot": "L20260808-B25",
+        "quantity": "20",
+        "unit": "PCS",
+        "serial": "SN-85C3887DRN",
+        "po_number": "PO-202608-0010",
+        "barcode": "8961492486490"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5135499959578738,
+        "inference_ms": 20810.255257005338,
+        "postprocess_ms": 0.023392000002786517,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20812.779714993667,
+        "pipeline_e2e_ms": 20812.779714993667
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "011_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "011_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nMOTOR PART\nSKU: A1-NHUDKCK\nLOT: L20260802-D76\nQTY: 10 BOX\nS/N: SN-5ES079H2B3\nPO: PO-202608-0011\nCODE: 8968017908735",
+      "detections": [],
+      "fields": {
+        "sku": "A1-NHUDKCK",
+        "lot": "L20260802-D76",
+        "quantity": "10",
+        "unit": "BOX",
+        "serial": "SN-5ES079H2B3",
+        "po_number": "PO-202608-0011",
+        "barcode": "8968017908735"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5812940071336925,
+        "inference_ms": 20908.735656994395,
+        "postprocess_ms": 0.020862993551418185,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20910.655090992805,
+        "pipeline_e2e_ms": 20910.655090992805
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "012_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "012_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nMOTOR PART\nSKU: SP-KZ9UUHG\nLOT: L20260817-C99\nQTY: 1000 BOX\nS/N: SN-56XDMZNMTD\nPO: PO-202608-0012\nREF: I100-AB8S\nCODE: 8981230662926",
+      "detections": [],
+      "fields": {
+        "sku": "SP-KZ9UUHG",
+        "lot": "L20260817-C99",
+        "quantity": "1000",
+        "unit": "BOX",
+        "serial": "SN-56XDMZNMTD",
+        "po_number": "PO-202608-0012",
+        "barcode": "8981230662926"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.502622002386488,
+        "inference_ms": 23863.64194699854,
+        "postprocess_ms": 0.02646399661898613,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23865.753140999004,
+        "pipeline_e2e_ms": 23865.753140999004
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "013_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "013_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nBEARING UNIT\n\nSKU: SP-6AN2V6W\nLOT: L20260821-D13\nQTY: 500 PCS\nS/N: SN-CN66CT51HU\nPO: PO-202608-0013\n\nCODE: 8996265117345",
+      "detections": [],
+      "fields": {
+        "sku": "SP-6AN2V6W",
+        "lot": "L20260821-D13",
+        "quantity": "500",
+        "unit": "PCS",
+        "serial": "SN-CN66CT51HU",
+        "po_number": "PO-202608-0013",
+        "barcode": "8996265117345"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.23505599529016763,
+        "inference_ms": 19265.91600300162,
+        "postprocess_ms": 0.020287989173084497,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19267.267647010158,
+        "pipeline_e2e_ms": 19267.267647010158
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "014_damaged.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "014_damaged.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nMOTOR PART\n\nSKU: VT-0BB0NRX\nLOT: L20260812-B48\nQTY: 1000 BOX\nS/N: SN-MH66N0X7EK\nPO: PO-202608-0014\n\nCODE: 8989083136676",
+      "detections": [],
+      "fields": {
+        "sku": "VT-0BB0NRX",
+        "lot": "L20260812-B48",
+        "quantity": "1000",
+        "unit": "BOX",
+        "serial": "SN-MH66N0X7EK",
+        "po_number": "PO-202608-0014",
+        "barcode": "8989083136676"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.45236699224915355,
+        "inference_ms": 20547.291570997913,
+        "postprocess_ms": 0.01911999424919486,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20549.10985499737,
+        "pipeline_e2e_ms": 20549.10985499737
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "015_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "015_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nMOTOR PART\nSKU: B8-JKHEK6Z\nLOT: L20260801-C52\nQTY: 10 BOX\nS/N: SN-8C0R6YFFVH\nPO: PO-202608-0015\nCODE: 8976496398830",
+      "detections": [],
+      "fields": {
+        "sku": "B8-JKHEK6Z",
+        "lot": "L20260801-C52",
+        "quantity": "10",
+        "unit": "BOX",
+        "serial": "SN-8C0R6YFFVH",
+        "po_number": "PO-202608-0015",
+        "barcode": "8976496398830"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.2853749901987612,
+        "inference_ms": 19510.657751001418,
+        "postprocess_ms": 0.0192320003407076,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19512.18080401304,
+        "pipeline_e2e_ms": 19512.18080401304
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "016_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "016_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nCONTROL MODULE\n\nSKU: VT-9S2LRCL\nLOT: L20260826-B26\nQTY: 200 BOX\nS/N: SN-WQ71HULDXN\nPO: PO-202608-0016\n\nREF: I100-AB8S\nCODE: 8966913824016",
+      "detections": [],
+      "fields": {
+        "sku": "VT-9S2LRCL",
+        "lot": "L20260826-B26",
+        "quantity": "200",
+        "unit": "BOX",
+        "serial": "SN-WQ71HULDXN",
+        "po_number": "PO-202608-0016",
+        "barcode": "8966913824016"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.18539201118983328,
+        "inference_ms": 23968.661689010332,
+        "postprocess_ms": 0.034639990190044045,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23969.695687002968,
+        "pipeline_e2e_ms": 23969.695687002968
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "017_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "017_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nSTEEL BRACKET\nSKU: MX-HD3CWYL\nLOT: L20260823-D18\nQTY: 10 PCS\nS/N: SN-RV0ATNNPAZ\nPO: PO-202608-0017\nCODE: 8999519665641",
+      "detections": [],
+      "fields": {
+        "sku": "MX-HD3CWYL",
+        "lot": "L20260823-D18",
+        "quantity": "10",
+        "unit": "PCS",
+        "serial": "SN-RV0ATNNPAZ",
+        "po_number": "PO-202608-0017",
+        "barcode": "8999519665641"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.28244699933566153,
+        "inference_ms": 18356.570932999603,
+        "postprocess_ms": 0.020576000679284334,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18358.454817003803,
+        "pipeline_e2e_ms": 18358.454817003803
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "018_dark.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "018_dark.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nSTEEL BRACKET\nSKU: B8-Z69ESXB\nLOT: L20260809-C76\nQTY: 100 BOX\nS/N: SN-F5VR13JK44\nPO: PO-202608-0018\nCODE: 8942203634077",
+      "detections": [],
+      "fields": {
+        "sku": "B8-Z69ESXB",
+        "lot": "L20260809-C76",
+        "quantity": "100",
+        "unit": "BOX",
+        "serial": "SN-F5VR13JK44",
+        "po_number": "PO-202608-0018",
+        "barcode": "8942203634077"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.31593500170856714,
+        "inference_ms": 21235.369540998363,
+        "postprocess_ms": 0.030288007110357285,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21237.033984987647,
+        "pipeline_e2e_ms": 21237.033984987647
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "019_dark.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "019_dark.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nSTEEL BRACKET\nSKU: VT-X8ZHKL\nLOT: L20260822-A71\nQTY: 10 SET\nS/N: SN-ZQT5FJSXBA\nPO: PO-202608-0019\nCODE: 8938753087732",
+      "detections": [],
+      "fields": {
+        "sku": "VT-X8ZHKL",
+        "lot": "L20260822-A71",
+        "quantity": "10",
+        "unit": "SET",
+        "serial": "SN-ZQT5FJSXBA",
+        "po_number": "PO-202608-0019",
+        "barcode": "8938753087732"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3009590000147,
+        "inference_ms": 20480.19021000073,
+        "postprocess_ms": 0.027247995603829622,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20481.51678199065,
+        "pipeline_e2e_ms": 20481.51678199065
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": false,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 6,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 0.8571428571428571,
+      "full_label_exact_match": false,
+      "critical_per_field": {
+        "sku": false,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 3,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 0.75,
+      "critical_fields_exact": false
+    }
+  },
+  {
+    "image": "020_vietnamese_mixed.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "020_vietnamese_mixed.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nBEARING UNIT\nSKU: VT-ZSJ3GPM\nLOT: L20260816-B76\nQTY: 10 SET\nS/N: SN-C9YDW2B5F8\nPO: PO-202608-0020\nREF: I100-AB8S\nCODE: 8941287441068",
+      "detections": [],
+      "fields": {
+        "sku": "VT-ZSJ3GPM",
+        "lot": "L20260816-B76",
+        "quantity": "10",
+        "unit": "SET",
+        "serial": "SN-C9YDW2B5F8",
+        "po_number": "PO-202608-0020",
+        "barcode": "8941287441068"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3903030010405928,
+        "inference_ms": 23586.798871998326,
+        "postprocess_ms": 0.031184012186713517,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23588.70262900018,
+        "pipeline_e2e_ms": 23588.70262900018
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "021_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "021_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nMOTOR PART\nSKU: A1-PP0PK91\nLOT: L20260801-D31\nQTY: 20 PCS\nS/N: SN-A5KSMAKLL5\nPO: PO-202608-0021\nCODE: 8980909723295",
+      "detections": [],
+      "fields": {
+        "sku": "A1-PP0PK91",
+        "lot": "L20260801-D31",
+        "quantity": "20",
+        "unit": "PCS",
+        "serial": "SN-A5KSMAKLL5",
+        "po_number": "PO-202608-0021",
+        "barcode": "8980909723295"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5249910027487203,
+        "inference_ms": 20934.139884993783,
+        "postprocess_ms": 0.023935994249768555,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20936.279145011213,
+        "pipeline_e2e_ms": 20936.279145011213
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "022_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "022_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nMOTOR PART\n\nSKU: MX-5QQD4FY\nLOT: L20260806-B56\nQTY: 20 BOX\nS/N: SN-RDRUJBVLBLW\nPO: PO-202608-0022\n\nCODE: 8950137531947",
+      "detections": [],
+      "fields": {
+        "sku": "MX-5QQD4FY",
+        "lot": "L20260806-B56",
+        "quantity": "20",
+        "unit": "BOX",
+        "serial": "SN-RDRUJBVLBLW",
+        "po_number": "PO-202608-0022",
+        "barcode": "8950137531947"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4196960071567446,
+        "inference_ms": 20942.688441005885,
+        "postprocess_ms": 0.028736001695506275,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20944.730436996906,
+        "pipeline_e2e_ms": 20944.730436996906
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": false,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 6,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 0.8571428571428571,
+      "full_label_exact_match": false,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": false,
+        "barcode": true
+      },
+      "critical_correct_fields": 3,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 0.75,
+      "critical_fields_exact": false
+    }
+  },
+  {
+    "image": "023_dark.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "023_dark.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nCONTROL MODULE\n\nSKU: MX-UNYREUT\nLOT: L20260820-D96\nQTY: 1000 BOX\nS/N: SN-XRUTCDSPEF\nPO: PO-202608-0023\n\nCODE: 8992358554897",
+      "detections": [],
+      "fields": {
+        "sku": "MX-UNYREUT",
+        "lot": "L20260820-D96",
+        "quantity": "1000",
+        "unit": "BOX",
+        "serial": "SN-XRUTCDSPEF",
+        "po_number": "PO-202608-0023",
+        "barcode": "8992358554897"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.51743900985457,
+        "inference_ms": 20856.020079998416,
+        "postprocess_ms": 0.03145598748233169,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20858.207964003668,
+        "pipeline_e2e_ms": 20858.207964003668
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "024_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "024_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nMOTOR PART\nSKU: VT-J2RPMCA\nLOT: L20260826-C59\nQTY: 100 BOX\nS/N: SN-PMXD05VKRC\nPO: PO-202608-0024\nREF: B8S5Z2G6\nCODE: 8964613741177",
+      "detections": [],
+      "fields": {
+        "sku": "VT-J2RPMCA",
+        "lot": "L20260826-C59",
+        "quantity": "100",
+        "unit": "BOX",
+        "serial": "SN-PMXD05VKRC",
+        "po_number": "PO-202608-0024",
+        "barcode": "8964613741177"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5312950088409707,
+        "inference_ms": 23508.563236988266,
+        "postprocess_ms": 0.029199989512562752,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23511.214608006412,
+        "pipeline_e2e_ms": 23511.214608006412
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "025_blur.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "025_blur.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nVALVE ASSEMBLY\nSKU: B8-18133EM\nLOT: L20260808-B83\nQTY: 200 BOX\nS/N: SN-WEESQGRV7P\nPO: PO-202608-0025\nCODE: 8952400222897",
+      "detections": [],
+      "fields": {
+        "sku": "B8-18133EM",
+        "lot": "L20260808-B83",
+        "quantity": "200",
+        "unit": "BOX",
+        "serial": "SN-WEESQGRV7P",
+        "po_number": "PO-202608-0025",
+        "barcode": "8952400222897"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3843829908873886,
+        "inference_ms": 21461.22141199885,
+        "postprocess_ms": 0.03875199763569981,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21463.02833801019,
+        "pipeline_e2e_ms": 21463.02833801019
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "026_damaged.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "026_damaged.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nCONTROL MODULE\nSKU: MX-6NPJJT7\nLOT: L20260811-C61\nQTY: 50 SET\nS/N: SN-D8ZMYM3UJR\nPO: PO-202608-0026\nCODE: 8951633847325",
+      "detections": [],
+      "fields": {
+        "sku": "MX-6NPJJT7",
+        "lot": "L20260811-C61",
+        "quantity": "50",
+        "unit": "SET",
+        "serial": "SN-D8ZMYM3UJR",
+        "po_number": "PO-202608-0026",
+        "barcode": "8951633847325"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5506390007212758,
+        "inference_ms": 20850.337623996893,
+        "postprocess_ms": 0.013791999663226306,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20852.37475800386,
+        "pipeline_e2e_ms": 20852.37475800386
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "027_damaged.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "027_damaged.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nCONTROL MODULE\nSKU: MX-HJ7ALHQ\nLOT: L20260806-A46\nQTY: 50 BOX\nS/N: SN-2VBTMDWQHR\nPO: PO-202608-0027\nCODE: 8971995286480",
+      "detections": [],
+      "fields": {
+        "sku": "MX-HJ7ALHQ",
+        "lot": "L20260806-A46",
+        "quantity": "50",
+        "unit": "BOX",
+        "serial": "SN-2VBTMDWQHR",
+        "po_number": "PO-202608-0027",
+        "barcode": "8971995286480"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.42761499935295433,
+        "inference_ms": 20619.321111997124,
+        "postprocess_ms": 0.02081599086523056,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20621.450004997314,
+        "pipeline_e2e_ms": 20621.450004997314
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "028_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "028_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nSTEEL BRACKET\n\nSKU: SP-MDMJ224\nLOT: L20260827-A69\nQTY: 100 PCS\nS/N: SN-6Q1GY8VR3G\nPO: PO-202608-0028\n\nREF: 0011L5S8B\nCODE: 8916094677166",
+      "detections": [],
+      "fields": {
+        "sku": "SP-MDMJ224",
+        "lot": "L20260827-A69",
+        "quantity": "100",
+        "unit": "PCS",
+        "serial": "SN-6Q1GY8VR3G",
+        "po_number": "PO-202608-0028",
+        "barcode": "8916094677166"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.709998988895677,
+        "inference_ms": 25164.477508005803,
+        "postprocess_ms": 0.031072006095200777,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 25167.086225003004,
+        "pipeline_e2e_ms": 25167.086225003004
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "029_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "029_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nVALVE ASSEMBLY\nSKU: SP-JY4TM46\nLOT: L20260821-A22\nQTY: 10 SET\nS/N: SN-L62Z2VHV0A\nPO: PO-202608-0029\nCODE: 8953587942600",
+      "detections": [],
+      "fields": {
+        "sku": "SP-JY4TM46",
+        "lot": "L20260821-A22",
+        "quantity": "10",
+        "unit": "SET",
+        "serial": "SN-L62Z2VHV0A",
+        "po_number": "PO-202608-0029",
+        "barcode": "8953587942600"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.6520150054711848,
+        "inference_ms": 21228.919169996516,
+        "postprocess_ms": 0.030816008802503347,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21231.384015001822,
+        "pipeline_e2e_ms": 21231.384015001822
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "030_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "030_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nBEARING UNIT\nSKU: SP-UP8B7KL\nLOT: L20260819-B73\nQTY: 10 SET\nS/N: SN-34MEUNBV0N\nPO: PO-202608-0030\nCODE: 8937386603374",
+      "detections": [],
+      "fields": {
+        "sku": "SP-UP8B7KL",
+        "lot": "L20260819-B73",
+        "quantity": "10",
+        "unit": "SET",
+        "serial": "SN-34MEUNBV0N",
+        "po_number": "PO-202608-0030",
+        "barcode": "8937386603374"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5054239882156253,
+        "inference_ms": 20854.47619399929,
+        "postprocess_ms": 0.033424003049731255,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20856.651727997814,
+        "pipeline_e2e_ms": 20856.651727997814
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "031_damaged.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "031_damaged.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nVALVE ASSEMBLY\nSKU: B8-CJZ6A06\nLOT: L20260828-C11\nQTY: 100 PCS\nS/N: SN-0PJNP00WSK\nPO: PO-202608-0031\nCODE: 8982048119024",
+      "detections": [],
+      "fields": {
+        "sku": "B8-CJZ6A06",
+        "lot": "L20260828-C11",
+        "quantity": "100",
+        "unit": "PCS",
+        "serial": "SN-0PJNP00WSK",
+        "po_number": "PO-202608-0031",
+        "barcode": "8982048119024"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5081749986857176,
+        "inference_ms": 21450.990103010554,
+        "postprocess_ms": 0.0196639884961769,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21453.01600500534,
+        "pipeline_e2e_ms": 21453.01600500534
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "032_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "032_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nSTEEL BRACKET\nSKU: B8-RXKKX64L\nLOT: L20260808-A61\nQTY: 20 PCS\nS/N: SN-7T7F9F17AP\nPO: PO-202608-0032\nREF: 00I1L5S8B\nCODE: 8997726592908",
+      "detections": [],
+      "fields": {
+        "sku": "B8-RXKKX64L",
+        "lot": "L20260808-A61",
+        "quantity": "20",
+        "unit": "PCS",
+        "serial": "SN-7T7F9F17AP",
+        "po_number": "PO-202608-0032",
+        "barcode": "8997726592908"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.30038299155421555,
+        "inference_ms": 24557.040448999032,
+        "postprocess_ms": 0.03643200034275651,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24558.586223007296,
+        "pipeline_e2e_ms": 24558.586223007296
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": false,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 6,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 0.8571428571428571,
+      "full_label_exact_match": false,
+      "critical_per_field": {
+        "sku": false,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 3,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 0.75,
+      "critical_fields_exact": false
+    }
+  },
+  {
+    "image": "033_dark.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "033_dark.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL BEARING UNIT\nSKU: B8-SZPJ3HW\nLOT: L20260823-D73\nQTY: 50 BOX\nS/N: SN-AEPCJSJ0L6\nPO: PO-202608-0033\nCODE: 8992893227513",
+      "detections": [],
+      "fields": {
+        "sku": "B8-SZPJ3HW",
+        "lot": "L20260823-D73",
+        "quantity": "50",
+        "unit": "BOX",
+        "serial": "SN-AEPCJSJ0L6",
+        "po_number": "PO-202608-0033",
+        "barcode": "8992893227513"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.36593599361367524,
+        "inference_ms": 20934.474954003235,
+        "postprocess_ms": 0.03649599966593087,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20936.35551200714,
+        "pipeline_e2e_ms": 20936.35551200714
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "034_blur.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "034_blur.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nSTEEL BRACKET\n\nSKU: B8-LSSEPNF\nLOT: L20260802-C18\nQTY: 50 SET\nS/N: SN-LHLVC00CU2\nPO: PO-202608-0034\n\nCODE: 8940238020383",
+      "detections": [],
+      "fields": {
+        "sku": "B8-LSSEPNF",
+        "lot": "L20260802-C18",
+        "quantity": "50",
+        "unit": "SET",
+        "serial": "SN-LHLVC00CU2",
+        "po_number": "PO-202608-0034",
+        "barcode": "8940238020383"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3367520112078637,
+        "inference_ms": 20927.08692899032,
+        "postprocess_ms": 0.03156800812575966,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20928.855232006754,
+        "pipeline_e2e_ms": 20928.855232006754
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "035_dark.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "035_dark.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nCONTROL MODULE\nSKU: SP-YF6LG5G\nLOT: L20260820-A51\nQTY: 20 SET\nS/N: SN-6D04TUG691\nPO: PO-202608-0035\nCODE: 8941084555787",
+      "detections": [],
+      "fields": {
+        "sku": "SP-YF6LG5G",
+        "lot": "L20260820-A51",
+        "quantity": "20",
+        "unit": "SET",
+        "serial": "SN-6D04TUG691",
+        "po_number": "PO-202608-0035",
+        "barcode": "8941084555787"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.38299200241453946,
+        "inference_ms": 21075.302490993636,
+        "postprocess_ms": 0.025487999664619565,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21076.898650004296,
+        "pipeline_e2e_ms": 21076.898650004296
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "036_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "036_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nVALVE ASSEMBLY\nSKU: MX-1JVFHWE\nLOT: L20260812-D42\nQTY: 200 SET\nS/N: SN-7FEWFD6CVN\nPO: PO-202608-0036\nREF: 00I1L5S8B\nCODE: 8943775832314",
+      "detections": [],
+      "fields": {
+        "sku": "MX-1JVFHWE",
+        "lot": "L20260812-D42",
+        "quantity": "200",
+        "unit": "SET",
+        "serial": "SN-7FEWFD6CVN",
+        "po_number": "PO-202608-0036",
+        "barcode": "8943775832314"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3400150017114356,
+        "inference_ms": 24034.06144499604,
+        "postprocess_ms": 0.0632479932392016,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24035.653876009746,
+        "pipeline_e2e_ms": 24035.653876009746
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "037_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "037_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nBEARING UNIT\nSKU: B8-J1EDW8G\nLOT: L20260809-C45\nQTY: 50 SET\nS/N: SN-9Y87UTJAGM\nPO: PO-202608-0037\nCODE: 8916661205088",
+      "detections": [],
+      "fields": {
+        "sku": "B8-J1EDW8G",
+        "lot": "L20260809-C45",
+        "quantity": "50",
+        "unit": "SET",
+        "serial": "SN-9Y87UTJAGM",
+        "po_number": "PO-202608-0037",
+        "barcode": "8916661205088"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.23123201390262693,
+        "inference_ms": 18875.90394099243,
+        "postprocess_ms": 0.027376008802093565,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18877.340530991205,
+        "pipeline_e2e_ms": 18877.340530991205
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "038_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "038_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nCONTROL MODULE\n\nSKU: SP-1UC9TCG\nLOT: L20260823-C97\nQTY: 100 SET\nS/N: SN-1VL6L9QQAX\nPO: PO-202608-0038\n\nCODE: 8974725386892",
+      "detections": [],
+      "fields": {
+        "sku": "SP-1UC9TCG",
+        "lot": "L20260823-C97",
+        "quantity": "100",
+        "unit": "SET",
+        "serial": "SN-1VL6L9QQAX",
+        "po_number": "PO-202608-0038",
+        "barcode": "8974725386892"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4623669956345111,
+        "inference_ms": 18956.42742801283,
+        "postprocess_ms": 0.01931200677063316,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18958.738369998173,
+        "pipeline_e2e_ms": 18958.738369998173
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "039_vietnamese_mixed.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "039_vietnamese_mixed.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nSTEEL BRACKET\nSKU: VT-SUVWENJ\nLOT: L20260806-D87\nQTY: 100 BOX\nS/N: SN-VVS6EBYFBS\nPO: PO-202608-0039\nCODE: 8926481828221",
+      "detections": [],
+      "fields": {
+        "sku": "VT-SUVWENJ",
+        "lot": "L20260806-D87",
+        "quantity": "100",
+        "unit": "BOX",
+        "serial": "SN-VVS6EBYFBS",
+        "po_number": "PO-202608-0039",
+        "barcode": "8926481828221"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5420959932962433,
+        "inference_ms": 20773.69936100149,
+        "postprocess_ms": 0.04078299389220774,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20776.22382300615,
+        "pipeline_e2e_ms": 20776.22382300615
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "040_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "040_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nMOTOR PART\n\nSKU: A1-32J4ZWM\nLOT: L20260815-A21\nQTY: 50 SET\nS/N: SN-845S632M6A\nPO: PO-202608-0040\n\nREF: B8S5Z2G6\nCODE: 8916033755547",
+      "detections": [],
+      "fields": {
+        "sku": "A1-32J4ZWM",
+        "lot": "L20260815-A21",
+        "quantity": "50",
+        "unit": "SET",
+        "serial": "SN-845S632M6A",
+        "po_number": "PO-202608-0040",
+        "barcode": "8916033755547"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3497599973343313,
+        "inference_ms": 24631.765697995434,
+        "postprocess_ms": 0.04019199695903808,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24634.008128996356,
+        "pipeline_e2e_ms": 24634.008128996356
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "041_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "041_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nVALVE ASSEMBLY\n\nSKU: SP-YCBKPEV\nLOT: L20260814-C29\nQTY: 1000 BOX\nS/N: SN-DMSXJLK6CR\nPO: PO-202608-0041\n\nCODE: 8944478742649",
+      "detections": [],
+      "fields": {
+        "sku": "SP-YCBKPEV",
+        "lot": "L20260814-C29",
+        "quantity": "1000",
+        "unit": "BOX",
+        "serial": "SN-DMSXJLK6CR",
+        "po_number": "PO-202608-0041",
+        "barcode": "8944478742649"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.29350399563554674,
+        "inference_ms": 19337.992183995084,
+        "postprocess_ms": 0.030960000003688037,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19339.64335100609,
+        "pipeline_e2e_ms": 19339.64335100609
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "042_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "042_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nMOTOR PART\n\nSKU: VT-Z1MAL40\nLOT: L20260816-A67\nQTY: 100 PCS\nS/N: SN-8C1G35EEJX\nPO: PO-202608-0042\n\nCODE: 8953509125955",
+      "detections": [],
+      "fields": {
+        "sku": "VT-Z1MAL40",
+        "lot": "L20260816-A67",
+        "quantity": "100",
+        "unit": "PCS",
+        "serial": "SN-8C1G35EEJX",
+        "po_number": "PO-202608-0042",
+        "barcode": "8953509125955"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.20511899492703378,
+        "inference_ms": 19180.146104001324,
+        "postprocess_ms": 0.026224006433039904,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19181.52077400009,
+        "pipeline_e2e_ms": 19181.52077400009
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "043_vietnamese_mixed.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "043_vietnamese_mixed.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nMOTOR PART\nSKU: A1-3LH95L9\nLOT: L20260824-D83\nQTY: 200 SET\nS/N: SN-94AVAFAEBVY\nPO: PO-202608-0043\nCODE: 8940570101523",
+      "detections": [],
+      "fields": {
+        "sku": "A1-3LH95L9",
+        "lot": "L20260824-D83",
+        "quantity": "200",
+        "unit": "SET",
+        "serial": "SN-94AVAFAEBVY",
+        "po_number": "PO-202608-0043",
+        "barcode": "8940570101523"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5131200014147907,
+        "inference_ms": 21525.52867999475,
+        "postprocess_ms": 0.025631990865804255,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21527.750118009862,
+        "pipeline_e2e_ms": 21527.750118009862
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": false,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 6,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 0.8571428571428571,
+      "full_label_exact_match": false,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": false,
+        "barcode": true
+      },
+      "critical_correct_fields": 3,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 0.75,
+      "critical_fields_exact": false
+    }
+  },
+  {
+    "image": "044_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "044_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nBEARING UNIT\nSKU: SP-3AR1SQQ\nLOT: L20260803-C49\nQTY: 1000 SET\nS/N: SN-FT0W3JG46R\nPO: PO-202608-0044\nREF: B8S5Z2G6\nCODE: 8963338684761",
+      "detections": [],
+      "fields": {
+        "sku": "SP-3AR1SQQ",
+        "lot": "L20260803-C49",
+        "quantity": "1000",
+        "unit": "SET",
+        "serial": "SN-FT0W3JG46R",
+        "po_number": "PO-202608-0044",
+        "barcode": "8963338684761"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.445807003416121,
+        "inference_ms": 24184.133345013834,
+        "postprocess_ms": 0.03297600778751075,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24186.191871995106,
+        "pipeline_e2e_ms": 24186.191871995106
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "045_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "045_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nMOTOR PART\nSKU: B8-BDYFPVP\nLOT: L20260812-C59\nQTY: 10 SET\nS/N: SN-Q2TQ4M3GNF\nPO: PO-202608-0045\nCODE: 8920084157465",
+      "detections": [],
+      "fields": {
+        "sku": "B8-BDYFPVP",
+        "lot": "L20260812-C59",
+        "quantity": "10",
+        "unit": "SET",
+        "serial": "SN-Q2TQ4M3GNF",
+        "po_number": "PO-202608-0045",
+        "barcode": "8920084157465"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5338720075087622,
+        "inference_ms": 20840.90665799158,
+        "postprocess_ms": 0.028848007787019014,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20843.09702500468,
+        "pipeline_e2e_ms": 20843.09702500468
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "046_dark.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "046_dark.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nBEARING UNIT\nSKU: VT-8E38207\nLOT: L20260803-A16\nQTY: 200 BOX\nS/N: SN-FAMCWYJA1P\nPO: PO-202608-0046\nCODE: 8931372811875",
+      "detections": [],
+      "fields": {
+        "sku": "VT-8E38207",
+        "lot": "L20260803-A16",
+        "quantity": "200",
+        "unit": "BOX",
+        "serial": "SN-FAMCWYJA1P",
+        "po_number": "PO-202608-0046",
+        "barcode": "8931372811875"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4154560010647401,
+        "inference_ms": 21215.9822370013,
+        "postprocess_ms": 0.02953600778710097,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21217.69774099812,
+        "pipeline_e2e_ms": 21217.69774099812
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "047_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "047_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nSTEEL BRACKET\n\nSKU: A1-9RZVEAZ\nLOT: L20260811-C18\nQTY: 1000 BOX\nS/N: SN-CF5YAQQHD5\nPO: PO-202608-0047\n\nCODE: 8959637100490",
+      "detections": [],
+      "fields": {
+        "sku": "A1-9RZVEAZ",
+        "lot": "L20260811-C18",
+        "quantity": "1000",
+        "unit": "BOX",
+        "serial": "SN-CF5YAQQHD5",
+        "po_number": "PO-202608-0047",
+        "barcode": "8959637100490"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4898390034213662,
+        "inference_ms": 19178.034807002405,
+        "postprocess_ms": 0.031104005756787956,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19180.1460209972,
+        "pipeline_e2e_ms": 19180.1460209972
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "048_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "048_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nSTEEL BRACKET\n\nSKU: MX-KCZADMS\nLOT: L20260802-A64\nQTY: 50 BOX\nS/N: SN-C0ZB9GVM7Y\nPO: PO-202608-0048\n\nREF: 00I1L5S8B\nCODE: 8912239902034",
+      "detections": [],
+      "fields": {
+        "sku": "MX-KCZADMS",
+        "lot": "L20260802-A64",
+        "quantity": "50",
+        "unit": "BOX",
+        "serial": "SN-C0ZB9GVM7Y",
+        "po_number": "PO-202608-0048",
+        "barcode": "8912239902034"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.7267190085258335,
+        "inference_ms": 24605.48347599979,
+        "postprocess_ms": 0.031311996281147,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24608.131347005838,
+        "pipeline_e2e_ms": 24608.131347005838
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "049_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "049_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nSTEEL BRACKET\nSKU: B8-W50JMT6\nLOT: L20260822-D49\nQTY: 1000 SET\nS/N: SN-1TK8Y70ANK\nPO: PO-202608-0049\nCODE: 8945046030405",
+      "detections": [],
+      "fields": {
+        "sku": "B8-W50JMT6",
+        "lot": "L20260822-D49",
+        "quantity": "1000",
+        "unit": "SET",
+        "serial": "SN-1TK8Y70ANK",
+        "po_number": "PO-202608-0049",
+        "barcode": "8945046030405"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5596150003839284,
+        "inference_ms": 22268.341168994084,
+        "postprocess_ms": 0.025039989850483835,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 22270.655504005845,
+        "pipeline_e2e_ms": 22270.655504005845
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "050_damaged.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "050_damaged.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nMOTOR PART\nSKU: SP-BXRXN76\nLOT: L20260813-D13\nQTY: 10 BOX\nS/N: SN-MDR2NMP8CH\nPO: PO-202608-0050\nCODE: 8930137999955",
+      "detections": [],
+      "fields": {
+        "sku": "SP-BXRXN76",
+        "lot": "L20260813-D13",
+        "quantity": "10",
+        "unit": "BOX",
+        "serial": "SN-MDR2NMP8CH",
+        "po_number": "PO-202608-0050",
+        "barcode": "8930137999955"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5246079963399097,
+        "inference_ms": 21073.614093009382,
+        "postprocess_ms": 0.027247995603829622,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21075.85940300487,
+        "pipeline_e2e_ms": 21075.85940300487
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "051_blur.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "051_blur.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nBEARING UNIT\n\nSKU: VT-P503V0D\nLOT: L20260826-D39\nQTY: 200 PCS\nS/N: SN-LSW88RGBUE\nPO: PO-202608-0051\n\nCODE: 8921324426139",
+      "detections": [],
+      "fields": {
+        "sku": "VT-P503V0D",
+        "lot": "L20260826-D39",
+        "quantity": "200",
+        "unit": "PCS",
+        "serial": "SN-LSW88RGBUE",
+        "po_number": "PO-202608-0051",
+        "barcode": "8921324426139"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.41691199294291437,
+        "inference_ms": 19875.039849997847,
+        "postprocess_ms": 0.023984001018106937,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19876.619882008526,
+        "pipeline_e2e_ms": 19876.619882008526
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "052_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "052_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nBEARING UNIT\nSKU: A1-U99BAVQ\nLOT: L20260806-C22\nQTY: 1000 PCS\nS/N: SN-5L1MY4BZW4\nPO: PO-202608-0052\nREF: I100-AB8S\nCODE: 8937471138286",
+      "detections": [],
+      "fields": {
+        "sku": "A1-U99BAVQ",
+        "lot": "L20260806-C22",
+        "quantity": "1000",
+        "unit": "PCS",
+        "serial": "SN-5L1MY4BZW4",
+        "po_number": "PO-202608-0052",
+        "barcode": "8937471138286"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.48719999904278666,
+        "inference_ms": 25518.2771809923,
+        "postprocess_ms": 0.04979199729859829,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 25520.35057199828,
+        "pipeline_e2e_ms": 25520.35057199828
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "053_blur.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "053_blur.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nCONTROL MODULE\nSKU: B8-WH3E1VE\nLOT: L20260826-D58\nQTY: 10 SET\nS/N: SN-GCVV34G74Q\nPO: PO-202608-0053\nCODE: 8927181553074",
+      "detections": [],
+      "fields": {
+        "sku": "B8-WH3E1VE",
+        "lot": "L20260826-D58",
+        "quantity": "10",
+        "unit": "SET",
+        "serial": "SN-GCVV34G74Q",
+        "po_number": "PO-202608-0053",
+        "barcode": "8927181553074"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.31211199529934675,
+        "inference_ms": 23823.6140730005,
+        "postprocess_ms": 0.023264001356437802,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23825.04218700342,
+        "pipeline_e2e_ms": 23825.04218700342
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "054_reflection.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "054_reflection.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nSTEEL BRACKET\nSKU: VT-UMGJ3ZS\nLOT: L20260819-B62\nQTY: 500 PCS\nS/N: SN-D0US432GPG\nPO: PO-202608-0054\nCODE: 8998496366161",
+      "detections": [],
+      "fields": {
+        "sku": "VT-UMGJ3ZS",
+        "lot": "L20260819-B62",
+        "quantity": "500",
+        "unit": "PCS",
+        "serial": "SN-D0US432GPG",
+        "po_number": "PO-202608-0054",
+        "barcode": "8998496366161"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.2908650058088824,
+        "inference_ms": 25428.81044599926,
+        "postprocess_ms": 0.026559995603747666,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 25430.20638600865,
+        "pipeline_e2e_ms": 25430.20638600865
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "055_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "055_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nBEARING UNIT\n\nSKU: MX-5H2N09W\nLOT: L20260824-B82\nQTY: 50 SET\nS/N: SN-F0K7B84FKF\nPO: PO-202608-0055\n\nCODE: 8958215652885",
+      "detections": [],
+      "fields": {
+        "sku": "MX-5H2N09W",
+        "lot": "L20260824-B82",
+        "quantity": "50",
+        "unit": "SET",
+        "serial": "SN-F0K7B84FKF",
+        "po_number": "PO-202608-0055",
+        "barcode": "8958215652885"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.2849770098691806,
+        "inference_ms": 21656.28285400453,
+        "postprocess_ms": 0.023472006432712078,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21657.617033997667,
+        "pipeline_e2e_ms": 21657.617033997667
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "056_blur.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "056_blur.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nBEARING UNIT\nSKU: A1-VXC743X\nLOT: L20260804-D53\nQTY: 500 SET\nS/N: SN-UMNTWYPK2H\nPO: PO-202608-0056\nREF: O0I1L5S8B\nCODE: 8934967555812",
+      "detections": [],
+      "fields": {
+        "sku": "A1-VXC743X",
+        "lot": "L20260804-D53",
+        "quantity": "500",
+        "unit": "SET",
+        "serial": "SN-UMNTWYPK2H",
+        "po_number": "PO-202608-0056",
+        "barcode": "8934967555812"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3860809956677258,
+        "inference_ms": 24196.639775997028,
+        "postprocess_ms": 0.033343996619805694,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24198.325347999344,
+        "pipeline_e2e_ms": 24198.325347999344
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "057_damaged.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "057_damaged.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nMOTOR PART\nSKU: B8-NYAU9JK\nLOT: L20260820-B28\nQTY: 100 SET\nS/N: SN-RQRMBB4150\nPO: PO-202608-0057\nCODE: 8921430805856",
+      "detections": [],
+      "fields": {
+        "sku": "B8-NYAU9JK",
+        "lot": "L20260820-B28",
+        "quantity": "100",
+        "unit": "SET",
+        "serial": "SN-RQRMBB4150",
+        "po_number": "PO-202608-0057",
+        "barcode": "8921430805856"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4311049997340888,
+        "inference_ms": 18802.261625998653,
+        "postprocess_ms": 0.037520003388635814,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18804.330959013896,
+        "pipeline_e2e_ms": 18804.330959013896
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "058_reflection.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "058_reflection.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nVALVE ASSEMBLY\n\nSKU: MX-DXE2V8P\nLOT: L20260820-B98\nQTY: 200 BOX\nS/N: SN-ABTDWG8KAH\nPO: PO-202608-0058\n\nCODE: 8946614299156",
+      "detections": [],
+      "fields": {
+        "sku": "MX-DXE2V8P",
+        "lot": "L20260820-B98",
+        "quantity": "200",
+        "unit": "BOX",
+        "serial": "SN-ABTDWG8KAH",
+        "po_number": "PO-202608-0058",
+        "barcode": "8946614299156"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.45188899093773216,
+        "inference_ms": 19044.464967999374,
+        "postprocess_ms": 0.03699200169648975,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19046.29860399291,
+        "pipeline_e2e_ms": 19046.29860399291
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "059_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "059_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nBEARING UNIT\nSKU: B8-F2MSGFW\nLOT: L20260819-C80\nQTY: 10 BOX\nS/N: SN-RSKZEFDZ2T\nPO: PO-202608-0059\nCODE: 8913184838633",
+      "detections": [],
+      "fields": {
+        "sku": "B8-F2MSGFW",
+        "lot": "L20260819-C80",
+        "quantity": "10",
+        "unit": "BOX",
+        "serial": "SN-RSKZEFDZ2T",
+        "po_number": "PO-202608-0059",
+        "barcode": "8913184838633"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5130089994054288,
+        "inference_ms": 20702.429876997485,
+        "postprocess_ms": 0.025264002033509314,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20704.286409003544,
+        "pipeline_e2e_ms": 20704.286409003544
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "060_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "060_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nBEARING UNIT\nSKU: MX-KU2CWSM\nLOT: L20260804-B20\nQTY: 20 PCS\nS/N: SN-CFMRT7P86X\nPO: PO-202608-0060\nREF: I100-AB8S\nCODE: 8961104248628",
+      "detections": [],
+      "fields": {
+        "sku": "MX-KU2CWSM",
+        "lot": "L20260804-B20",
+        "quantity": "20",
+        "unit": "PCS",
+        "serial": "SN-CFMRT7P86X",
+        "po_number": "PO-202608-0060",
+        "barcode": "8961104248628"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5466729926411062,
+        "inference_ms": 23579.356507005286,
+        "postprocess_ms": 0.028063994250260293,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23581.765902999905,
+        "pipeline_e2e_ms": 23581.765902999905
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "061_damaged.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "061_damaged.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nBEARING UNIT\n\nSKU: MX-8JCCXQ7\nLOT: L20260817-D81\nQTY: 200 PCS\nS/N: SN-BBYUH62VQN\nPO: PO-202608-0061\n\nCODE: 8975421549495",
+      "detections": [],
+      "fields": {
+        "sku": "MX-8JCCXQ7",
+        "lot": "L20260817-D81",
+        "quantity": "200",
+        "unit": "PCS",
+        "serial": "SN-BBYUH62VQN",
+        "po_number": "PO-202608-0061",
+        "barcode": "8975421549495"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4394569987198338,
+        "inference_ms": 19120.145176988444,
+        "postprocess_ms": 0.032064999686554074,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19122.178222998627,
+        "pipeline_e2e_ms": 19122.178222998627
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "062_dark.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "062_dark.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nCONTROL MODULE\nSKU: A1-3GR1C9U\nLOT: L20260808-D69\nQTY: 1000 BOX\nS/N: SN-0APC13NG2C\nPO: PO-202608-0062\nCODE: 8936460451381",
+      "detections": [],
+      "fields": {
+        "sku": "A1-3GR1C9U",
+        "lot": "L20260808-D69",
+        "quantity": "1000",
+        "unit": "BOX",
+        "serial": "SN-0APC13NG2C",
+        "po_number": "PO-202608-0062",
+        "barcode": "8936460451381"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.45982499432284385,
+        "inference_ms": 19260.657627004548,
+        "postprocess_ms": 0.024335997295565903,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19262.28599800379,
+        "pipeline_e2e_ms": 19262.28599800379
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "063_reflection.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "063_reflection.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nVALVE ASSEMBLY\nSKU: SP-0FBCHY5\nLOT: L20260807-B72\nQTY: 1000 SET\nS/N: SN-61G6T1JQRL\nPO: PO-202608-0063\nCODE: 8977559034651",
+      "detections": [],
+      "fields": {
+        "sku": "SP-0FBCHY5",
+        "lot": "L20260807-B72",
+        "quantity": "1000",
+        "unit": "SET",
+        "serial": "SN-61G6T1JQRL",
+        "po_number": "PO-202608-0063",
+        "barcode": "8977559034651"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5113609950058162,
+        "inference_ms": 21605.402289002086,
+        "postprocess_ms": 0.022079999325796962,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21607.380100002047,
+        "pipeline_e2e_ms": 21607.380100002047
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "064_damaged.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "064_damaged.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nBEARING UNIT\nSKU: VT-6ZA6SSJ\nLOT: L20260823-C14\nQTY: 1000 PCS\nS/N: SN-Q6H78JE3SC\nPO: PO-202608-0064\nREF: I100-AB8S\nCODE: 8923105308930",
+      "detections": [],
+      "fields": {
+        "sku": "VT-6ZA6SSJ",
+        "lot": "L20260823-C14",
+        "quantity": "1000",
+        "unit": "PCS",
+        "serial": "SN-Q6H78JE3SC",
+        "po_number": "PO-202608-0064",
+        "barcode": "8923105308930"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4304809990571812,
+        "inference_ms": 23957.495951995952,
+        "postprocess_ms": 0.02948798646684736,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23959.84753999801,
+        "pipeline_e2e_ms": 23959.84753999801
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "065_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "065_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nSTEEL BRACKET\n\nSKU: B8-QVRD06G\nLOT: L20260808-C81\nQTY: 200 SET\nS/N: SN-E9CDC3TK93\nPO: PO-202608-0065\n\nCODE: 8960377465748",
+      "detections": [],
+      "fields": {
+        "sku": "B8-QVRD06G",
+        "lot": "L20260808-C81",
+        "quantity": "200",
+        "unit": "SET",
+        "serial": "SN-E9CDC3TK93",
+        "po_number": "PO-202608-0065",
+        "barcode": "8960377465748"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.29760100005660206,
+        "inference_ms": 19108.190644008573,
+        "postprocess_ms": 0.02502399729564786,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19109.545094994246,
+        "pipeline_e2e_ms": 19109.545094994246
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "066_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "066_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nMOTOR PART\n\nSKU: B8-GNCGCZS\nLOT: L20260822-D98\nQTY: 500 SET\nS/N: SN-ZQZ60VRWE3\nPO: PO-202608-0066\n\nCODE: 8950104200159",
+      "detections": [],
+      "fields": {
+        "sku": "B8-GNCGCZS",
+        "lot": "L20260822-D98",
+        "quantity": "500",
+        "unit": "SET",
+        "serial": "SN-ZQZ60VRWE3",
+        "po_number": "PO-202608-0066",
+        "barcode": "8950104200159"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5114889936521649,
+        "inference_ms": 19390.251510005328,
+        "postprocess_ms": 0.026271998649463058,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19392.316986006335,
+        "pipeline_e2e_ms": 19392.316986006335
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "067_reflection.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "067_reflection.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nSTEEL BRACKET\nSKU: VT-UZLLYJB\nLOT: L20260805-D91\nQTY: 1000 PCS\nS/N: SN-8TDJK273GR\nPO: PO-202608-0067\nCODE: 8957512664161",
+      "detections": [],
+      "fields": {
+        "sku": "VT-UZLLYJB",
+        "lot": "L20260805-D91",
+        "quantity": "1000",
+        "unit": "PCS",
+        "serial": "SN-8TDJK273GR",
+        "po_number": "PO-202608-0067",
+        "barcode": "8957512664161"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3950890095438808,
+        "inference_ms": 21358.186315992498,
+        "postprocess_ms": 0.02617599966470152,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21359.872638990055,
+        "pipeline_e2e_ms": 21359.872638990055
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "068_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "068_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nVALVE ASSEMBLY\nSKU: SP-LC657Y8\nLOT: L20260822-A94\nQTY: 500 SET\nS/N: SN-6R5SAQVRMB\nPO: PO-202608-0068\nREF: B8S5Z2G6\nCODE: 8984318762839",
+      "detections": [],
+      "fields": {
+        "sku": "SP-LC657Y8",
+        "lot": "L20260822-A94",
+        "quantity": "500",
+        "unit": "SET",
+        "serial": "SN-6R5SAQVRMB",
+        "po_number": "PO-202608-0068",
+        "barcode": "8984318762839"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.6557450105901808,
+        "inference_ms": 24104.344698993373,
+        "postprocess_ms": 0.06184000812936574,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24106.769325997448,
+        "pipeline_e2e_ms": 24106.769325997448
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "069_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "069_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nSTEEL BRACKET\n\nSKU: SP-G8NUZZX\nLOT: L20260814-C15\nQTY: 20 BOX\nS/N: SN-JHL9PSJ7ZV\nPO: PO-202608-0069\n\nCODE: 8953681254461",
+      "detections": [],
+      "fields": {
+        "sku": "SP-G8NUZZX",
+        "lot": "L20260814-C15",
+        "quantity": "20",
+        "unit": "BOX",
+        "serial": "SN-JHL9PSJ7ZV",
+        "po_number": "PO-202608-0069",
+        "barcode": "8953681254461"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.2737930044531822,
+        "inference_ms": 18814.808580005774,
+        "postprocess_ms": 0.031311996281147,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18816.27349399787,
+        "pipeline_e2e_ms": 18816.27349399787
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "070_reflection.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "070_reflection.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nVALVE ASSEMBLY\nSKU: SP-BJ85BP8\nLOT: L20260805-C61\nQTY: 200 PCS\nS/N: SN-L85C8K7E39\nPO: PO-202608-0070\nCODE: 8927139293206",
+      "detections": [],
+      "fields": {
+        "sku": "SP-BJ85BP8",
+        "lot": "L20260805-C61",
+        "quantity": "200",
+        "unit": "PCS",
+        "serial": "SN-L85C8K7E39",
+        "po_number": "PO-202608-0070",
+        "barcode": "8927139293206"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5494409997481853,
+        "inference_ms": 21455.752726003993,
+        "postprocess_ms": 0.028736001695506275,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21457.858522000606,
+        "pipeline_e2e_ms": 21457.858522000606
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "071_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "071_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nSTEEL BRACKET\n\nSKU: A1-F1G24XP\nLOT: L20260827-B42\nQTY: 1000 SET\nS/N: SN-2MYUVSC64V\nPO: PO-202608-0071\n\nCODE: 8970075359684",
+      "detections": [],
+      "fields": {
+        "sku": "A1-F1G24XP",
+        "lot": "L20260827-B42",
+        "quantity": "1000",
+        "unit": "SET",
+        "serial": "SN-2MYUVSC64V",
+        "po_number": "PO-202608-0071",
+        "barcode": "8970075359684"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3981120098615065,
+        "inference_ms": 19403.461052002967,
+        "postprocess_ms": 0.019871993572451174,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19404.877278007916,
+        "pipeline_e2e_ms": 19404.877278007916
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "072_dark.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "072_dark.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nBEARING UNIT\nSKU: MX-2WZJ1BL\nLOT: L20260817-B39\nQTY: 20 SET\nS/N: SN-G4GC1ZWNLC\nPO: PO-202608-0072\nREF: B8S5Z2G6\nCODE: 8992229289227",
+      "detections": [],
+      "fields": {
+        "sku": "MX-2WZJ1BL",
+        "lot": "L20260817-B39",
+        "quantity": "20",
+        "unit": "SET",
+        "serial": "SN-G4GC1ZWNLC",
+        "po_number": "PO-202608-0072",
+        "barcode": "8992229289227"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3442570014158264,
+        "inference_ms": 23659.993766006664,
+        "postprocess_ms": 0.04540800000540912,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23661.600792998797,
+        "pipeline_e2e_ms": 23661.600792998797
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "073_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "073_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nVALVE ASSEMBLY\nSKU: B8-JCBCMDL\nLOT: L20260828-A71\nQTY: 1000 BOX\nS/N: SN-W2XF737UDW\nPO: PO-202608-0073\nCODE: 8922898565551",
+      "detections": [],
+      "fields": {
+        "sku": "B8-JCBCMDL",
+        "lot": "L20260828-A71",
+        "quantity": "1000",
+        "unit": "BOX",
+        "serial": "SN-W2XF737UDW",
+        "po_number": "PO-202608-0073",
+        "barcode": "8922898565551"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3257609932916239,
+        "inference_ms": 18881.96068700927,
+        "postprocess_ms": 0.030416005756706,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18883.69531299395,
+        "pipeline_e2e_ms": 18883.69531299395
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "074_blur.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "074_blur.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH BEARING UNIT\nSKU: VT-V42LWZB\nLOT: L20260828-C51\nQTY: 1000 SET\nS/N: SN-MGSGA0U51U\nPO: PO-202608-0074\nCODE: 8916411804184",
+      "detections": [],
+      "fields": {
+        "sku": "VT-V42LWZB",
+        "lot": "L20260828-C51",
+        "quantity": "1000",
+        "unit": "SET",
+        "serial": "SN-MGSGA0U51U",
+        "po_number": "PO-202608-0074",
+        "barcode": "8916411804184"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3710250020958483,
+        "inference_ms": 21380.865861006896,
+        "postprocess_ms": 0.025711997295729816,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21382.558263008832,
+        "pipeline_e2e_ms": 21382.558263008832
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "075_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "075_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nSTEEL BRACKET\n\nSKU: VT-9RUD2M1\nLOT: L20260810-B66\nQTY: 100 SET\nS/N: SN-F1KL1LJ56R\nPO: PO-202608-0075\n\nCODE: 8987011315521",
+      "detections": [],
+      "fields": {
+        "sku": "VT-9RUD2M1",
+        "lot": "L20260810-B66",
+        "quantity": "100",
+        "unit": "SET",
+        "serial": "SN-F1KL1LJ56R",
+        "po_number": "PO-202608-0075",
+        "barcode": "8987011315521"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.6140170007711276,
+        "inference_ms": 19259.503339999355,
+        "postprocess_ms": 0.025551998987793922,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19261.91713499429,
+        "pipeline_e2e_ms": 19261.91713499429
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "076_vietnamese_mixed.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "076_vietnamese_mixed.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nSTEEL BRACKET\n\nSKU: VT-1H0QPQ2\nLOT: L20260817-C34\nQTY: 500 BOX\nS/N: SN-HNAL5010MW\nPO: PO-202608-0076\n\nREF: 00I1L5S8B\nCODE: 8930534276974",
+      "detections": [],
+      "fields": {
+        "sku": "VT-1H0QPQ2",
+        "lot": "L20260817-C34",
+        "quantity": "500",
+        "unit": "BOX",
+        "serial": "SN-HNAL5010MW",
+        "po_number": "PO-202608-0076",
+        "barcode": "8930534276974"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5252650007605553,
+        "inference_ms": 24332.931135999388,
+        "postprocess_ms": 0.036976009141653776,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24334.920434994274,
+        "pipeline_e2e_ms": 24334.920434994274
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "077_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "077_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nBEARING UNIT\nSKU: B8-N90W2R9\nLOT: L20260809-B32\nQTY: 10 PCS\nS/N: SN-03PFLNHHMG\nPO: PO-202608-0077\nCODE: 8975211983011",
+      "detections": [],
+      "fields": {
+        "sku": "B8-N90W2R9",
+        "lot": "L20260809-B32",
+        "quantity": "10",
+        "unit": "PCS",
+        "serial": "SN-03PFLNHHMG",
+        "po_number": "PO-202608-0077",
+        "barcode": "8975211983011"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5673449923051521,
+        "inference_ms": 21151.592346999678,
+        "postprocess_ms": 0.02705599763430655,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21153.988349993597,
+        "pipeline_e2e_ms": 21153.988349993597
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "078_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "078_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nCONTROL MODULE\nSKU: MX-TAKUV1C\nLOT: L20260813-A19\nQTY: 10 SET\nS/N: SN-0JWZUKA9KW\nPO: PO-202608-0078\nCODE: 8971952831074",
+      "detections": [],
+      "fields": {
+        "sku": "MX-TAKUV1C",
+        "lot": "L20260813-A19",
+        "quantity": "10",
+        "unit": "SET",
+        "serial": "SN-0JWZUKA9KW",
+        "po_number": "PO-202608-0078",
+        "barcode": "8971952831074"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.6613130099140108,
+        "inference_ms": 20781.449011992663,
+        "postprocess_ms": 0.026736001018434763,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20783.887047000462,
+        "pipeline_e2e_ms": 20783.887047000462
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "079_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "079_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nCONTROL MODULE\n\nSKU: VT-24MS0VZ\nLOT: L20260814-B81\nQTY: 10 SET\nS/N: SN-MUDHWRLHXE\nPO: PO-202608-0079\n\nCODE: 8989808610102",
+      "detections": [],
+      "fields": {
+        "sku": "VT-24MS0VZ",
+        "lot": "L20260814-B81",
+        "quantity": "10",
+        "unit": "SET",
+        "serial": "SN-MUDHWRLHXE",
+        "po_number": "PO-202608-0079",
+        "barcode": "8989808610102"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3846079926006496,
+        "inference_ms": 18805.63799799711,
+        "postprocess_ms": 0.03539200406521559,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18807.390416011913,
+        "pipeline_e2e_ms": 18807.390416011913
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "080_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "080_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nSTEEL BRACKET\n\nSKU: B8-MZBS3CN\nLOT: L20260815-D91\nQTY: 20 PCS\nS/N: SN-5NPCF9KCVA\nPO: PO-202608-0080\n\nREF: I100-AB8S\nCODE: 8959501072345",
+      "detections": [],
+      "fields": {
+        "sku": "B8-MZBS3CN",
+        "lot": "L20260815-D91",
+        "quantity": "20",
+        "unit": "PCS",
+        "serial": "SN-5NPCF9KCVA",
+        "po_number": "PO-202608-0080",
+        "barcode": "8959501072345"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.36675299634225667,
+        "inference_ms": 23914.7761889908,
+        "postprocess_ms": 0.043535997974686325,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23916.651311999885,
+        "pipeline_e2e_ms": 23916.651311999885
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "081_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "081_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nVALVE ASSEMBLY\nSKU: B8-9GQHR5Q\nLOT: L20260823-C97\nQTY: 20 PCS\nS/N: SN-GBEZLGZYWK\nPO: PO-202608-0081\nCODE: 8973988192517",
+      "detections": [],
+      "fields": {
+        "sku": "B8-9GQHR5Q",
+        "lot": "L20260823-C97",
+        "quantity": "20",
+        "unit": "PCS",
+        "serial": "SN-GBEZLGZYWK",
+        "po_number": "PO-202608-0081",
+        "barcode": "8973988192517"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.691648994688876,
+        "inference_ms": 21158.425721994718,
+        "postprocess_ms": 0.03300800744909793,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21160.739819999435,
+        "pipeline_e2e_ms": 21160.739819999435
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "082_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "082_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nCONTROL MODULE\nSKU: B8-9STGKQQ\nLOT: L20260816-D35\nQTY: 100 PCS\nS/N: SN-3DG868GJLZ\nPO: PO-202608-0082\nCODE: 8969868470908",
+      "detections": [],
+      "fields": {
+        "sku": "B8-9STGKQQ",
+        "lot": "L20260816-D35",
+        "quantity": "100",
+        "unit": "PCS",
+        "serial": "SN-3DG868GJLZ",
+        "po_number": "PO-202608-0082",
+        "barcode": "8969868470908"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3872170054819435,
+        "inference_ms": 19178.079748002347,
+        "postprocess_ms": 0.0350560003425926,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19180.296741993516,
+        "pipeline_e2e_ms": 19180.296741993516
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "083_rotated.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "083_rotated.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nMOTOR PART\n\nSKU: VT-EFNDAB1\nLOT: L20260809-C88\nQTY: 200 PCS\nS/N: SN-1BLV7FRT5Z\nPO: PO-202608-0083\n\nCODE: 8976062321137",
+      "detections": [],
+      "fields": {
+        "sku": "VT-EFNDAB1",
+        "lot": "L20260809-C88",
+        "quantity": "200",
+        "unit": "PCS",
+        "serial": "SN-1BLV7FRT5Z",
+        "po_number": "PO-202608-0083",
+        "barcode": "8976062321137"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.5622239987133071,
+        "inference_ms": 18876.319874005276,
+        "postprocess_ms": 0.025296001695096493,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18878.622692995123,
+        "pipeline_e2e_ms": 18878.622692995123
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "084_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "084_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nVALVE ASSEMBLY\n\nSKU: VT-YRG5D0Z\nLOT: L20260811-A22\nQTY: 100 SET\nS/N: SN-22REPQMXGC\nPO: PO-202608-0084\n\nREF: I100-AB8S\nCODE: 8997281735453",
+      "detections": [],
+      "fields": {
+        "sku": "VT-YRG5D0Z",
+        "lot": "L20260811-A22",
+        "quantity": "100",
+        "unit": "SET",
+        "serial": "SN-22REPQMXGC",
+        "po_number": "PO-202608-0084",
+        "barcode": "8997281735453"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4772649990627542,
+        "inference_ms": 23930.26279298647,
+        "postprocess_ms": 0.03081599425058812,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23932.248138997238,
+        "pipeline_e2e_ms": 23932.248138997238
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "085_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "085_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nMOTOR PART\n\nSKU: MX-RVF9NQ3\nLOT: L20260807-B80\nQTY: 200 SET\nS/N: SN-JWA4WN1N0S\nPO: PO-202608-0085\n\nCODE: 8934885166151",
+      "detections": [],
+      "fields": {
+        "sku": "MX-RVF9NQ3",
+        "lot": "L20260807-B80",
+        "quantity": "200",
+        "unit": "SET",
+        "serial": "SN-JWA4WN1N0S",
+        "po_number": "PO-202608-0085",
+        "barcode": "8934885166151"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.39046400343067944,
+        "inference_ms": 19013.503059992217,
+        "postprocess_ms": 0.025599991204217076,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19015.381845994852,
+        "pipeline_e2e_ms": 19015.381845994852
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "086_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "086_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nCONTROL MODULE\nSKU: B8-MCH3PFK\nLOT: L20260824-C15\nQTY: 10 PCS\nS/N: SN-90HLYMD0UK\nPO: PO-202608-0086\nCODE: 8929380588853",
+      "detections": [],
+      "fields": {
+        "sku": "B8-MCH3PFK",
+        "lot": "L20260824-C15",
+        "quantity": "10",
+        "unit": "PCS",
+        "serial": "SN-90HLYMD0UK",
+        "po_number": "PO-202608-0086",
+        "barcode": "8929380588853"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3933120024157688,
+        "inference_ms": 20756.15796400234,
+        "postprocess_ms": 0.04478399932850152,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20757.856254000217,
+        "pipeline_e2e_ms": 20757.856254000217
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "087_vietnamese_mixed.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "087_vietnamese_mixed.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nVALVE ASSEMBLY\nSKU: MX-SKCJBW6\nLOT: L20260821-A67\nQTY: 1000 PCS\nS/N: SN-R1PEEKJM5Y\nPO: PO-202608-0087\nCODE: 8996839306034",
+      "detections": [],
+      "fields": {
+        "sku": "MX-SKCJBW6",
+        "lot": "L20260821-A67",
+        "quantity": "1000",
+        "unit": "PCS",
+        "serial": "SN-R1PEEKJM5Y",
+        "po_number": "PO-202608-0087",
+        "barcode": "8996839306034"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4151370085310191,
+        "inference_ms": 15980.793444003211,
+        "postprocess_ms": 0.03868799831252545,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 15982.696854000096,
+        "pipeline_e2e_ms": 15982.696854000096
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "088_blur.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "088_blur.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nCONTROL MODULE\n\nSKU: B8-ZUWCS0X\nLOT: L20260810-C83\nQTY: 100 BOX\nS/N: SN-BJFKQZ8V2T\nPO: PO-202608-0088\n\nREF: I1O0-AB8S\nCODE: 8912140610753",
+      "detections": [],
+      "fields": {
+        "sku": "B8-ZUWCS0X",
+        "lot": "L20260810-C83",
+        "quantity": "100",
+        "unit": "BOX",
+        "serial": "SN-BJFKQZ8V2T",
+        "po_number": "PO-202608-0088",
+        "barcode": "8912140610753"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3350409970153123,
+        "inference_ms": 24227.365215003374,
+        "postprocess_ms": 0.03529600508045405,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24228.9816650009,
+        "pipeline_e2e_ms": 24228.9816650009
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "089_reflection.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "089_reflection.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nVALVE ASSEMBLY\n\nSKU: A1-JUWVEPG\nLOT: L20260804-A77\nQTY: 50 SET\nS/N: SN-GGQ02XLHVS\nPO: PO-202608-0089\n\nCODE: 8989097773463",
+      "detections": [],
+      "fields": {
+        "sku": "A1-JUWVEPG",
+        "lot": "L20260804-A77",
+        "quantity": "50",
+        "unit": "SET",
+        "serial": "SN-GGQ02XLHVS",
+        "po_number": "PO-202608-0089",
+        "barcode": "8989097773463"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.45769599091727287,
+        "inference_ms": 18868.762586003868,
+        "postprocess_ms": 0.025679997634142637,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18870.640987996012,
+        "pipeline_e2e_ms": 18870.640987996012
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "090_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "090_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nCONTROL MODULE\n\nSKU: MX-WC9BJKK\nLOT: L20260826-C41\nQTY: 50 PCS\nS/N: SN-9KZXQMGBKZ\nPO: PO-202608-0090\n\nCODE: 8976981867323",
+      "detections": [],
+      "fields": {
+        "sku": "MX-WC9BJKK",
+        "lot": "L20260826-C41",
+        "quantity": "50",
+        "unit": "PCS",
+        "serial": "SN-9KZXQMGBKZ",
+        "po_number": "PO-202608-0090",
+        "barcode": "8976981867323"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.43195199395995587,
+        "inference_ms": 18566.822981010773,
+        "postprocess_ms": 0.037663994589820504,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18569.06376600091,
+        "pipeline_e2e_ms": 18569.06376600091
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "091_reflection.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "091_reflection.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nSTEEL BRACKET\n\nSKU: MX-MED5252\nLOT: L20260826-B91\nQTY: 200 PCS\nS/N: SN-JQYJNJZ1VL\nPO: PO-202608-0091\n\nCODE: 8911444467718",
+      "detections": [],
+      "fields": {
+        "sku": "MX-MED5252",
+        "lot": "L20260826-B91",
+        "quantity": "200",
+        "unit": "PCS",
+        "serial": "SN-JQYJNJZ1VL",
+        "po_number": "PO-202608-0091",
+        "barcode": "8911444467718"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4519680078374222,
+        "inference_ms": 19013.671177002834,
+        "postprocess_ms": 0.03219200880266726,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 19015.50956199935,
+        "pipeline_e2e_ms": 19015.50956199935
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "092_damaged.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "092_damaged.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nBEARING UNIT\nSKU: VT-JQF52VL\nLOT: L20260815-A20\nQTY: 20 BOX\nS/N: SN-NVCE227953\nPO: PO-202608-0092\nREF: I100-AB8S\nCODE: 8933398131575",
+      "detections": [],
+      "fields": {
+        "sku": "VT-JQF52VL",
+        "lot": "L20260815-A20",
+        "quantity": "20",
+        "unit": "BOX",
+        "serial": "SN-NVCE227953",
+        "po_number": "PO-202608-0092",
+        "barcode": "8933398131575"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3938409936381504,
+        "inference_ms": 23775.839927999186,
+        "postprocess_ms": 0.028800001018680632,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 23777.55433000857,
+        "pipeline_e2e_ms": 23777.55433000857
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "093_dark.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "093_dark.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL\nMOTOR PART\nSKU: B8-J0MRZY1\nLOT: L20260801-D43\nQTY: 1000 SET\nS/N: SN-3J2JL2ZRCY\nPO: PO-202608-0093\nCODE: 8983134456936",
+      "detections": [],
+      "fields": {
+        "sku": "B8-J0MRZY1",
+        "lot": "L20260801-D43",
+        "quantity": "1000",
+        "unit": "SET",
+        "serial": "SN-3J2JL2ZRCY",
+        "po_number": "PO-202608-0093",
+        "barcode": "8983134456936"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4956640041200444,
+        "inference_ms": 21579.285678002634,
+        "postprocess_ms": 0.022831998649053276,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21581.46222399955,
+        "pipeline_e2e_ms": 21581.46222399955
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "094_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "094_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nMOTOR PART\n\nSKU: SP-LBEPMGW\nLOT: L20260808-C18\nQTY: 10 BOX\nS/N: SN-M8QVD4WCRL\nPO: PO-202608-0094\n\nCODE: 8935667610603",
+      "detections": [],
+      "fields": {
+        "sku": "SP-LBEPMGW",
+        "lot": "L20260808-C18",
+        "quantity": "10",
+        "unit": "BOX",
+        "serial": "SN-M8QVD4WCRL",
+        "po_number": "PO-202608-0094",
+        "barcode": "8935667610603"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.25476800510659814,
+        "inference_ms": 18479.9496820051,
+        "postprocess_ms": 0.024639986804686487,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18481.358866003575,
+        "pipeline_e2e_ms": 18481.358866003575
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "095_clear.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "095_clear.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH BEARING UNIT\nSKU: B8-XYEX9S4\nLOT: L20260825-A76\nQTY: 200 BOX\nS/N: SN-SBKFEAE811\nPO: PO-202608-0095\nCODE: 8994572537436",
+      "detections": [],
+      "fields": {
+        "sku": "B8-XYEX9S4",
+        "lot": "L20260825-A76",
+        "quantity": "200",
+        "unit": "BOX",
+        "serial": "SN-SBKFEAE811",
+        "po_number": "PO-202608-0095",
+        "barcode": "8994572537436"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4970400041202083,
+        "inference_ms": 21147.581296012504,
+        "postprocess_ms": 0.024847991880960763,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21150.011617995915,
+        "pipeline_e2e_ms": 21150.011617995915
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "096_vietnamese_mixed.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "096_vietnamese_mixed.jpg",
+      "status": "SUCCESS",
+      "raw_text": "MEKONG PARTS\nCONTROL MODULE\nSKU: SP-3LHW66L\nLOT: L20260810-D44\nQTY: 1000 SET\nS/N: SN-0MFFEHFBX9\nPO: PO-202608-0096\nREF: B8S5Z2G6\nCODE: 8911847425369",
+      "detections": [],
+      "fields": {
+        "sku": "SP-3LHW66L",
+        "lot": "L20260810-D44",
+        "quantity": "1000",
+        "unit": "SET",
+        "serial": "SN-0MFFEHFBX9",
+        "po_number": "PO-202608-0096",
+        "barcode": "8911847425369"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.42627200309652835,
+        "inference_ms": 24000.27199999022,
+        "postprocess_ms": 0.03100799222011119,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24002.292081990163,
+        "pipeline_e2e_ms": 24002.292081990163
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "097_dark.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "097_dark.jpg",
+      "status": "SUCCESS",
+      "raw_text": "NOVA LOGISTICS\nSTEEL BRACKET\nSKU: MX-7CWD03A\nLOT: L20260804-A83\nQTY: 200 SET\nS/N: SN-T3H7X8KFXN\nPO: PO-202608-0097\nCODE: 8981067705930",
+      "detections": [],
+      "fields": {
+        "sku": "MX-7CWD03A",
+        "lot": "L20260804-A83",
+        "quantity": "200",
+        "unit": "SET",
+        "serial": "SN-T3H7X8KFXN",
+        "po_number": "PO-202608-0097",
+        "barcode": "8981067705930"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4086720000486821,
+        "inference_ms": 21679.57462000777,
+        "postprocess_ms": 0.024591994588263333,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 21681.37482801103,
+        "pipeline_e2e_ms": 21681.37482801103
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "098_reflection.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "098_reflection.jpg",
+      "status": "SUCCESS",
+      "raw_text": "VIETTECH\nVALVE ASSEMBLY\nSKU: SP-VTWGCCU\nLOT: L20260810-A25\nQTY: 10 BOX\nS/N: SN-WVWYG7EL46\nPO: PO-202608-0098\nCODE: 8958638207588",
+      "detections": [],
+      "fields": {
+        "sku": "SP-VTWGCCU",
+        "lot": "L20260810-A25",
+        "quantity": "10",
+        "unit": "BOX",
+        "serial": "SN-WVWYG7EL46",
+        "po_number": "PO-202608-0098",
+        "barcode": "8958638207588"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.392687987186946,
+        "inference_ms": 20693.869234004524,
+        "postprocess_ms": 0.024128006771206856,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 20695.708259998355,
+        "pipeline_e2e_ms": 20695.708259998355
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  },
+  {
+    "image": "099_small_text.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "099_small_text.jpg",
+      "status": "SUCCESS",
+      "raw_text": "HANOI COMPONENTS\nVALVE ASSEMBLY\n\nSKU: SP-6NJTYC7\nLOT: L20260802-C82\nQTY: 500 BOX\nS/N: SN-TGMP5PYAN5\nPO: PO-202608-0099\n\nCODE: 8965885826948",
+      "detections": [],
+      "fields": {
+        "sku": "SP-6NJTYC7",
+        "lot": "L20260802-C82",
+        "quantity": "500",
+        "unit": "BOX",
+        "serial": "SN-TGMP5PYAN5",
+        "po_number": "PO-202608-0099",
+        "barcode": "8965885826948"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.3228639980079606,
+        "inference_ms": 18946.908904996235,
+        "postprocess_ms": 0.022128006094135344,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 18948.52826501301,
+        "pipeline_e2e_ms": 18948.52826501301
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": false,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 6,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 0.8571428571428571,
+      "full_label_exact_match": false,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": false,
+        "barcode": true
+      },
+      "critical_correct_fields": 3,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 0.75,
+      "critical_fields_exact": false
+    }
+  },
+  {
+    "image": "100_vietnamese_mixed.jpg",
+    "prediction": {
+      "model": "qwen2_vl_7b",
+      "image": "100_vietnamese_mixed.jpg",
+      "status": "SUCCESS",
+      "raw_text": "ACME INDUSTRIAL BEARING UNIT\nSKU: VT-J66K8XH\nLOT: L20260807-B48\nQTY: 1000 SET\nS/N: SN-S2B53LMR1G\nPO: PO-202608-0100\nREF: 0011L5S8B\nCODE: 8964108824557",
+      "detections": [],
+      "fields": {
+        "sku": "VT-J66K8XH",
+        "lot": "L20260807-B48",
+        "quantity": "1000",
+        "unit": "SET",
+        "serial": "SN-S2B53LMR1G",
+        "po_number": "PO-202608-0100",
+        "barcode": "8964108824557"
+      },
+      "confidence": {},
+      "timing": {
+        "preprocess_ms": 0.4786409990629181,
+        "inference_ms": 24499.74780100456,
+        "postprocess_ms": 0.034527998650446534,
+        "worker_startup_ms": 1.0758999997051433,
+        "model_load_ms": 85.34785200026818,
+        "request_round_trip_ms": 24501.99924199842,
+        "pipeline_e2e_ms": 24501.99924199842
+      },
+      "metadata": {
+        "endpoint": "http://127.0.0.1:8101/v1",
+        "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "server_model_id": "Qwen/Qwen2-VL-7B-Instruct",
+        "revision": "HF_MAIN",
+        "license_status": "Apache-2.0"
+      },
+      "error": null
+    },
+    "barcode_source": "decoder",
+    "field_metrics": {
+      "per_field": {
+        "sku": true,
+        "lot": true,
+        "quantity": true,
+        "unit": true,
+        "serial": true,
+        "po_number": true,
+        "barcode": true
+      },
+      "correct_fields": 7,
+      "required_fields": 7,
+      "field_exact_match_accuracy": 1.0,
+      "full_label_exact_match": true,
+      "critical_per_field": {
+        "sku": true,
+        "lot": true,
+        "serial": true,
+        "barcode": true
+      },
+      "critical_correct_fields": 4,
+      "critical_fields": 4,
+      "critical_field_exact_match_accuracy": 1.0,
+      "critical_fields_exact": true
+    }
+  }
+]

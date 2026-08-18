@@ -1,0 +1,279 @@
+<!doctype html><html><head><meta charset='utf-8'><title>OCR Benchmark</title></head><body><h1>OCR Benchmark Report</h1><pre>{
+  &quot;accuracy&quot;: {
+    &quot;images&quot;: 100,
+    &quot;successful_images&quot;: 100,
+    &quot;failure_rate&quot;: 0.0,
+    &quot;field_exact_accuracy&quot;: 0.22571428571428573,
+    &quot;critical_field_accuracy&quot;: 0.2225,
+    &quot;critical_full_label_accuracy&quot;: 0.2,
+    &quot;full_label_accuracy&quot;: 0.2,
+    &quot;full_label_accuracy_wilson_95&quot;: [
+      0.1333669333310325,
+      0.2888291655931589
+    ],
+    &quot;critical_full_label_accuracy_wilson_95&quot;: [
+      0.1333669333310325,
+      0.2888291655931589
+    ],
+    &quot;mean_cer&quot;: 188.31,
+    &quot;mean_wer&quot;: 20.54
+  },
+  &quot;gates&quot;: {
+    &quot;eligible&quot;: false,
+    &quot;valid&quot;: true,
+    &quot;checks&quot;: {
+      &quot;full_label_accuracy&quot;: false,
+      &quot;critical_field_accuracy&quot;: false,
+      &quot;failure_rate&quot;: true,
+      &quot;p95_ms&quot;: false,
+      &quot;p99_ms&quot;: false,
+      &quot;peak_unified_memory_bytes&quot;: null
+    }
+  },
+  &quot;score&quot;: null,
+  &quot;performance&quot;: {
+    &quot;model&quot;: &quot;glm_ocr&quot;,
+    &quot;status&quot;: &quot;SUCCESS&quot;,
+    &quot;samples&quot;: 300,
+    &quot;failures&quot;: 0,
+    &quot;failure_rate&quot;: 0.0,
+    &quot;p50_ms&quot;: 2779.8110639996594,
+    &quot;p90_ms&quot;: 3127.037409998593,
+    &quot;p95_ms&quot;: 3379.1747850045795,
+    &quot;p99_ms&quot;: 4025.977447992773,
+    &quot;mean_ms&quot;: 2782.3536710999906,
+    &quot;throughput_images_per_second&quot;: 0.35940793953942407,
+    &quot;batch_results&quot;: [
+      {
+        &quot;batch_size&quot;: 1,
+        &quot;status&quot;: &quot;SUCCESS&quot;,
+        &quot;images&quot;: 300,
+        &quot;failures&quot;: 0,
+        &quot;failure_rate&quot;: 0.0,
+        &quot;p50_ms&quot;: 2864.6887020004215,
+        &quot;p90_ms&quot;: 3225.7941349962493,
+        &quot;p95_ms&quot;: 3485.1234079978894,
+        &quot;p99_ms&quot;: 4147.894159992575,
+        &quot;mean_ms&quot;: 2867.9401735368206,
+        &quot;throughput_images_per_second&quot;: 0.3486823083784113,
+        &quot;execution_mode&quot;: &quot;adapter_batch_contract_sequential_fallback&quot;,
+        &quot;resource_usage&quot;: {
+          &quot;sample_count&quot;: 5166,
+          &quot;peak_rss_bytes&quot;: 34217984,
+          &quot;mean_cpu_percent&quot;: 0.0,
+          &quot;peak_cpu_percent&quot;: 0.0,
+          &quot;mean_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_unified_memory_bytes&quot;: null,
+          &quot;peak_gpu_memory_bytes&quot;: null,
+          &quot;peak_gpu_power_watts&quot;: null,
+          &quot;peak_gpu_temperature_c&quot;: null
+        }
+      },
+      {
+        &quot;batch_size&quot;: 4,
+        &quot;status&quot;: &quot;SUCCESS&quot;,
+        &quot;images&quot;: 300,
+        &quot;failures&quot;: 0,
+        &quot;failure_rate&quot;: 0.0,
+        &quot;p50_ms&quot;: 11508.775612004683,
+        &quot;p90_ms&quot;: 12393.916651999461,
+        &quot;p95_ms&quot;: 12591.577201994369,
+        &quot;p99_ms&quot;: 12913.471193998703,
+        &quot;mean_ms&quot;: 11549.07420792093,
+        &quot;throughput_images_per_second&quot;: 0.3463481079077837,
+        &quot;execution_mode&quot;: &quot;adapter_batch_contract_sequential_fallback&quot;,
+        &quot;resource_usage&quot;: {
+          &quot;sample_count&quot;: 5228,
+          &quot;peak_rss_bytes&quot;: 34258944,
+          &quot;mean_cpu_percent&quot;: 0.0,
+          &quot;peak_cpu_percent&quot;: 0.0,
+          &quot;mean_gpu_utilization_percent&quot;: 95.93420045906656,
+          &quot;peak_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_unified_memory_bytes&quot;: null,
+          &quot;peak_gpu_memory_bytes&quot;: null,
+          &quot;peak_gpu_power_watts&quot;: null,
+          &quot;peak_gpu_temperature_c&quot;: null
+        }
+      },
+      {
+        &quot;batch_size&quot;: 8,
+        &quot;status&quot;: &quot;SUCCESS&quot;,
+        &quot;images&quot;: 300,
+        &quot;failures&quot;: 0,
+        &quot;failure_rate&quot;: 0.0,
+        &quot;p50_ms&quot;: 22971.274719006033,
+        &quot;p90_ms&quot;: 23296.84507699858,
+        &quot;p95_ms&quot;: 23414.24710598949,
+        &quot;p99_ms&quot;: 23480.049160003546,
+        &quot;mean_ms&quot;: 22070.38350069361,
+        &quot;throughput_images_per_second&quot;: 0.34853529808695644,
+        &quot;execution_mode&quot;: &quot;adapter_batch_contract_sequential_fallback&quot;,
+        &quot;resource_usage&quot;: {
+          &quot;sample_count&quot;: 5169,
+          &quot;peak_rss_bytes&quot;: 34250752,
+          &quot;mean_cpu_percent&quot;: 0.0,
+          &quot;peak_cpu_percent&quot;: 0.0,
+          &quot;mean_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_unified_memory_bytes&quot;: null,
+          &quot;peak_gpu_memory_bytes&quot;: null,
+          &quot;peak_gpu_power_watts&quot;: null,
+          &quot;peak_gpu_temperature_c&quot;: null
+        }
+      }
+    ],
+    &quot;concurrency_results&quot;: [
+      {
+        &quot;concurrency&quot;: 1,
+        &quot;status&quot;: &quot;SUCCESS&quot;,
+        &quot;images&quot;: 300,
+        &quot;failures&quot;: 0,
+        &quot;failure_rate&quot;: 0.0,
+        &quot;p50_ms&quot;: 2872.339806999662,
+        &quot;p90_ms&quot;: 3220.5751970031997,
+        &quot;p95_ms&quot;: 3488.2505020068493,
+        &quot;p99_ms&quot;: 4157.691284999601,
+        &quot;mean_ms&quot;: 2869.4482957438836,
+        &quot;throughput_images_per_second&quot;: 0.34849904822583927,
+        &quot;resource_usage&quot;: {
+          &quot;sample_count&quot;: 5151,
+          &quot;peak_rss_bytes&quot;: 34209792,
+          &quot;mean_cpu_percent&quot;: 0.0,
+          &quot;peak_cpu_percent&quot;: 0.0,
+          &quot;mean_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_unified_memory_bytes&quot;: null,
+          &quot;peak_gpu_memory_bytes&quot;: null,
+          &quot;peak_gpu_power_watts&quot;: null,
+          &quot;peak_gpu_temperature_c&quot;: null
+        }
+      },
+      {
+        &quot;concurrency&quot;: 2,
+        &quot;status&quot;: &quot;SUCCESS&quot;,
+        &quot;images&quot;: 300,
+        &quot;failures&quot;: 0,
+        &quot;failure_rate&quot;: 0.0,
+        &quot;p50_ms&quot;: 5888.246806003735,
+        &quot;p90_ms&quot;: 6511.493910002173,
+        &quot;p95_ms&quot;: 6700.925267999992,
+        &quot;p99_ms&quot;: 7271.426541992696,
+        &quot;mean_ms&quot;: 5905.700183843388,
+        &quot;throughput_images_per_second&quot;: 0.169327932145246,
+        &quot;resource_usage&quot;: {
+          &quot;sample_count&quot;: 10820,
+          &quot;peak_rss_bytes&quot;: 34181120,
+          &quot;mean_cpu_percent&quot;: 0.0,
+          &quot;peak_cpu_percent&quot;: 0.0,
+          &quot;mean_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_unified_memory_bytes&quot;: null,
+          &quot;peak_gpu_memory_bytes&quot;: null,
+          &quot;peak_gpu_power_watts&quot;: null,
+          &quot;peak_gpu_temperature_c&quot;: null
+        }
+      },
+      {
+        &quot;concurrency&quot;: 4,
+        &quot;status&quot;: &quot;SUCCESS&quot;,
+        &quot;images&quot;: 300,
+        &quot;failures&quot;: 0,
+        &quot;failure_rate&quot;: 0.0,
+        &quot;p50_ms&quot;: 12547.019491001265,
+        &quot;p90_ms&quot;: 13475.699633010663,
+        &quot;p95_ms&quot;: 13804.562607998378,
+        &quot;p99_ms&quot;: 15445.967028994346,
+        &quot;mean_ms&quot;: 12548.52473869653,
+        &quot;throughput_images_per_second&quot;: 0.07969064259133575,
+        &quot;resource_usage&quot;: {
+          &quot;sample_count&quot;: 23126,
+          &quot;peak_rss_bytes&quot;: 34148352,
+          &quot;mean_cpu_percent&quot;: 0.0,
+          &quot;peak_cpu_percent&quot;: 0.0,
+          &quot;mean_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_unified_memory_bytes&quot;: null,
+          &quot;peak_gpu_memory_bytes&quot;: null,
+          &quot;peak_gpu_power_watts&quot;: null,
+          &quot;peak_gpu_temperature_c&quot;: null
+        }
+      },
+      {
+        &quot;concurrency&quot;: 8,
+        &quot;status&quot;: &quot;SUCCESS&quot;,
+        &quot;images&quot;: 300,
+        &quot;failures&quot;: 0,
+        &quot;failure_rate&quot;: 0.0,
+        &quot;p50_ms&quot;: 26085.010477007017,
+        &quot;p90_ms&quot;: 27026.70390899584,
+        &quot;p95_ms&quot;: 27405.510170996422,
+        &quot;p99_ms&quot;: 27821.89222300076,
+        &quot;mean_ms&quot;: 25766.49524628956,
+        &quot;throughput_images_per_second&quot;: 0.038810090019674,
+        &quot;resource_usage&quot;: {
+          &quot;sample_count&quot;: 34579,
+          &quot;peak_rss_bytes&quot;: 34172928,
+          &quot;mean_cpu_percent&quot;: 0.0,
+          &quot;peak_cpu_percent&quot;: 0.0,
+          &quot;mean_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_gpu_utilization_percent&quot;: 96.0,
+          &quot;peak_unified_memory_bytes&quot;: null,
+          &quot;peak_gpu_memory_bytes&quot;: null,
+          &quot;peak_gpu_power_watts&quot;: null,
+          &quot;peak_gpu_temperature_c&quot;: null
+        }
+      }
+    ],
+    &quot;resource_usage&quot;: {
+      &quot;sample_count&quot;: 41670,
+      &quot;peak_rss_bytes&quot;: 34197504,
+      &quot;mean_cpu_percent&quot;: 0.0,
+      &quot;peak_cpu_percent&quot;: 0.0,
+      &quot;mean_gpu_utilization_percent&quot;: 95.991720662347,
+      &quot;peak_gpu_utilization_percent&quot;: 96.0,
+      &quot;peak_unified_memory_bytes&quot;: null,
+      &quot;peak_gpu_memory_bytes&quot;: null,
+      &quot;peak_gpu_power_watts&quot;: null,
+      &quot;peak_gpu_temperature_c&quot;: null
+    }
+  },
+  &quot;barcode&quot;: {
+    &quot;images&quot;: 100,
+    &quot;engines&quot;: {
+      &quot;opencv&quot;: {
+        &quot;images&quot;: 100,
+        &quot;successes&quot;: 85,
+        &quot;exact_matches&quot;: 85,
+        &quot;exact_match_accuracy&quot;: 0.85,
+        &quot;mean_latency_ms&quot;: 39.07416331945569
+      },
+      &quot;zxing_cpp&quot;: {
+        &quot;images&quot;: 100,
+        &quot;successes&quot;: 100,
+        &quot;exact_matches&quot;: 100,
+        &quot;exact_match_accuracy&quot;: 1.0,
+        &quot;mean_latency_ms&quot;: 8.549040529469494
+      }
+    }
+  },
+  &quot;system_accuracy&quot;: {
+    &quot;images&quot;: 100,
+    &quot;successful_images&quot;: 100,
+    &quot;failure_rate&quot;: 0.0,
+    &quot;field_exact_accuracy&quot;: 0.3357142857142857,
+    &quot;critical_field_accuracy&quot;: 0.415,
+    &quot;critical_full_label_accuracy&quot;: 0.2,
+    &quot;full_label_accuracy&quot;: 0.2,
+    &quot;full_label_accuracy_wilson_95&quot;: [
+      0.1333669333310325,
+      0.2888291655931589
+    ],
+    &quot;critical_full_label_accuracy_wilson_95&quot;: [
+      0.1333669333310325,
+      0.2888291655931589
+    ],
+    &quot;mean_cer&quot;: 0.0,
+    &quot;mean_wer&quot;: 0.0
+  }
+}</pre><table><tr><th>Image</th><th>Status</th><th>Field exact</th></tr><tr><td>001_blur.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>002_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>003_damaged.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>004_reflection.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>005_blur.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>006_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>007_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>008_reflection.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>009_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>010_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>011_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>012_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>013_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>014_damaged.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>015_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>016_small_text.jpg</td><td>SUCCESS</td><td>0.8571428571428571</td></tr><tr><td>017_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>018_dark.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>019_dark.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>020_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>021_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>022_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>023_dark.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>024_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>025_blur.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>026_damaged.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>027_damaged.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>028_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>029_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>030_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>031_damaged.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>032_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>033_dark.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>034_blur.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>035_dark.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>036_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>037_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>038_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>039_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>040_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>041_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>042_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>043_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>044_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>045_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>046_dark.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>047_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>048_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>049_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>050_damaged.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>051_blur.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>052_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>053_blur.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>054_reflection.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>055_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>056_blur.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>057_damaged.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>058_reflection.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>059_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>060_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>061_damaged.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>062_dark.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>063_reflection.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>064_damaged.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>065_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>066_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>067_reflection.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>068_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>069_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>070_reflection.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>071_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>072_dark.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>073_small_text.jpg</td><td>SUCCESS</td><td>0.8571428571428571</td></tr><tr><td>074_blur.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>075_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>076_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>077_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>078_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>079_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>080_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>081_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>082_clear.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>083_rotated.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>084_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>085_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>086_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>087_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>088_blur.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>089_reflection.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>090_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>091_reflection.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>092_damaged.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>093_dark.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>094_small_text.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>095_clear.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>096_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>1.0</td></tr><tr><td>097_dark.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>098_reflection.jpg</td><td>SUCCESS</td><td>0.0</td></tr><tr><td>099_small_text.jpg</td><td>SUCCESS</td><td>0.8571428571428571</td></tr><tr><td>100_vietnamese_mixed.jpg</td><td>SUCCESS</td><td>0.0</td></tr></table></body></html>

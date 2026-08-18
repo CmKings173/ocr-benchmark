@@ -1,0 +1,3102 @@
+[
+  {
+    "image": "001_blur.jpg",
+    "expected": "8914852027678",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/001_blur.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 115.96476400154643,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/001_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8914852027678",
+          "symbology": "QR Code",
+          "latency_ms": 20.983116992283612,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "002_blur.jpg",
+    "expected": "8942755085487",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/002_blur.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 44.23341600340791,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/002_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8942755085487",
+          "symbology": "QR Code",
+          "latency_ms": 8.317198997247033,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "003_damaged.jpg",
+    "expected": "8923048322824",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/003_damaged.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 26.60039499460254,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/003_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8923048322824",
+          "symbology": "QR Code",
+          "latency_ms": 8.334575002663769,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "004_reflection.jpg",
+    "expected": "8935337831069",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/004_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8935337831069",
+          "symbology": "QR",
+          "latency_ms": 35.01909799524583,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/004_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8935337831069",
+          "symbology": "QR Code",
+          "latency_ms": 8.554333995562047,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "005_blur.jpg",
+    "expected": "8993480596843",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/005_blur.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 36.768826001207344,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/005_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8993480596843",
+          "symbology": "QR Code",
+          "latency_ms": 7.969999001943506,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "006_rotated.jpg",
+    "expected": "8998961653625",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/006_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8998961653625",
+          "symbology": "QR",
+          "latency_ms": 36.740569994435646,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/006_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8998961653625",
+          "symbology": "QR Code",
+          "latency_ms": 8.917469996958971,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "007_vietnamese_mixed.jpg",
+    "expected": "8952663487456",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/007_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8952663487456",
+          "symbology": "QR",
+          "latency_ms": 35.197210003389046,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/007_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8952663487456",
+          "symbology": "QR Code",
+          "latency_ms": 8.486271006404422,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "008_reflection.jpg",
+    "expected": "8973495411920",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/008_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8973495411920",
+          "symbology": "QR",
+          "latency_ms": 36.49549798865337,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/008_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8973495411920",
+          "symbology": "QR Code",
+          "latency_ms": 8.199582996894605,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "009_vietnamese_mixed.jpg",
+    "expected": "8980376445850",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/009_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8980376445850",
+          "symbology": "QR",
+          "latency_ms": 36.91410600731615,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/009_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8980376445850",
+          "symbology": "QR Code",
+          "latency_ms": 9.028269996633753,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "010_vietnamese_mixed.jpg",
+    "expected": "8961492486490",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/010_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8961492486490",
+          "symbology": "QR",
+          "latency_ms": 36.46506600489374,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/010_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8961492486490",
+          "symbology": "QR Code",
+          "latency_ms": 8.528414997272193,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "011_rotated.jpg",
+    "expected": "8968017908735",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/011_rotated.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 36.131258006207645,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/011_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8968017908735",
+          "symbology": "QR Code",
+          "latency_ms": 8.70009399659466,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "012_rotated.jpg",
+    "expected": "8981230662926",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/012_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8981230662926",
+          "symbology": "QR",
+          "latency_ms": 35.993017998407595,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/012_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8981230662926",
+          "symbology": "QR Code",
+          "latency_ms": 9.002942009828985,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "013_small_text.jpg",
+    "expected": "8996265117345",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/013_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8996265117345",
+          "symbology": "QR",
+          "latency_ms": 35.73373799736146,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/013_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8996265117345",
+          "symbology": "QR Code",
+          "latency_ms": 7.171549994382076,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "014_damaged.jpg",
+    "expected": "8989083136676",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/014_damaged.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 39.259290002519265,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/014_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8989083136676",
+          "symbology": "QR Code",
+          "latency_ms": 8.72067001182586,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "015_small_text.jpg",
+    "expected": "8976496398830",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/015_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8976496398830",
+          "symbology": "QR",
+          "latency_ms": 37.87634499894921,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/015_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8976496398830",
+          "symbology": "QR Code",
+          "latency_ms": 7.265391002874821,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "016_small_text.jpg",
+    "expected": "8966913824016",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/016_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8966913824016",
+          "symbology": "QR",
+          "latency_ms": 37.785449996590614,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/016_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8966913824016",
+          "symbology": "QR Code",
+          "latency_ms": 7.23980600014329,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "017_clear.jpg",
+    "expected": "8999519665641",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/017_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8999519665641",
+          "symbology": "QR",
+          "latency_ms": 39.16959300113376,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/017_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8999519665641",
+          "symbology": "QR Code",
+          "latency_ms": 8.175934999599122,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "018_dark.jpg",
+    "expected": "8942203634077",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/018_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8942203634077",
+          "symbology": "QR",
+          "latency_ms": 38.62050500174519,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/018_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8942203634077",
+          "symbology": "QR Code",
+          "latency_ms": 7.83907099685166,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "019_dark.jpg",
+    "expected": "8938753087732",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/019_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8938753087732",
+          "symbology": "QR",
+          "latency_ms": 38.916521007195115,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/019_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8938753087732",
+          "symbology": "QR Code",
+          "latency_ms": 7.725917996140197,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "020_vietnamese_mixed.jpg",
+    "expected": "8941287441068",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/020_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8941287441068",
+          "symbology": "QR",
+          "latency_ms": 38.18892200069968,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/020_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8941287441068",
+          "symbology": "QR Code",
+          "latency_ms": 8.778382005402818,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "021_clear.jpg",
+    "expected": "8980909723295",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/021_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8980909723295",
+          "symbology": "QR",
+          "latency_ms": 36.45964201132301,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/021_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8980909723295",
+          "symbology": "QR Code",
+          "latency_ms": 8.426685992162675,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "022_clear.jpg",
+    "expected": "8950137531947",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/022_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8950137531947",
+          "symbology": "QR",
+          "latency_ms": 39.33301698998548,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/022_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8950137531947",
+          "symbology": "QR Code",
+          "latency_ms": 8.317758998600766,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "023_dark.jpg",
+    "expected": "8992358554897",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/023_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8992358554897",
+          "symbology": "QR",
+          "latency_ms": 39.05804098758381,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/023_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8992358554897",
+          "symbology": "QR Code",
+          "latency_ms": 8.87827000406105,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "024_clear.jpg",
+    "expected": "8964613741177",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/024_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8964613741177",
+          "symbology": "QR",
+          "latency_ms": 38.63522599567659,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/024_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8964613741177",
+          "symbology": "QR Code",
+          "latency_ms": 8.680286002345383,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "025_blur.jpg",
+    "expected": "8952400222897",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/025_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8952400222897",
+          "symbology": "QR",
+          "latency_ms": 36.30952999810688,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/025_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8952400222897",
+          "symbology": "QR Code",
+          "latency_ms": 8.031582008698024,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "026_damaged.jpg",
+    "expected": "8951633847325",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/026_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8951633847325",
+          "symbology": "QR",
+          "latency_ms": 38.723496996681206,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/026_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8951633847325",
+          "symbology": "QR Code",
+          "latency_ms": 8.474607006064616,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "027_damaged.jpg",
+    "expected": "8971995286480",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/027_damaged.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 38.96754501329269,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/027_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8971995286480",
+          "symbology": "QR Code",
+          "latency_ms": 8.443055005045608,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "028_rotated.jpg",
+    "expected": "8916094677166",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/028_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8916094677166",
+          "symbology": "QR",
+          "latency_ms": 39.231289993040264,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/028_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8916094677166",
+          "symbology": "QR Code",
+          "latency_ms": 9.29714999801945,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "029_rotated.jpg",
+    "expected": "8953587942600",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/029_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8953587942600",
+          "symbology": "QR",
+          "latency_ms": 39.0602329862304,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/029_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8953587942600",
+          "symbology": "QR Code",
+          "latency_ms": 8.63246301014442,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "030_rotated.jpg",
+    "expected": "8937386603374",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/030_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8937386603374",
+          "symbology": "QR",
+          "latency_ms": 38.912345000426285,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/030_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8937386603374",
+          "symbology": "QR Code",
+          "latency_ms": 8.573006009100936,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "031_damaged.jpg",
+    "expected": "8982048119024",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/031_damaged.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 39.255545008927584,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/031_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8982048119024",
+          "symbology": "QR Code",
+          "latency_ms": 8.462639001663774,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "032_small_text.jpg",
+    "expected": "8997726592908",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/032_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8997726592908",
+          "symbology": "QR",
+          "latency_ms": 37.92477698880248,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/032_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8997726592908",
+          "symbology": "QR Code",
+          "latency_ms": 7.503215005272068,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "033_dark.jpg",
+    "expected": "8992893227513",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/033_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8992893227513",
+          "symbology": "QR",
+          "latency_ms": 39.07032900315244,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/033_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8992893227513",
+          "symbology": "QR Code",
+          "latency_ms": 8.305790004669689,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "034_blur.jpg",
+    "expected": "8940238020383",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/034_blur.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 27.817162990686484,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/034_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8940238020383",
+          "symbology": "QR Code",
+          "latency_ms": 7.825966997188516,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "035_dark.jpg",
+    "expected": "8941084555787",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/035_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8941084555787",
+          "symbology": "QR",
+          "latency_ms": 38.9030970109161,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/035_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8941084555787",
+          "symbology": "QR Code",
+          "latency_ms": 7.574831004603766,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "036_small_text.jpg",
+    "expected": "8943775832314",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/036_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8943775832314",
+          "symbology": "QR",
+          "latency_ms": 39.07512899604626,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/036_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8943775832314",
+          "symbology": "QR Code",
+          "latency_ms": 7.7705579897155985,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "037_small_text.jpg",
+    "expected": "8916661205088",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/037_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8916661205088",
+          "symbology": "QR",
+          "latency_ms": 37.52737000468187,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/037_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8916661205088",
+          "symbology": "QR Code",
+          "latency_ms": 7.08999800554011,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "038_clear.jpg",
+    "expected": "8974725386892",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/038_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8974725386892",
+          "symbology": "QR",
+          "latency_ms": 38.899673003470525,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/038_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8974725386892",
+          "symbology": "QR Code",
+          "latency_ms": 8.572270002332516,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "039_vietnamese_mixed.jpg",
+    "expected": "8926481828221",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/039_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8926481828221",
+          "symbology": "QR",
+          "latency_ms": 39.066697005182505,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/039_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8926481828221",
+          "symbology": "QR Code",
+          "latency_ms": 8.66785499965772,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "040_small_text.jpg",
+    "expected": "8916033755547",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/040_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8916033755547",
+          "symbology": "QR",
+          "latency_ms": 37.951417005388066,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/040_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8916033755547",
+          "symbology": "QR Code",
+          "latency_ms": 17.446348996600136,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "041_small_text.jpg",
+    "expected": "8944478742649",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/041_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8944478742649",
+          "symbology": "QR",
+          "latency_ms": 38.50461699767038,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/041_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8944478742649",
+          "symbology": "QR Code",
+          "latency_ms": 7.227422000141814,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "042_small_text.jpg",
+    "expected": "8953509125955",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/042_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8953509125955",
+          "symbology": "QR",
+          "latency_ms": 38.89964100380894,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/042_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8953509125955",
+          "symbology": "QR Code",
+          "latency_ms": 7.255887001520023,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "043_vietnamese_mixed.jpg",
+    "expected": "8940570101523",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/043_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8940570101523",
+          "symbology": "QR",
+          "latency_ms": 39.766695990692824,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/043_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8940570101523",
+          "symbology": "QR Code",
+          "latency_ms": 8.705134998308495,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "044_clear.jpg",
+    "expected": "8963338684761",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/044_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8963338684761",
+          "symbology": "QR",
+          "latency_ms": 39.62320899881888,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/044_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8963338684761",
+          "symbology": "QR Code",
+          "latency_ms": 8.594414000981487,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "045_clear.jpg",
+    "expected": "8920084157465",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/045_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8920084157465",
+          "symbology": "QR",
+          "latency_ms": 38.67674499633722,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/045_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8920084157465",
+          "symbology": "QR Code",
+          "latency_ms": 8.28001399349887,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "046_dark.jpg",
+    "expected": "8931372811875",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/046_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8931372811875",
+          "symbology": "QR",
+          "latency_ms": 37.791384995216504,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/046_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8931372811875",
+          "symbology": "QR Code",
+          "latency_ms": 7.947230988065712,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "047_clear.jpg",
+    "expected": "8959637100490",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/047_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8959637100490",
+          "symbology": "QR",
+          "latency_ms": 39.168297007563524,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/047_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8959637100490",
+          "symbology": "QR Code",
+          "latency_ms": 8.726637999643572,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "048_rotated.jpg",
+    "expected": "8912239902034",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/048_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8912239902034",
+          "symbology": "QR",
+          "latency_ms": 38.881273008883,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/048_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8912239902034",
+          "symbology": "QR Code",
+          "latency_ms": 9.327997991931625,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "049_rotated.jpg",
+    "expected": "8945046030405",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/049_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8945046030405",
+          "symbology": "QR",
+          "latency_ms": 39.179289000458084,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/049_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8945046030405",
+          "symbology": "QR Code",
+          "latency_ms": 8.658670994918793,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "050_damaged.jpg",
+    "expected": "8930137999955",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/050_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8930137999955",
+          "symbology": "QR",
+          "latency_ms": 39.76714400050696,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/050_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8930137999955",
+          "symbology": "QR Code",
+          "latency_ms": 8.905391005100682,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "051_blur.jpg",
+    "expected": "8921324426139",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/051_blur.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 30.24616999027785,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/051_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8921324426139",
+          "symbology": "QR Code",
+          "latency_ms": 8.332878991495818,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "052_clear.jpg",
+    "expected": "8937471138286",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/052_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8937471138286",
+          "symbology": "QR",
+          "latency_ms": 38.52192799968179,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/052_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8937471138286",
+          "symbology": "QR Code",
+          "latency_ms": 8.138446995872073,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "053_blur.jpg",
+    "expected": "8927181553074",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/053_blur.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 38.68725700885989,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/053_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8927181553074",
+          "symbology": "QR Code",
+          "latency_ms": 8.297325999592431,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "054_reflection.jpg",
+    "expected": "8998496366161",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/054_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8998496366161",
+          "symbology": "QR",
+          "latency_ms": 39.430937002180144,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/054_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8998496366161",
+          "symbology": "QR Code",
+          "latency_ms": 8.388910006033257,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "055_small_text.jpg",
+    "expected": "8958215652885",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/055_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8958215652885",
+          "symbology": "QR",
+          "latency_ms": 39.03380100382492,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/055_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8958215652885",
+          "symbology": "QR Code",
+          "latency_ms": 7.40574199880939,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "056_blur.jpg",
+    "expected": "8934967555812",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/056_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8934967555812",
+          "symbology": "QR",
+          "latency_ms": 39.19711300113704,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/056_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8934967555812",
+          "symbology": "QR Code",
+          "latency_ms": 8.36500599689316,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "057_damaged.jpg",
+    "expected": "8921430805856",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/057_damaged.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 37.83634499995969,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/057_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8921430805856",
+          "symbology": "QR Code",
+          "latency_ms": 8.563277995563112,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "058_reflection.jpg",
+    "expected": "8946614299156",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/058_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8946614299156",
+          "symbology": "QR",
+          "latency_ms": 39.76922499714419,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/058_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8946614299156",
+          "symbology": "QR Code",
+          "latency_ms": 8.523565993527882,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "059_clear.jpg",
+    "expected": "8913184838633",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/059_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8913184838633",
+          "symbology": "QR",
+          "latency_ms": 38.755864996346645,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/059_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8913184838633",
+          "symbology": "QR Code",
+          "latency_ms": 8.574526000302285,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "060_rotated.jpg",
+    "expected": "8961104248628",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/060_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8961104248628",
+          "symbology": "QR",
+          "latency_ms": 39.47618500387762,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/060_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8961104248628",
+          "symbology": "QR Code",
+          "latency_ms": 8.928221999667585,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "061_damaged.jpg",
+    "expected": "8975421549495",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/061_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8975421549495",
+          "symbology": "QR",
+          "latency_ms": 39.96352800459135,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/061_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8975421549495",
+          "symbology": "QR Code",
+          "latency_ms": 8.68337499559857,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "062_dark.jpg",
+    "expected": "8936460451381",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/062_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8936460451381",
+          "symbology": "QR",
+          "latency_ms": 38.37664799357299,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/062_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8936460451381",
+          "symbology": "QR Code",
+          "latency_ms": 8.144734994857572,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "063_reflection.jpg",
+    "expected": "8977559034651",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/063_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8977559034651",
+          "symbology": "QR",
+          "latency_ms": 39.23685599875171,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/063_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8977559034651",
+          "symbology": "QR Code",
+          "latency_ms": 8.51627100200858,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "064_damaged.jpg",
+    "expected": "8923105308930",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/064_damaged.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 38.61240799596999,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/064_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8923105308930",
+          "symbology": "QR Code",
+          "latency_ms": 8.78161498985719,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "065_small_text.jpg",
+    "expected": "8960377465748",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/065_small_text.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 39.83338399848435,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/065_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8960377465748",
+          "symbology": "QR Code",
+          "latency_ms": 7.313390990020707,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "066_clear.jpg",
+    "expected": "8950104200159",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/066_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8950104200159",
+          "symbology": "QR",
+          "latency_ms": 38.97128799872007,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/066_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8950104200159",
+          "symbology": "QR Code",
+          "latency_ms": 8.482894991175272,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "067_reflection.jpg",
+    "expected": "8957512664161",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/067_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8957512664161",
+          "symbology": "QR",
+          "latency_ms": 38.82989600242581,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/067_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8957512664161",
+          "symbology": "QR Code",
+          "latency_ms": 8.183247002307326,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "068_rotated.jpg",
+    "expected": "8984318762839",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/068_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8984318762839",
+          "symbology": "QR",
+          "latency_ms": 39.07687199534848,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/068_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8984318762839",
+          "symbology": "QR Code",
+          "latency_ms": 8.946126996306702,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "069_small_text.jpg",
+    "expected": "8953681254461",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/069_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8953681254461",
+          "symbology": "QR",
+          "latency_ms": 38.19628000201192,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/069_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8953681254461",
+          "symbology": "QR Code",
+          "latency_ms": 7.344655008637346,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "070_reflection.jpg",
+    "expected": "8927139293206",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/070_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8927139293206",
+          "symbology": "QR",
+          "latency_ms": 39.57919200183824,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/070_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8927139293206",
+          "symbology": "QR Code",
+          "latency_ms": 8.499902993207797,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "071_clear.jpg",
+    "expected": "8970075359684",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/071_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8970075359684",
+          "symbology": "QR",
+          "latency_ms": 38.972375987214036,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/071_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8970075359684",
+          "symbology": "QR Code",
+          "latency_ms": 7.992047001607716,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "072_dark.jpg",
+    "expected": "8992229289227",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/072_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8992229289227",
+          "symbology": "QR",
+          "latency_ms": 39.180024003144354,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/072_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8992229289227",
+          "symbology": "QR Code",
+          "latency_ms": 7.673886997508816,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "073_small_text.jpg",
+    "expected": "8922898565551",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/073_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8922898565551",
+          "symbology": "QR",
+          "latency_ms": 38.35261700442061,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/073_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8922898565551",
+          "symbology": "QR Code",
+          "latency_ms": 7.396926012006588,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "074_blur.jpg",
+    "expected": "8916411804184",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/074_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8916411804184",
+          "symbology": "QR",
+          "latency_ms": 38.782217001426034,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/074_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8916411804184",
+          "symbology": "QR Code",
+          "latency_ms": 8.181117998901755,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "075_rotated.jpg",
+    "expected": "8987011315521",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/075_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8987011315521",
+          "symbology": "QR",
+          "latency_ms": 39.741431988659315,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/075_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8987011315521",
+          "symbology": "QR Code",
+          "latency_ms": 9.080478994292207,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "076_vietnamese_mixed.jpg",
+    "expected": "8930534276974",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/076_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8930534276974",
+          "symbology": "QR",
+          "latency_ms": 39.32015199097805,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/076_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8930534276974",
+          "symbology": "QR Code",
+          "latency_ms": 9.009421992232092,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "077_rotated.jpg",
+    "expected": "8975211983011",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/077_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8975211983011",
+          "symbology": "QR",
+          "latency_ms": 38.76114399463404,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/077_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8975211983011",
+          "symbology": "QR Code",
+          "latency_ms": 8.952126998337917,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "078_rotated.jpg",
+    "expected": "8971952831074",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/078_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8971952831074",
+          "symbology": "QR",
+          "latency_ms": 39.68236000218894,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/078_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8971952831074",
+          "symbology": "QR Code",
+          "latency_ms": 9.01481400069315,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "079_clear.jpg",
+    "expected": "8989808610102",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/079_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8989808610102",
+          "symbology": "QR",
+          "latency_ms": 38.6795280064689,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/079_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8989808610102",
+          "symbology": "QR Code",
+          "latency_ms": 8.190591004677117,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "080_clear.jpg",
+    "expected": "8959501072345",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/080_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8959501072345",
+          "symbology": "QR",
+          "latency_ms": 39.15136800787877,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/080_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8959501072345",
+          "symbology": "QR Code",
+          "latency_ms": 8.444621998933144,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "081_rotated.jpg",
+    "expected": "8973988192517",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/081_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8973988192517",
+          "symbology": "QR",
+          "latency_ms": 39.40660100488458,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/081_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8973988192517",
+          "symbology": "QR Code",
+          "latency_ms": 9.042205987498164,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "082_clear.jpg",
+    "expected": "8969868470908",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/082_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8969868470908",
+          "symbology": "QR",
+          "latency_ms": 38.66140000172891,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/082_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8969868470908",
+          "symbology": "QR Code",
+          "latency_ms": 8.400845996220596,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "083_rotated.jpg",
+    "expected": "8976062321137",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/083_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8976062321137",
+          "symbology": "QR",
+          "latency_ms": 39.10989699943457,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/083_rotated.jpg",
+          "status": "SUCCESS",
+          "value": "8976062321137",
+          "symbology": "QR Code",
+          "latency_ms": 8.97358200745657,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "084_clear.jpg",
+    "expected": "8997281735453",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/084_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8997281735453",
+          "symbology": "QR",
+          "latency_ms": 38.89003999938723,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/084_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8997281735453",
+          "symbology": "QR Code",
+          "latency_ms": 8.361150990822352,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "085_clear.jpg",
+    "expected": "8934885166151",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/085_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8934885166151",
+          "symbology": "QR",
+          "latency_ms": 39.455784994061105,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/085_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8934885166151",
+          "symbology": "QR Code",
+          "latency_ms": 8.706830005394295,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "086_clear.jpg",
+    "expected": "8929380588853",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/086_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8929380588853",
+          "symbology": "QR",
+          "latency_ms": 39.35122399707325,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/086_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8929380588853",
+          "symbology": "QR Code",
+          "latency_ms": 8.600127010140568,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "087_vietnamese_mixed.jpg",
+    "expected": "8996839306034",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/087_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8996839306034",
+          "symbology": "QR",
+          "latency_ms": 40.112343995133415,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/087_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8996839306034",
+          "symbology": "QR Code",
+          "latency_ms": 8.901278008124791,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "088_blur.jpg",
+    "expected": "8912140610753",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/088_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8912140610753",
+          "symbology": "QR",
+          "latency_ms": 38.39205599797424,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/088_blur.jpg",
+          "status": "SUCCESS",
+          "value": "8912140610753",
+          "symbology": "QR Code",
+          "latency_ms": 8.356142992852256,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "089_reflection.jpg",
+    "expected": "8989097773463",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/089_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8989097773463",
+          "symbology": "QR",
+          "latency_ms": 39.37311199842952,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/089_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8989097773463",
+          "symbology": "QR Code",
+          "latency_ms": 8.103806001599878,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "090_clear.jpg",
+    "expected": "8976981867323",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/090_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8976981867323",
+          "symbology": "QR",
+          "latency_ms": 39.8799760005204,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/090_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8976981867323",
+          "symbology": "QR Code",
+          "latency_ms": 8.443070997600444,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "091_reflection.jpg",
+    "expected": "8911444467718",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/091_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8911444467718",
+          "symbology": "QR",
+          "latency_ms": 39.063128002453595,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/091_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8911444467718",
+          "symbology": "QR Code",
+          "latency_ms": 8.2919020060217,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "092_damaged.jpg",
+    "expected": "8933398131575",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/092_damaged.jpg",
+          "status": "NO_DECODE",
+          "value": null,
+          "symbology": null,
+          "latency_ms": 31.467402004636824,
+          "error": null
+        },
+        "exact_match": false
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/092_damaged.jpg",
+          "status": "SUCCESS",
+          "value": "8933398131575",
+          "symbology": "QR Code",
+          "latency_ms": 8.650269999634475,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "093_dark.jpg",
+    "expected": "8983134456936",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/093_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8983134456936",
+          "symbology": "QR",
+          "latency_ms": 38.810073005151935,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/093_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8983134456936",
+          "symbology": "QR Code",
+          "latency_ms": 7.883069993113168,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "094_small_text.jpg",
+    "expected": "8935667610603",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/094_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8935667610603",
+          "symbology": "QR",
+          "latency_ms": 38.825832001748495,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/094_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8935667610603",
+          "symbology": "QR Code",
+          "latency_ms": 7.191119002527557,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "095_clear.jpg",
+    "expected": "8994572537436",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/095_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8994572537436",
+          "symbology": "QR",
+          "latency_ms": 39.3273359950399,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/095_clear.jpg",
+          "status": "SUCCESS",
+          "value": "8994572537436",
+          "symbology": "QR Code",
+          "latency_ms": 8.301934998598881,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "096_vietnamese_mixed.jpg",
+    "expected": "8911847425369",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/096_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8911847425369",
+          "symbology": "QR",
+          "latency_ms": 39.09410499909427,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/096_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8911847425369",
+          "symbology": "QR Code",
+          "latency_ms": 8.663629996590316,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "097_dark.jpg",
+    "expected": "8981067705930",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/097_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8981067705930",
+          "symbology": "QR",
+          "latency_ms": 39.80965599475894,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/097_dark.jpg",
+          "status": "SUCCESS",
+          "value": "8981067705930",
+          "symbology": "QR Code",
+          "latency_ms": 8.226414007367566,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "098_reflection.jpg",
+    "expected": "8958638207588",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/098_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8958638207588",
+          "symbology": "QR",
+          "latency_ms": 39.543031991343014,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/098_reflection.jpg",
+          "status": "SUCCESS",
+          "value": "8958638207588",
+          "symbology": "QR Code",
+          "latency_ms": 8.425293999607675,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "099_small_text.jpg",
+    "expected": "8965885826948",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/099_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8965885826948",
+          "symbology": "QR",
+          "latency_ms": 38.98218399262987,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/099_small_text.jpg",
+          "status": "SUCCESS",
+          "value": "8965885826948",
+          "symbology": "QR Code",
+          "latency_ms": 7.574207003926858,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  },
+  {
+    "image": "100_vietnamese_mixed.jpg",
+    "expected": "8964108824557",
+    "barcode_type": null,
+    "engines": [
+      {
+        "result": {
+          "engine": "opencv",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/100_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8964108824557",
+          "symbology": "QR",
+          "latency_ms": 39.093304993002675,
+          "error": null
+        },
+        "exact_match": true
+      },
+      {
+        "result": {
+          "engine": "zxing_cpp",
+          "image": "/home/minh/work/ocr-benchmark/data/images/ocr_label_dataset_v1/images/100_vietnamese_mixed.jpg",
+          "status": "SUCCESS",
+          "value": "8964108824557",
+          "symbology": "QR Code",
+          "latency_ms": 8.914893987821415,
+          "error": null
+        },
+        "exact_match": true
+      }
+    ]
+  }
+]

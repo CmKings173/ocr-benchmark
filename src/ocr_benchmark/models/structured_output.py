@@ -27,8 +27,12 @@ def fields_from_payload(value: Any) -> dict[str, Any]:
     return {}
 
 
-def parse_structured_content(content: Any) -> tuple[str, dict[str, Any]]:
-    """Parse plain text or JSON/fenced JSON returned by an OCR/VLM model."""
+def decode_structured_content(content: Any) -> tuple[Any, str]:
+    """Decode common provider content while preserving the original fallback.
+
+    The decoded value is intentionally exposed so provider-specific adapters
+    can handle their own output schemas without duplicating fence/JSON logic.
+    """
     if isinstance(content, list):
         # Some OpenAI-compatible servers return content blocks instead of one
         # string.  Preserve text blocks and feed the combined value through
@@ -42,7 +46,7 @@ def parse_structured_content(content: Any) -> tuple[str, dict[str, Any]]:
                 if isinstance(value, str):
                     parts.append(value)
         if parts:
-            return parse_structured_content("\n".join(parts))
+            return decode_structured_content("\n".join(parts))
         parsed = None
         fallback = json.dumps(content, ensure_ascii=False)
     elif isinstance(content, dict):
@@ -76,7 +80,14 @@ def parse_structured_content(content: Any) -> tuple[str, dict[str, Any]]:
         fallback = json.dumps(content, ensure_ascii=False)
         parsed = None
 
+    return parsed, fallback
+
+
+def parse_structured_content(content: Any) -> tuple[str, dict[str, Any]]:
+    """Parse plain text or JSON/fenced JSON returned by an OCR/VLM model."""
+    parsed, fallback = decode_structured_content(content)
+
     if isinstance(parsed, dict):
-        raw_text = parsed.get("raw_text", fallback)
+        raw_text = parsed.get("raw_text", parsed.get("text", fallback))
         return str(raw_text), fields_from_payload(parsed.get("fields", {}))
     return fallback, {}
