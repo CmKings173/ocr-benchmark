@@ -17,6 +17,9 @@ models:
   paddleocr_vl_1_6:
     adapter: paddleocr_vl_1_6
     device: gpu:0
+    # PaddleOCR-VL native startup/inference can exceed the generic 60s
+    # benchmark timeout, especially on CPU-only aarch64 installations.
+    timeout_seconds: 300
     revision: VERIFY_REQUIRED
     license_status: VERIFY_REQUIRED
   monkey_ocr_v2_b_parsing:
