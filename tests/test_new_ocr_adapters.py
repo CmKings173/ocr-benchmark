@@ -1,6 +1,7 @@
 from ocr_benchmark.core.registry import create_adapter
 from ocr_benchmark.models.dots_mocr import DOTS_IMAGE_PREFIX, DOTS_MOCR_JSON_PROMPT, DotsMOCRAdapter
 from ocr_benchmark.models.hunyuan_ocr import HunyuanOCRAdapter
+from ocr_benchmark.models.paddleocr_vl import PaddleOCRVLAdapter
 from ocr_benchmark.models.unlimited_ocr import UnlimitedOCRAdapter
 
 
@@ -17,6 +18,12 @@ def test_new_adapters_are_registered_with_documented_defaults():
         create_adapter("dots_mocr", {"endpoint": "http://127.0.0.1:8108/v1", "verify_model": False}),
         DotsMOCRAdapter,
     )
+    paddle_vl = create_adapter(
+        "paddleocr_vl_1_6",
+        {"device": "cpu", "timeout_seconds": 300},
+    )
+    assert isinstance(paddle_vl, PaddleOCRVLAdapter)
+    assert paddle_vl.timeout_seconds == 300
 
 
 def test_official_prompt_profiles_are_not_generic_json_prompts():

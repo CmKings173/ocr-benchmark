@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import sys
 from contextlib import redirect_stdout
 from pathlib import Path
@@ -12,7 +13,9 @@ def _error_status(exc: Exception) -> str:
     message = str(exc).upper()
     if "INVALID_OUTPUT" in message or "VALIDATION ERROR" in message:
         return "INVALID_OUTPUT"
-    if "TIMEOUT" in message:
+    # Avoid classifying errors mentioning ``timeout_seconds`` as actual
+    # request timeouts.
+    if isinstance(exc, TimeoutError) or re.search(r"\bTIMEOUT\b|\bTIMED OUT\b", message):
         return "TIMEOUT"
     if "OUT OF MEMORY" in message or "OOM" in message:
         return "OOM"

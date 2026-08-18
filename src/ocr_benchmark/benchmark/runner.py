@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import statistics
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -24,7 +25,9 @@ def _classify_error(exc: Exception) -> RunStatus:
     message = str(exc).upper()
     if "INVALID_OUTPUT" in message or "VALIDATIONERROR" in message or "VALIDATION ERROR" in message:
         return RunStatus.INVALID_OUTPUT
-    if "TIMEOUT" in message or "TIMED OUT" in message:
+    # Match timeout tokens as words.  A config parameter such as
+    # ``timeout_seconds`` must not turn an unrelated TypeError into TIMEOUT.
+    if isinstance(exc, TimeoutError) or re.search(r"\bTIMEOUT\b|\bTIMED OUT\b", message):
         return RunStatus.TIMEOUT
     if "NOT_CONFIGURED" in message:
         return RunStatus.NOT_CONFIGURED

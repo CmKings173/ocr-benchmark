@@ -12,11 +12,22 @@ from ocr_benchmark.models.helpers import first_mapping, text_from_payload, to_pl
 class PaddleOCRVLAdapter(OCRAdapter):
     name = "paddleocr_vl_1_6"
 
-    def __init__(self, device: str = "gpu:0", engine: Optional[str] = None, revision: Optional[str] = None, license_status: str = "VERIFY_REQUIRED"):
+    def __init__(
+        self,
+        device: str = "gpu:0",
+        engine: Optional[str] = None,
+        revision: Optional[str] = None,
+        license_status: str = "VERIFY_REQUIRED",
+        timeout_seconds: Optional[float] = None,
+    ):
         self.device = device
         self.engine = engine
         self.revision = revision
         self.license_status = license_status
+        # The benchmark orchestrator owns request timeouts.  Accept the
+        # per-model value here because it is passed through the shared model
+        # config, but do not apply it to PaddleOCRVL itself.
+        self.timeout_seconds = timeout_seconds
         self.pipeline: Any = None
 
     def load(self) -> None:
